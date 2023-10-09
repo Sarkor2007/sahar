@@ -1227,6 +1227,7 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     padding: 35px 0;
+    cursor: pointer;
 }
 
 .questions__item-btn img {
