@@ -18,12 +18,55 @@ var swiper = new Swiper(".mySwiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
 });
 
 
+var swiper = new Swiper(".mySwiperOne", {
+    slidesPerView: 1,
+    spaceBetween: 15,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        401: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+    },
+});
+
+
+
 var swiper = new Swiper(".mySwiperTwo", {
-    slidesPerView: 2,
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween: 8,
+    breakpoints: {
+        450: {
+            slidesPerView: 1.5,
+            spaceBetween: 15,
+        },
+        576: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        640: {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+        },
+        870: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1000: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+    },
 });
 
 

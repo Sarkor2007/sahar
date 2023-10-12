@@ -58,7 +58,7 @@ body.active {
 }
 
 body {
-    min-width: 360px;
+    min-width: 330px;
 }
 
 html {
@@ -399,7 +399,7 @@ html::-webkit-scrollbar-thumb {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: url('../images/png/main-bg.png');
+    background-image: url('../images/png/main-bg.webp');
     background-repeat: no-repeat;
     background-position: right center;
     background-size: auto 100%;
@@ -801,9 +801,9 @@ html::-webkit-scrollbar-thumb {
 /* ----- features ---- */
 
 .features {
-    margin-top: 70px;
+    margin-top: 50px;
+    padding-bottom: 50px;
     overflow: hidden;
-    padding-bottom: 20px;
 }
 
 .features-title {
@@ -913,24 +913,27 @@ html::-webkit-scrollbar-thumb {
 /* ---- offers ---- */
 
 .offers {
-    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.offers-wrapper {
+    margin-top: 20px;
     border-radius: 10px;
-    padding: 70px 0;
+    padding: 70px 0 50px;
     background-image: url('/images/png/offers.png');
     background-size: cover;
     background-position: center;
-    height: 380px;
 }
 
 .offers__content {
     display: flex;
     align-items: flex-start;
-    gap: 22px;
+    gap: 18px;
     justify-content: center;
 }
 
 .offers__content-box {
-    width: 320px;
+    width: 315px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -939,7 +942,7 @@ html::-webkit-scrollbar-thumb {
 
 .offers__content-item {
     width: 100%;
-    padding: 42px 30px 18px;
+    padding: 42px 25px 18px;
     border-radius: 15px;
     background: var(--white);
     box-shadow: 0px 35px 50px -15px var(--shadow);
@@ -1041,7 +1044,8 @@ html::-webkit-scrollbar-thumb {
 /* ---- team ---- */
 
 .team {
-    margin-top: 100px;
+    margin-top: 50px;
+    padding-bottom: 50px;
 }
 
 .team-title {
@@ -1084,6 +1088,7 @@ html::-webkit-scrollbar-thumb {
     height: 45px;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0 27px;
     color: var(--white);
     font-family: Comfortaa;
@@ -1263,6 +1268,10 @@ html::-webkit-scrollbar-thumb {
     list-style: disc inside;
 }
 
+.mySwiperOne {
+    display: none;
+}
+
 .swiper {
     width: 100%;
     height: 100%;
@@ -1301,7 +1310,7 @@ html::-webkit-scrollbar-thumb {
 /* ---- questions ---- */
 
 .questions {
-    margin-top: 100px;
+    margin-top: 50px;
     padding-bottom: 50px;
     overflow-x: hidden;
 }
@@ -1342,6 +1351,7 @@ html::-webkit-scrollbar-thumb {
     font-weight: 600;
     line-height: 150%;
     text-align: center;
+    padding: 0 15px;
     padding-bottom: 50px;
     position: relative;
 }
@@ -1596,6 +1606,17 @@ html::-webkit-scrollbar-thumb {
     .features-content {
         gap: 20px;
     }
+
+    .questions__item-text {
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 950px) {
+    .team-header {
+        flex-direction: column-reverse;
+        gap: 25px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -1642,6 +1663,27 @@ html::-webkit-scrollbar-thumb {
     }
 }
 
+@media (max-width: 870px) {
+    .questions-slider .swiper {
+        max-width: 650px;
+    }
+
+    .questions-slider {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 830px) {
+    .team-slider {
+        margin-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    .team__list-last {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     .fit__title {
         flex-direction: column;
@@ -1684,6 +1726,46 @@ html::-webkit-scrollbar-thumb {
 
     .service__content-item {
         gap: 10px;
+    }
+
+    .offers__content-center {
+        display: none;
+    }
+
+    .offers__content {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .offers-wrapper {
+        max-width: 550px;
+        margin: auto;
+    }
+
+    .team-title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .team-header {
+        margin-top: 35px;
+        padding-bottom: 40px;
+    }
+
+    .questions__item-btn {
+        padding: 25px 0;
+    }
+
+    .questions__item-btn img {
+        width: 40px;
+        height: 35px;
+    }
+    .questions-item {
+        padding-top: 35px;
+    }
+    .questions__item-title {
+        padding-bottom: 30px;
     }
 }
 
@@ -1780,6 +1862,100 @@ html::-webkit-scrollbar-thumb {
     .features {
         margin-top: 40px;
     }
+
+    .team__buttons {
+        flex-direction: column;
+        max-width: 320px;
+        width: 100%;
+    }
+
+    .team-under {
+        margin-top: 30px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+
+    .team-title {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .questions {
+        margin-top: 25px;
+    }
+
+    .questions-title {
+        font-size: 38px;
+        line-height: 44px;
+    }
+
+    .questions-slider {
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    .questions__item-btn {
+        padding: 15px 0;
+    }
+
+    .questions__item-btn img {
+        width: 30px;
+        height: 28px;
+    }
+
+    .questions__item-text {
+        padding: 25px 16px;
+        font-size: 14px;
+    }
+
+    .questions__item-title {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .questions-item {
+        border-radius: 8px;
+        padding-top: 25px;
+    }
+}
+
+@media (max-width: 440px) {
+    .team__header-box {
+        flex-direction: column;
+    }
+
+    .team__header-info {
+        max-width: 380px;
+        text-align: center;
+    }
+
+    .team__list-item {
+        flex-direction: column;
+        width: 100%;
+        max-width: 340px;
+        padding: 15px 20px 15px 25px;
+    }
+
+    .team__item-article {
+        width: 100%;
+    }
+
+    .mySwiper {
+        display: none;
+    }
+
+    .team {
+        overflow-x: hidden;
+    }
+
+    .mySwiperOne {
+        display: block;
+        max-width: 330px;
+        overflow: visible;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1788,7 +1964,7 @@ html::-webkit-scrollbar-thumb {
     }
 
     .header__logo-text {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .header__logo-img,
@@ -1842,22 +2018,57 @@ html::-webkit-scrollbar-thumb {
     }
 
     .features__item-title {
-        font-size: 30px;
-        line-height: 32px;
+        font-size: 24px;
+        line-height: 28px;
     }
 
     .features__item-text {
-        font-size: 16px;
-        line-height: 26px;
-        margin-top: 20px;
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 14px;
     }
 
     .features-title {
-        font-size: 30px;
-        line-height: 38px;
+        font-size: 26px;
+        line-height: 32px;
     }
 
     .features-content {
         margin-top: 25px;
+    }
+
+    .offers__content-title {
+        font-size: 20px;
+    }
+
+    .offers__content-subtitle {
+        font-size: 12px;
+        margin-top: 14px;
+    }
+
+    .offers__content-box {
+        width: 100%;
+    }
+
+    .offers__content-item {
+        border-radius: 8px;
+    }
+
+    .offers__content-under {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .offers-wrapper {
+        padding: 40px 8px 15px;
+    }
+
+    .mySwiperOne {
+        max-width: 300px;
+    }
+
+    .questions-title {
+        font-size: 30px;
+        line-height: 36px;
     }
 }
