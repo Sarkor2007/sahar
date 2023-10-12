@@ -1,14 +1,18 @@
 console.log('Welcome!');
 
-const langBtn = document.querySelectorAll('.header__lang-btn');
-const langMenu = document.querySelectorAll('.header__lang-list');
+const langBtn = document.querySelector('.header__lang-btn');
+const langMenu = document.querySelector('.header__lang-list');
+const footerLangBtn = document.querySelector('.footer__lang-btn');
+const footerLangMenu = document.querySelector('.footer__lang-list');
 
 
-for (let i = 0; i < langBtn.length; i++) {
-    langBtn[i].addEventListener('click', () => {
-        langMenu[i].classList.toggle('active');
-    })
-}
+langBtn.addEventListener('click', () => {
+    langMenu.classList.toggle('active');
+})
+
+footerLangBtn.addEventListener('click', () => {
+    footerLangMenu.classList.toggle('active');
+})
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
