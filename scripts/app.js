@@ -73,6 +73,12 @@ var swiper = new Swiper(".mySwiperTwo", {
     },
 });
 
+var swiper = new Swiper(".mySwiperThree", {
+    slidesPerView: 3,
+    direction: "vertical",
+});
+
+
 
 const accordionBtn = document.querySelectorAll('.questions__item-btn');
 const accordionBody = document.querySelectorAll('.questions__item-content');
