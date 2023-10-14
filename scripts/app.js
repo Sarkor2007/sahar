@@ -45,10 +45,16 @@ var swiper = new Swiper(".mySwiperOne", {
 });
 
 
-var swiper = new Swiper(".mySwiperThree", {
+var swiperAbout = new Swiper(".mySwiperThree", {
     slidesPerView: 3,
     direction: "vertical",
 });
+
+const aboutHeaderBtn = document.querySelector('#aboutBtn')
+
+aboutHeaderBtn.addEventListener('click', () => {
+    swiperAbout.slideNext();
+})
 
 
 const accordionBtn = document.querySelectorAll('.questions__item-btn');
@@ -71,19 +77,15 @@ var swiper1 = new Swiper(".mySwiperTwo", {
     slidesPerView: 1,
     spaceBetween: 8,
     breakpoints: {
-        450: {
-            slidesPerView: 1.5,
-            spaceBetween: 15,
-        },
         576: {
             slidesPerView: 1,
             spaceBetween: 20,
         },
-        640: {
+        690: {
             slidesPerView: 1.5,
             spaceBetween: 20,
         },
-        870: {
+        950: {
             slidesPerView: 2,
             spaceBetween: 20,
         },

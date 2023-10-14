@@ -29,6 +29,7 @@
     --text: #8535E8;
     --gradient: linear-gradient(277deg, #8535E8 -21.7%, #03C7D0 116.3%);
     --shadow: rgba(133, 53, 232, 0.15);
+    --hover-shadow: 0px 0px 6px 2px rgba(133, 53, 232, 0.5);
 }
 
 
@@ -316,15 +317,13 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* transition: background .5s, color .5s; */
     transition: .5s all;
     border-radius: 10px;
 }
 
 .header-login:hover,
 .footer-login:hover {
-    background: var(--gradient);
-    color: var(--white);
+    box-shadow: var(--hover-shadow);
 }
 
 .header-signup,
@@ -341,15 +340,12 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid transparent;
-    transition: .5s all;
+    transition: .3s all;
 }
 
 .header-signup:hover,
 .footer-signup:hover {
-    background: var(--white);
-    border: 1px solid var(--text);
-    color: var(--text);
+    box-shadow: var(--hover-shadow);
 }
 
 .header__lang,
@@ -889,7 +885,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .features__item-img.third img {
-    transform: scale(2) translate(10px, 15px);
+    transform: scale(1.6) translate(50px, 15px);
 }
 
 .features__item-title {
@@ -946,7 +942,7 @@ html::-webkit-scrollbar-thumb {
     margin-top: 20px;
     border-radius: 10px;
     padding: 70px 0 50px;
-    background-image: url('/images/png/offers.png');
+    background-image: url('../images/png/offers.png');
     background-size: cover;
     background-position: center;
 }
@@ -1126,13 +1122,11 @@ html::-webkit-scrollbar-thumb {
     background: var(--gradient);
     box-shadow: 0px 35px 50px -15px var(--shadow);
     transition: .3s all;
-    border: 1px solid transparent;
+    cursor: pointer;
 }
 
 .about__buttons-item:hover {
-    border: 1px solid var(--text);
-    background: var(--white);
-    color: var(--text);
+    box-shadow: var(--hover-shadow);
 }
 
 .about__buttons-item.second img {
@@ -1149,9 +1143,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .about__buttons-item.second:hover {
-    background: var(--gradient);
-    color: var(--white);
-    border: 1px solid transparent;
+    box-shadow: var(--hover-shadow);
 }
 
 .about-slider {
@@ -1276,14 +1268,11 @@ html::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background: var(--gradient);
     box-shadow: 0px 35px 50px -15px var(--shadow);
-    transition: .5s all;
-    border: 1px solid transparent;
+    transition: .3s all;
 }
 
 .team__buttons-item:hover {
-    border: 1px solid var(--text);
-    background: var(--white);
-    color: var(--text);
+    box-shadow: var(--hover-shadow);
 }
 
 .team__buttons-item.second {
@@ -1293,9 +1282,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .team__buttons-item.second:hover {
-    background: var(--gradient);
-    color: var(--white);
-    border: 1px solid transparent;
+    box-shadow: var(--hover-shadow);
 }
 
 .team__header-box {
@@ -1587,7 +1574,7 @@ html::-webkit-scrollbar-thumb {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 35px 0;
+    padding: 25px 0;
     cursor: pointer;
 }
 
@@ -1607,8 +1594,6 @@ html::-webkit-scrollbar-thumb {
 .mySwiperTwo .swiper-slide {
     align-items: flex-start;
     height: 525px;
-
-    /* height: fit-content; */
 }
 
 /* ---- footer ---- */
@@ -1677,9 +1662,14 @@ html::-webkit-scrollbar-thumb {
 
 @media (max-width: 1300px) {
     .features__item-img.third img {
-        transform: scale(1.6) translate(-10px, 15px);
+        transform: scale(1.5) translate(35px, 15px);
     }
+}
 
+@media (max-width: 1190px) {
+    .mySwiperTwo .swiper-slide {
+        height: 540px;
+    }
 }
 
 @media (max-width: 1130px) {
@@ -1773,10 +1763,6 @@ html::-webkit-scrollbar-thumb {
     .features__item-img.second img {
         transform: scale(1.5) translate(20px, 10px);
     }
-
-    .features__item-img.third img {
-        transform: scale(1.6) translate(-80px, 15px);
-    }
 }
 
 @media (max-width: 1050px) {
@@ -1812,6 +1798,14 @@ html::-webkit-scrollbar-thumb {
 
     .questions__item-text {
         padding: 40px 30px;
+    }
+}
+
+@media (max-width: 1010px) {
+    @media (max-width: 1190px) {
+        .mySwiperTwo .swiper-slide {
+            height: 580px;
+        }
     }
 }
 
@@ -1873,10 +1867,6 @@ html::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 870px) {
-    .questions-slider .swiper {
-        max-width: 650px;
-    }
-
     .questions-slider {
         padding: 0 30px;
     }
@@ -1963,7 +1953,7 @@ html::-webkit-scrollbar-thumb {
     }
 
     .questions__item-btn {
-        padding: 25px 0;
+        padding: 20px 0;
     }
 
     .questions__item-btn img {
@@ -1972,8 +1962,8 @@ html::-webkit-scrollbar-thumb {
     }
 
     .questions__item-title {
-        padding-top: 35px;
-        padding-bottom: 30px;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 
     .about__title {
@@ -2013,6 +2003,14 @@ html::-webkit-scrollbar-thumb {
     .about__slider-img {
         left: -5px;
         height: 110px;
+    }
+}
+
+@media (max-width: 690px) {
+    @media (max-width: 1190px) {
+        .mySwiperTwo .swiper-slide {
+            height: 490px;
+        }
     }
 }
 
@@ -2167,6 +2165,12 @@ html::-webkit-scrollbar-thumb {
     .questions-item {
         border-radius: 8px;
     }
+
+    @media (max-width: 1190px) {
+        .mySwiperTwo .swiper-slide {
+            height: 450px;
+        }
+    }
 }
 
 @media (max-width: 540px) {
@@ -2223,6 +2227,11 @@ html::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 440px) {
+
+    .questions__item-title {
+        font-size: 18px;
+    }
+
     .team__header-box {
         flex-direction: column;
     }
@@ -2402,5 +2411,11 @@ html::-webkit-scrollbar-thumb {
 
     .footer-dot {
         display: none;
+    }
+
+    @media (max-width: 1190px) {
+        .mySwiperTwo .swiper-slide {
+            height: 460px;
+        }
     }
 }
