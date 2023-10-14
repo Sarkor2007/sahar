@@ -167,6 +167,18 @@ html::-webkit-scrollbar-thumb {
     gap: 30px;
 }
 
+.nav__list li,
+.footer__nav-list li {
+    transition: .3s all;
+}
+
+.nav__list li:hover,
+.footer__nav-list li:hover {
+    transform: scale(1.1);
+}
+
+
+
 .nav__list-link {
     color: var(--black);
     font-family: Comfortaa;
@@ -304,7 +316,8 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .3s all;
+    /* transition: background .5s, color .5s; */
+    transition: .5s all;
     border-radius: 10px;
 }
 
@@ -329,7 +342,7 @@ html::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     border: 1px solid transparent;
-    transition: .3s all;
+    transition: .5s all;
 }
 
 .header-signup:hover,
@@ -1263,7 +1276,7 @@ html::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background: var(--gradient);
     box-shadow: 0px 35px 50px -15px var(--shadow);
-    transition: .3s all;
+    transition: .5s all;
     border: 1px solid transparent;
 }
 
@@ -1507,7 +1520,6 @@ html::-webkit-scrollbar-thumb {
     border-radius: 15px;
     background: var(--white);
     box-shadow: 0px 35px 50px -15px var(--shadow);
-    padding-top: 45px;
 }
 
 .questions__item-title {
@@ -1518,6 +1530,7 @@ html::-webkit-scrollbar-thumb {
     line-height: 150%;
     text-align: center;
     padding: 0 15px;
+    padding-top: 45px;
     padding-bottom: 50px;
     position: relative;
 }
@@ -1579,21 +1592,28 @@ html::-webkit-scrollbar-thumb {
 }
 
 .questions__item-btn img {
+    user-select: none;
     width: 50px;
     height: 43px;
     object-fit: contain;
-    transform: rotate(180deg);
     transition: .3s all;
+    transform: rotate(0);
 }
 
 .questions__item-btn img.active {
-    transform: rotate(0)
+    transform: rotate(180deg);
+}
+
+.mySwiperTwo .swiper-slide {
+    align-items: flex-start;
+    height: 525px;
+
+    /* height: fit-content; */
 }
 
 /* ---- footer ---- */
 
 .footer {
-    margin-top: 100px;
     background: var(--gradient);
     padding: 75px 0;
 }
@@ -1951,11 +1971,8 @@ html::-webkit-scrollbar-thumb {
         height: 35px;
     }
 
-    .questions-item {
-        padding-top: 35px;
-    }
-
     .questions__item-title {
+        padding-top: 35px;
         padding-bottom: 30px;
     }
 
@@ -2143,12 +2160,12 @@ html::-webkit-scrollbar-thumb {
 
     .questions__item-title {
         font-size: 20px;
+        padding-top: 25px;
         padding-bottom: 20px;
     }
 
     .questions-item {
         border-radius: 8px;
-        padding-top: 25px;
     }
 }
 
@@ -2254,9 +2271,7 @@ html::-webkit-scrollbar-thumb {
         width: 100%;
     }
 
-    .footer {
-        margin-top: 50px;
-    }
+
     .about__buttons {
         width: 100%;
     }

@@ -45,8 +45,29 @@ var swiper = new Swiper(".mySwiperOne", {
 });
 
 
+var swiper = new Swiper(".mySwiperThree", {
+    slidesPerView: 3,
+    direction: "vertical",
+});
 
-var swiper = new Swiper(".mySwiperTwo", {
+
+const accordionBtn = document.querySelectorAll('.questions__item-btn');
+const accordionBody = document.querySelectorAll('.questions__item-content');
+const accordionArrow = document.querySelectorAll('.questions__item-btn img');
+
+for (let i = 0; i < accordionBtn.length; i++) {
+    accordionBtn[i]?.addEventListener('click', () => {
+        accordionBody[i].classList.toggle('active');
+        accordionArrow[i].classList.toggle('active');
+        if (accordionBody[i].classList.contains('active')) {
+            accordionBody[i].style.minHeight = accordionBody[i].scrollHeight + 'px';
+        } else {
+            accordionBody[i].style.minHeight = '0';
+        }
+    });
+}
+
+var swiper1 = new Swiper(".mySwiperTwo", {
     slidesPerView: 1,
     spaceBetween: 8,
     breakpoints: {
@@ -73,28 +94,6 @@ var swiper = new Swiper(".mySwiperTwo", {
     },
 });
 
-var swiper = new Swiper(".mySwiperThree", {
-    slidesPerView: 3,
-    direction: "vertical",
-});
-
-
-
-const accordionBtn = document.querySelectorAll('.questions__item-btn');
-const accordionBody = document.querySelectorAll('.questions__item-content');
-const accordionArrow = document.querySelectorAll('.questions__item-btn img');
-
-for (let i = 0; i < accordionBtn.length; i++) {
-    accordionBtn[i]?.addEventListener('click', () => {
-        accordionBody[i].classList.toggle('active');
-        accordionArrow[i].classList.toggle('active');
-        if (accordionBody[i].classList.contains('active')) {
-            accordionBody[i].style.minHeight = accordionBody[i].scrollHeight + 'px';
-        } else {
-            accordionBody[i].style.minHeight = '0';
-        }
-    })
-}
 
 const burgerOpen = document.querySelector('.nav__open');
 const burgerExit = document.querySelector('.nav__exit-btn');
