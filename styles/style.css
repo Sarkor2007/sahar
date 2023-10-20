@@ -1707,7 +1707,11 @@ html::-webkit-scrollbar-thumb {
     font-size: 54px;
     font-weight: 400;
     line-height: 70px;
-    max-width: 620px;
+    max-width: 640px;
+}
+
+.login-header.second {
+    margin-top: 40px;
 }
 
 .login-header {
@@ -1716,6 +1720,7 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 45px;
 }
 
 .login__header-box {
@@ -1723,7 +1728,6 @@ html::-webkit-scrollbar-thumb {
     align-items: center;
     gap: 15px;
     margin-top: 30px;
-    padding-bottom: 45px;
     width: 100%;
     justify-content: center;
 }
@@ -1817,6 +1821,11 @@ html::-webkit-scrollbar-thumb {
     align-items: center;
 }
 
+.login-form.second {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
 .login-box {
     border-radius: 15px;
     background: var(--white);
@@ -1865,10 +1874,61 @@ input[type="number"]::-webkit-outer-spin-button {
     font-weight: 400;
     height: 46px;
     transition: .3s all;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 10px;
 }
 
 .login-btn:hover {
     box-shadow: var(--hover-shadow);
+}
+
+.login__number {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login__number-text {
+    color: var(--white);
+    font-family: Comfortaa;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.login__number-text span {
+    text-decoration-line: underline;
+}
+
+.login__number-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    background: var(--white);
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__number-btn button {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background: var(--gradient);
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__number-btn img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
 @media (max-width: 1300px) {
