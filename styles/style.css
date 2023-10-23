@@ -1995,21 +1995,22 @@ input[type="number"]::-webkit-outer-spin-button {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .user__header-item {
     border-radius: 15px;
     background: var(--white);
     box-shadow: 0px 35px 75px 0px var(--shadow);
-    height: 60px;
     display: flex;
     align-items: center;
-    padding: 0 8px;
+    padding: 8px;
 }
 
 .user__header-link {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 45px;
     padding: 0 26px;
     border-radius: 12px;
@@ -2027,6 +2028,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .user-wrapper {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     max-width: 1200px;
     margin: auto;
@@ -2040,6 +2042,11 @@ input[type="number"]::-webkit-outer-spin-button {
     border-radius: 15px;
     background: var(--white);
     box-shadow: 0px 35px 75px 0px var(--shadow);
+}
+
+.user__schedule {
+    position: relative;
+    z-index: 3;
 }
 
 .user__profile-title,
@@ -2070,19 +2077,31 @@ input[type="number"]::-webkit-outer-spin-button {
     display: flex;
     gap: 25px;
     align-items: center;
-    margin-top: 25px;
-    padding: 0 25px 30px;
+    height: 195px;
+    padding: 0 15px 0 25px;
+}
+
+.user__profile-img {
+    min-width: 120px;
+    height: 140px;
+}
+
+.user__profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .user__profile-name {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
 }
 
 .user__profile-name p {
     font-family: Magnolia;
     font-size: 28px;
+    line-height: 30px;
     font-weight: 400;
     color: var(--text);
 }
@@ -2096,6 +2115,7 @@ input[type="number"]::-webkit-outer-spin-button {
     font-weight: 600;
     height: 33px;
     width: 115px;
+    min-width: 115px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2150,11 +2170,17 @@ input[type="number"]::-webkit-outer-spin-button {
     font-family: Comfortaa;
     font-size: 20px;
     font-weight: 600;
+    line-height: 24px;
 }
 
 .profile__bottom-img {
     width: 24px;
     height: 24px;
+}
+
+.profile__bottom-img img {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
@@ -2170,6 +2196,7 @@ input[type="number"]::-webkit-outer-spin-button {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: center;
     padding: 0 25px 10px;
     overflow-y: scroll;
     height: 261px;
@@ -2198,8 +2225,9 @@ input[type="number"]::-webkit-outer-spin-button {
     background: var(--white);
     box-shadow: 0px 35px 75px 0px var(--shadow);
     width: calc(50% - 15px/2);
-    padding: 20px 0 16px;
+    padding-top: 20px;
     height: max-content;
+    overflow: hidden;
 }
 
 .schedule__item-title {
@@ -2224,7 +2252,6 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .schedule__item-body {
-    padding: 0 20px;
     margin-top: 15px;
 }
 
@@ -2233,6 +2260,9 @@ input[type="number"]::-webkit-outer-spin-button {
     font-family: Comfortaa;
     font-size: 15px;
     font-weight: 600;
+    line-height: 18px;
+    height: 36px;
+    padding: 0 20px;
 }
 
 .schedule__item-link {
@@ -2245,6 +2275,14 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 15px;
     font-weight: 600;
     text-decoration-line: underline;
+    padding: 0 20px;
+    padding-bottom: 14px;
+}
+
+.schedule__item-link img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
 .user-article {
@@ -2263,10 +2301,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .user__article-wrapper {
     display: flex;
+    justify-content: center;
     margin-top: 50px;
     gap: 30px;
     padding-bottom: 50px;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .user__article-box {
@@ -2347,7 +2387,7 @@ input[type="number"]::-webkit-outer-spin-button {
     font-family: Comfortaa;
     font-size: 14px;
     font-weight: 600;
-    padding: 0 27px;
+    padding: 0 22px;
     transition: .3s all;
 }
 
@@ -2530,7 +2570,6 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 100%;
     height: 335px;
     position: relative;
-    /* padding-top: 25px; */
     height: 335px;
 }
 
@@ -2749,6 +2788,35 @@ input[type="number"]::-webkit-outer-spin-button {
     }
 }
 
+@media (max-width: 1150px) {
+    .user__profile-name p {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .user__profile-name span {
+        font-size: 9px;
+        height: 24px;
+        min-width: 84px;
+        width: 84px;
+        border-radius: 8px;
+    }
+
+    .user__profile-name {
+        gap: 10px;
+    }
+
+    .user__progress-item {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .schedule__item-link {
+        margin-top: 14px;
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 1130px) {
     .nav__open {
         display: flex;
@@ -2842,8 +2910,14 @@ input[type="number"]::-webkit-outer-spin-button {
     }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1100px) {
+    .user__article-under {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
 
+@media (max-width: 1050px) {
     .features__item-box {
         width: 100% !important;
     }
@@ -2876,6 +2950,39 @@ input[type="number"]::-webkit-outer-spin-button {
     .questions__item-text {
         padding: 40px 30px;
     }
+
+    .user-wrapper {
+        gap: 18px;
+    }
+
+    .user-box {
+        width: calc(50% - 9px);
+    }
+
+    .user__profile-box {
+        gap: 18px;
+        padding: 0 15px;
+    }
+
+    .user__profile-bottom {
+        padding: 36px 0 20px;
+    }
+
+    .user__profile-bottom::after {
+        width: 50px;
+        height: 4px;
+        left: 50%;
+        top: 16px;
+    }
+
+    .profile__bottom-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .schedule__list {
+        height: 245px;
+    }
 }
 
 @media (max-width: 1010px) {
@@ -2896,6 +3003,38 @@ input[type="number"]::-webkit-outer-spin-button {
     .team-header {
         flex-direction: column-reverse;
         gap: 25px;
+    }
+
+    .user__article-img {
+        transform: scale(1.2);
+    }
+
+    .user__article-text {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .user__article-text.second {
+        height: calc(22px * 4);
+    }
+
+    .user__article-btn {
+        height: 40px;
+        font-size: 12px;
+        padding: 0 20px;
+    }
+
+    .user-box {
+        width: 100%;
+    }
+
+    .user-wrapper {
+        max-width: 750px;
+        margin-top: 45px;
+    }
+
+    .user__profile-box {
+        justify-content: center;
     }
 }
 
@@ -3160,6 +3299,27 @@ input[type="number"]::-webkit-outer-spin-button {
         margin-top: 40px;
         padding-bottom: 20px;
     }
+
+    .user__header-item {
+        border-radius: 12px;
+        padding: 4px;
+    }
+
+    .user__header-link {
+        height: 38px;
+        padding: 0 22px;
+        font-size: 12px;
+    }
+
+    .user__article-box {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .user__article-item::before {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 @media (max-width: 690px) {
@@ -3244,6 +3404,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
     .fit__item-subtitle {
         font-size: 18px;
+        line-height: 26px;
     }
 
     .fit-arrow {
@@ -3360,6 +3521,26 @@ input[type="number"]::-webkit-outer-spin-button {
         width: 16px;
         height: 16px;
     }
+
+    .user-title {
+        font-size: 24px;
+        line-height: 30px;
+        padding: 50px 0 25px;
+    }
+
+    .user__header-title {
+        font-size: 20px;
+    }
+
+    .schedule__list {
+        gap: 10px;
+        padding: 0 5px 10px 10px;
+    }
+
+    .user__profile-box {
+        gap: 12px;
+        padding: 0 12px;
+    }
 }
 
 @media (max-width: 540px) {
@@ -3468,6 +3649,93 @@ input[type="number"]::-webkit-outer-spin-button {
     .login-wrapper {
         padding: 30px 0 10px;
     }
+
+    .user__profile-box {
+        flex-direction: column;
+        height: auto;
+        padding: 25px 12px 18px;
+        gap: 20px;
+    }
+
+    .user__profile-title,
+    .user__schedule-title {
+        padding: 22px 0 20px;
+        font-size: 15px;
+    }
+
+    .user__profile-name {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user__profile-name p {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .user__progress-item {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .user__profile-bottom {
+        padding: 28px 0 16px;
+    }
+
+    .profile__bottom-text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .profile__bottom-img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .user__profile-bottom::after {
+        width: 40px;
+        height: 3px;
+        top: 12px;
+    }
+
+    .schedule__list-item {
+        border-radius: 12px;
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .schedule__item-text {
+        font-size: 13px;
+        line-height: 16px;
+        height: 32px;
+    }
+
+    .schedule__item-link {
+        margin-top: 8px;
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+    .schedule__item-link img {
+        width: 20px;
+        height: 20px;
+    }
+    .schedule__item-title {
+        padding: 0 20px 12px;
+    }
+    .schedule__list-item {
+        padding-top: 18px;
+    }
+    .schedule__list {
+        gap: 10px;
+        padding: 0 10px;
+        margin: 15px 0;
+    }
+    .user-box {
+        border-radius: 12px;
+    }
+    .user__profile-bottom {
+        border-radius: 12px;
+    }
 }
 
 @media (max-width: 440px) {
@@ -3527,6 +3795,16 @@ input[type="number"]::-webkit-outer-spin-button {
 
     .about__buttons {
         width: 100%;
+    }
+
+    .user__header-item {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .user__header-link {
+        width: 100%;
+        font-size: 10px;
     }
 }
 
@@ -3693,25 +3971,46 @@ input[type="number"]::-webkit-outer-spin-button {
         gap: 8px;
         padding: 3px 3px 3px 8px;
     }
+
     .login__header-btn {
         width: 36px;
         height: 36px;
     }
+
     .login__header-btn img {
         width: 20px;
         height: 20px;
     }
+
     .login__header-link {
         padding: 7px 7px 5px;
     }
+
     .login__header-link img {
         width: 20px;
         height: 20px;
     }
+
     .login-form {
         max-width: 260px;
     }
+
     .login-phone {
         width: calc(100% - 115px);
+    }
+
+    .user__article-img {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 360px) {
+    .user__article-text {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .user__article-text.second {
+        height: calc(16px * 5);
     }
 }
