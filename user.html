@@ -10,10 +10,14 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
+<!-- <body style="overflow: hidden;"> -->
+
 <body>
-    <div class="filter"></div>
+    <div class="modal-filter"></div>
 
     <header class="header">
+        <div class="filter"></div>
+
         <div class="container">
             <div class="header__logo">
                 <a href="#" class="header__logo-img">
@@ -63,6 +67,160 @@
         </div>
     </header>
 
+    <div class="edit-modal">
+        <form class="edit-content">
+            <div class="edit__modal-header">
+                <h3 class="edit__modal-title">⚙️ Ваш профиль и настройка</h3>
+                <div class="edit__modal-exit">
+                    <div class="edit__modal-close">
+                        <img src="./images/svg/close.svg" alt="close btn">
+                    </div>
+                </div>
+            </div>
+            <div class="edit__modal-wrapper">
+                <div class="edit__modal-content">
+                    <div class="edit__modal-box">
+                        <div class="edit__modal-top">
+                            <div class="edit__top-box">
+                                <h2 class="edit__top-title">
+                                    Изменить фото
+                                </h2>
+                                <div class="edit__top-content">
+                                    <div class="edit__top-icon">
+                                        <img src="./images/svg/edit.svg" alt="edit img">
+                                    </div>
+                                    <div class="edit__top-arrow">
+                                        <img src="./images/png/right-arrow.png" alt="arrow">
+                                    </div>
+                                    <div class="edit__top-user">
+                                        <img src="./images/png/man.png" alt="user image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit__vertical-line"></div>
+                            <div class="edit__top-box">
+                                <h2 class="edit__top-title">
+                                    Верификация личности
+                                </h2>
+                                <div class="edit__top-content">
+                                    <div class="edit__top-icon">
+                                        <img src="./images/svg/card.svg" alt="card img">
+                                    </div>
+                                    <div class="edit__top-arrow">
+                                        <img src="./images/png/right-arrow.png" alt="arrow">
+                                    </div>
+                                    <div class="edit__top-article">
+                                        <p class="edit__top-text">
+                                            Загрузите фотографию или ксперокопию вашей ID-карты в хорошем качестве для
+                                            утверждения личности аккаунта
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edit-inputs">
+                            <ul class="edit__list">
+                                <li class="edit__list-item">
+                                    <label for="name" class="edit-label">
+                                        <h3 class="edit__label-title">Имя</h3>
+                                        <div class="edit__input-box">
+                                            <input placeholder="Введите имя..." type="text" name="name" id="name"
+                                                class="edit-input">
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="edit__list-item">
+                                    <label for="surname" class="edit-label">
+                                        <h3 class="edit__label-title">Фамилия</h3>
+                                        <div class="edit__input-box">
+                                            <input placeholder="Введите фамилию..." type="text" name="surname"
+                                                id="surname" class="edit-input">
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="edit__list-line"></div>
+                            <ul class="edit__list">
+                                <li class="edit__list-item">
+                                    <label for="city" class="edit-label">
+                                        <h3 class="edit__label-title">Город</h3>
+                                        <div class="edit__input-box edit__select-box">
+                                            <select class="edit-input" name="city" id="city">
+                                                <option selected disabled value="">Выберите город...</option>
+                                                <option value="tashkent">Ташкент</option>
+                                                <option value="samarkand">Самарканд</option>
+                                            </select>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="edit__list-item">
+                                    <label for="birthday" class="edit-label">
+                                        <h3 class="edit__label-title">Дата рождения</h3>
+                                        <div class="edit__input-box">
+                                            <input type="date" name="birthday" id="birthday" class="edit-input">
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="edit__modal-line"></div>
+                    <div class="edit__modal-box second">
+                        <div class="edit-inputs">
+                            <ul class="edit__list">
+                                <li class="edit__list-item">
+                                    <label for="password" class="edit-label">
+                                        <h3 class="edit__label-title">Пароль</h3>
+                                        <div class="edit__input-box second">
+                                            <input placeholder="Введите пароль..." type="password" name="password"
+                                                id="password" class="edit-input">
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="edit__list-item">
+                                    <label for="repassword" class="edit-label">
+                                        <h3 class="edit__label-title">Повторите пароль</h3>
+                                        <div class="edit__input-box second">
+                                            <input placeholder="Введите пароль еще раз..." type="password"
+                                                name="repassword" id="repassword" class="edit-input">
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="edit__list-line"></div>
+                            <ul class="edit__list">
+                                <li class="edit__list-item">
+                                    <label for="email" class="edit-label">
+                                        <h3 class="edit__label-title">E-mail</h3>
+                                        <div class="edit__input-box">
+                                            <input placeholder="Введите E-mail..." type="email" name="email" id="email" class="edit-input">
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="edit__list-item">
+                                    <label for="phone" class="edit-label">
+                                        <h3 class="edit__label-title">Номер телефона</h3>
+                                        <div class="edit__input-box">
+                                            <input placeholder="Введите номер телефона..." type="number" name="phone" id="phone" class="edit-input">
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="edit__modal-line"></div>
+            </div>
+            <div class="edit-bottom">
+                <button class="edit__bottom-btn">
+                    <p>Сохранить изменения</p>
+                    <img src="./images/svg/checkAll.svg" alt="checked icon">
+                </button>
+                <button type="reset" class="edit__bottom-btn second">Отменить</button>
+            </div>
+        </form>
+    </div>
+
     <section class="user">
         <div class="container">
             <h2 class="user-title">
@@ -101,7 +259,7 @@
                         </div>
                         <div class="user__profile-article">
                             <h3 class="user__profile-name">
-                                <p>Абдужаббовров Саркор</p>
+                                <p>Абдужаббовров Максим</p>
                                 <span>Так держать!</span>
                             </h3>
                             <ul class="user__progress-list">

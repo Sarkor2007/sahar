@@ -52,7 +52,7 @@ var swiperAbout = new Swiper(".mySwiperThree", {
 
 const aboutHeaderBtn = document.querySelector('#aboutBtn')
 
-aboutHeaderBtn.addEventListener('click', () => {
+aboutHeaderBtn?.addEventListener('click', () => {
     swiperAbout.slideNext();
 })
 
@@ -103,20 +103,44 @@ const nav = document.querySelector('.nav');
 const body = document.querySelector('body')
 const filter = document.querySelector('.filter')
 
-burgerOpen.addEventListener('click', () => {
+burgerOpen?.addEventListener('click', () => {
     nav.classList.add('active');
     body.classList.add('active');
     filter.classList.add('active');
 })
 
-burgerExit.addEventListener('click', () => {
+burgerExit?.addEventListener('click', () => {
     nav.classList.remove('active');
     body.classList.remove('active');
     filter.classList.remove('active');
 })
 
-filter.addEventListener('click', () => {
+filter?.addEventListener('click', () => {
     nav.classList.remove('active');
     body.classList.remove('active');
     filter.classList.remove('active');
+})
+
+const editModalBtn = document.querySelector('.edit__modal-close')
+const editModalClose = document.querySelector('.edit__bottom-btn second')
+const editModal = document.querySelector('.edit-modal')
+const modalFilter = document.querySelector('.modal-filter')
+const editModalOpen = document.querySelector('.user__profile-bottom')
+
+editModalOpen?.addEventListener('click', ()=>{
+    editModal.classList.add('active')
+    modalFilter.classList.add('active')
+    body.classList.add('active');
+})
+
+editModalBtn?.addEventListener('click', ()=>{
+    editModal.classList.remove('active')
+    modalFilter.classList.remove('active')
+    body.classList.remove('active');
+})
+
+editModalClose?.addEventListener('click', ()=>{
+    editModal.classList.remove('active')
+    modalFilter.classList.remove('active')
+    body.classList.remove('active');
 })
