@@ -4087,11 +4087,12 @@ select.edit-input {
         height: 20px;
     }
     .edit__input-box {
-        border-radius: 12px;
-        padding: 4px;
+        border-radius: 10px;
+        padding: 3px;
+        border: 1px solid var(--text);
     }
     .edit-input {
-        border-radius: 10px;
+        border-radius: 8px;
         padding-left: 15px;
         padding-right: 10px;
         font-size: 14px;
