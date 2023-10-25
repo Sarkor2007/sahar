@@ -1769,7 +1769,7 @@ html::-webkit-scrollbar-thumb {
     max-width: 140px;
 }
 
-.login__header-info a {
+.login__header-info span {
     color: inherit;
     text-decoration-line: underline;
 }
@@ -1952,7 +1952,7 @@ input[type="number"]::-webkit-outer-spin-button {
 /* ---- user ----- */
 
 .user {
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .user-title {
@@ -2143,6 +2143,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .user__profile-bottom {
+    width: 100%;
     display: block;
     border-radius: 15px;
     background: var(--gradient);
@@ -2416,7 +2417,7 @@ input[type="number"]::-webkit-outer-spin-button {
     right: 0;
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: none;
     z-index: 10;
 }
@@ -2512,7 +2513,6 @@ input[type="number"]::-webkit-outer-spin-button {
     padding-top: 25px;
     padding-right: 8px;
     position: relative;
-    /* height: 500px; */
 }
 
 .edit__modal-wrapper::before,
@@ -2540,8 +2540,7 @@ input[type="number"]::-webkit-outer-spin-button {
     overflow-y: scroll;
     height: calc(100vh - 140px - 74px - 100px - 30px - 25px - 25px);
     margin-bottom: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 10px 10px 0;
 }
 
 .edit__modal-content::-webkit-scrollbar {
@@ -2559,10 +2558,9 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .edit__modal-box {
-    width: 100%;
     max-width: 960px;
     padding-bottom: 50px;
-    margin-left: 50px;
+    margin-left: 35px;
 }
 
 .edit__modal-box.second {
@@ -2623,6 +2621,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .edit__top-arrow {
+    min-width: 50px;
     width: 50px;
     height: 43px;
 }
@@ -2712,6 +2711,7 @@ input[type="number"]::-webkit-outer-spin-button {
     box-shadow: 0px 35px 50px -15px var(--shadow);
     padding: 10px;
     position: relative;
+    width: 100%;
 }
 
 .edit-input {
@@ -3322,6 +3322,18 @@ select.edit-input {
     .features__item-img.second img {
         transform: scale(1.5) translate(20px, 10px);
     }
+
+    .edit-modal {
+        top: 120px;
+    }
+
+    .edit-content {
+        height: calc(100vh - 120px - 30px);
+    }
+
+    .edit__modal-content {
+        height: calc(100vh - 120px - 74px - 100px - 30px - 25px - 25px);
+    }
 }
 
 @media (max-width: 1100px) {
@@ -3405,6 +3417,18 @@ select.edit-input {
     .chat-wrapper {
         gap: 20px;
     }
+
+    .edit__modal-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .edit__vertical-line {
+        width: 180px;
+        height: 1px;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 1010px) {
@@ -3419,7 +3443,7 @@ select.edit-input {
     .about__title {
         flex-direction: column;
     }
-    
+
     .chat {
         margin-top: 25px;
     }
@@ -3511,6 +3535,11 @@ select.edit-input {
 @media (max-width: 870px) {
     .questions-slider {
         padding: 0 30px;
+    }
+
+    .edit__modal-box {
+        padding-bottom: 30px;
+        margin-left: 15px;
     }
 }
 
@@ -3767,6 +3796,33 @@ select.edit-input {
     .chat-window {
         max-width: 450px;
     }
+
+    .edit-inputs {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .edit__list-line {
+        height: 1px;
+        width: 160px;
+    }
+
+    .edit__list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 500px;
+    }
+    .edit-bottom {
+        gap: 12px;
+        padding-left: 16px;
+        height: 80px;
+    }
+    .edit__modal-content {
+        height: calc(100vh - 115px - 74px - 80px - 30px - 25px - 25px);
+    }
 }
 
 @media (max-width: 690px) {
@@ -3834,6 +3890,24 @@ select.edit-input {
         width: 210px;
         height: 210px;
         transform: translate(40%, 60%);
+    }
+    .edit__top-content {
+        margin-top: 15px;
+        align-items: flex-start;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .edit__top-arrow {
+        min-width: 40px;
+        width: 40px;
+        height: 28px;
+        transform: rotate(90deg) translateY(-40px);
+    }
+    .edit__modal-wrapper {
+        padding-top: 15px;
+    }
+    .edit__modal-wrapper::before {
+        top: 15px;
     }
 }
 
@@ -3992,6 +4066,84 @@ select.edit-input {
         gap: 12px;
         padding: 0 12px;
     }
+    .edit__modal-title {
+        font-size: 16px;
+    }
+    .edit__modal-header {
+        padding: 10px 10px 10px 20px;
+    }
+    .edit__modal-exit {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+    }
+    .edit__modal-close {
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+    }
+    .edit__modal-close img {
+        width: 20px;
+        height: 20px;
+    }
+    .edit__input-box {
+        border-radius: 12px;
+        padding: 4px;
+    }
+    .edit-input {
+        border-radius: 10px;
+        padding-left: 15px;
+        padding-right: 10px;
+        font-size: 14px;
+        line-height: 18px;
+        height: 44px;
+        border: 1px solid var(--text);
+    }
+    .edit__select-box::after {
+        right: 8px;
+    }
+    .edit__modal-content {
+        height: calc(100vh - 95px - 74px - 80px - 30px - 25px - 25px);
+    }
+    .edit-content {
+        border-radius: 12px;
+    }
+    .header .container {
+        padding: 10px 8px;
+        border-radius: 10px;
+    }
+    .edit__top-article {
+        max-width: 100%;
+        height: auto;
+    }
+    .edit__modal-box {
+        margin-left: 12px;
+    }
+    .edit__top-title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .edit__top-content {
+        margin-top: 10px;
+    }
+    .edit__top-icon {
+        min-width: 100px;
+        width: 100px;
+        height: 100px;
+        border-radius: 12px;
+    }
+    .edit__top-icon img {
+        width: 26px;
+        height: 26px;
+    }
+    .edit__top-arrow {
+        transform: rotate(90deg) translateY(-25px);
+    }
+    .edit__top-user {
+        min-width: 100px;
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @media (max-width: 540px) {
@@ -4013,10 +4165,21 @@ select.edit-input {
         font-size: 14px;
         line-height: 22px;
     }
+    .edit__bottom-btn {
+        height: 36px;
+        padding: 0 16px;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+    .edit-bottom{
+        height: 60px;
+    }
+    .edit__modal-content {
+        height: calc(100vh - 75px - 74px - 80px - 30px - 25px - 25px);
+    }
 }
 
 @media (max-width: 470px) {
-
     .about__title-text {
         font-size: 30px;
         line-height: 40px;
@@ -4199,6 +4362,21 @@ select.edit-input {
     .user__profile-bottom {
         border-radius: 12px;
     }
+    .edit-content {
+        border-radius: 8px;
+    }
+    .edit-label {
+        gap: 8px;
+    }
+    .edit__label-title {
+        font-size: 16px;
+    }
+    .edit-inputs {
+        gap: 15px;
+    }
+    .edit-input {
+        height: 40px;
+    }
 }
 
 @media (max-width: 440px) {
@@ -4349,21 +4527,25 @@ select.edit-input {
     .chat__under {
         padding: 16px 12px;
     }
+
     .chat__under-form {
         border-radius: 16px;
         padding: 6px;
     }
+
     .chat__under-box {
         border-radius: 12px;
         height: 44px;
         padding: 4px;
         padding-right: 6px;
     }
+
     .chat__under-btn {
         border-radius: 8px;
         width: 36px;
-        height: 36px;    
+        height: 36px;
     }
+
     .chat__under-text {
         width: calc(100% - 45px);
         font-size: 13px;
@@ -4572,6 +4754,25 @@ select.edit-input {
         padding: 12px 14px;
         font-size: 12px;
         line-height: 18px;
+    }
+    .edit__bottom-btn {
+        width: 100%;
+    }
+    .edit-bottom{
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        height: 100px;
+        padding: 0 12px;
+    }
+    .edit__modal-content {
+        height: calc(100vh - 115px - 74px - 80px - 30px - 25px - 25px);
+    }
+    .edit__modal-title {
+        font-size: 14px;
+    }
+    .edit__modal-header {
+        padding: 10px;
     }
 }
 

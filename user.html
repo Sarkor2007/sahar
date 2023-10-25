@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sahar - Главная</title>
+    <title>Sahar - Личный Кабинет</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
-
-<!-- <body style="overflow: hidden;"> -->
 
 <body>
     <div class="modal-filter"></div>
@@ -20,7 +18,7 @@
 
         <div class="container">
             <div class="header__logo">
-                <a href="#" class="header__logo-img">
+                <a href="index.html" class="header__logo-img">
                     <img src="images/svg/logo.svg" alt="logo">
                 </a>
                 <div class="dot"></div>
@@ -33,7 +31,7 @@
                 </div>
                 <ul class="nav__list">
                     <li class="nav__list-item">
-                        <a href="#" class="nav__list-link">Главная</a>
+                        <a href="index.html" class="nav__list-link">Главная</a>
                     </li>
                     <li class="nav__list-item">
                         <a href="#" class="nav__list-link">Психологи</a>
@@ -43,17 +41,17 @@
                     </li>
                 </ul>
                 <div class="header-content">
-                    <button class="header-login">Войти</button>
-                    <button class="header-signup">Зарегистрироваться</button>
+                    <a href="login.html" class="header-login">Войти</a>
+                    <a href="login.html" class="header-signup">Зарегистрироваться</a>
                     <button class="header__lang">
                         <div class="header__lang-btn">
                             <img src="images/svg/globe.svg" alt="lang icon">
                         </div>
                         <div class="header__lang-list">
                             <div class="header__lang-content">
-                                <a href="#" class="header__lang-item">RU</a>
+                                <a href="chat.html" class="header__lang-item">RU</a>
                                 <div class="dot"></div>
-                                <a href="#" class="header__lang-item">UZ</a>
+                                <a href="chat.html" class="header__lang-item">UZ</a>
                             </div>
                         </div>
                     </button>
@@ -193,7 +191,8 @@
                                     <label for="email" class="edit-label">
                                         <h3 class="edit__label-title">E-mail</h3>
                                         <div class="edit__input-box">
-                                            <input placeholder="Введите E-mail..." type="email" name="email" id="email" class="edit-input">
+                                            <input placeholder="Введите E-mail..." type="email" name="email" id="email"
+                                                class="edit-input">
                                         </div>
                                     </label>
                                 </li>
@@ -201,7 +200,8 @@
                                     <label for="phone" class="edit-label">
                                         <h3 class="edit__label-title">Номер телефона</h3>
                                         <div class="edit__input-box">
-                                            <input placeholder="Введите номер телефона..." type="number" name="phone" id="phone" class="edit-input">
+                                            <input placeholder="Введите номер телефона..." type="number" name="phone"
+                                                id="phone" class="edit-input">
                                         </div>
                                     </label>
                                 </li>
@@ -272,14 +272,14 @@
                             </ul>
                         </div>
                     </div>
-                    <a href="#" class="user__profile-bottom">
+                    <button class="user__profile-bottom">
                         <div class="profile__bottom-box">
                             <p class="profile__bottom-text">Редактировать профиль</p>
                             <div class="profile__bottom-img">
                                 <img src="./images/svg/edit.svg" alt="edit icon">
                             </div>
                         </div>
-                    </a>
+                    </button>
                 </div>
                 <div class="user-box user__schedule">
                     <h4 class="user__schedule-title">
@@ -400,516 +400,516 @@
                 </div>
             </div>
         </div>
-        </div>
+    </section>
 
-        <section class="team">
-            <div class="container">
-                <h2 class="team-title">
-                    <span>Найдите</span> подходящего
-                    специалиста
-                </h2>
-                <div class="team-header">
-                    <div class="team__buttons">
-                        <a href="#" class="team__buttons-item">Подобрать психолога</a>
-                        <a href="#" class="team__buttons-item second">Подобрать репетитора</a>
-                    </div>
-                    <div class="team__header-box">
-                        <div class="team__header-nav">
-                            <ul class="team__header-list">
-                                <li class="team__header-el">
-                                    <a href="#" class="team__header-link">
-                                        <img src="images/svg/house.svg" alt="house icon">
-                                    </a>
-                                </li>
-                                <li class="team__header-el">
-                                    <a href="#" class="team__header-link">
-                                        <img src="images/svg/chat.svg" alt="chat icon">
-                                    </a>
-                                </li>
-                                <li class="team__header-el">
-                                    <a href="#" class="team__header-link">
-                                        <img src="images/svg/phone.svg" alt="phone icon">
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="team__header-btn">
-                                <img src="images/svg/reload.svg" alt="reload icon">
-                            </div>
-                        </div>
-                        <div class="team__header-info">
-                            Зарегестрируйтесь
-                            и получите доступ
-                            в <a href="#"> Личный кабинет</a>
-                        </div>
-                    </div>
+    <section class="team">
+        <div class="container">
+            <h2 class="team-title">
+                <span>Найдите</span> подходящего
+                специалиста
+            </h2>
+            <div class="team-header">
+                <div class="team__buttons">
+                    <a href="#" class="team__buttons-item">Подобрать психолога</a>
+                    <a href="#" class="team__buttons-item second">Подобрать репетитора</a>
                 </div>
-                <div class="team-slider">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <ul class="team__list">
-                                    <li class="team__list-item">
-                                        <div class="team__item-img">
-                                            <img src="images/png/man.png" alt="man photo">
-                                        </div>
-                                        <div class="team__item-article">
-                                            <h3 class="team__item-title">Михаил Лопатин</h3>
-                                            <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                            <div class="team__item-line"></div>
-                                            <ul class="team__item-list">
-                                                <li class="team__item-el">Стаж - 10 лет</li>
-                                                <li class="team__item-el">Гештальт-терапия</li>
-                                                <li class="team__item-el">50+ клиентов</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="team__list-item">
-                                        <div class="team__item-img">
-                                            <img src="images/png/man.png" alt="man photo">
-                                        </div>
-                                        <div class="team__item-article">
-                                            <h3 class="team__item-title">Михаил Лопатин</h3>
-                                            <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                            <div class="team__item-line"></div>
-                                            <ul class="team__item-list">
-                                                <li class="team__item-el">Стаж - 10 лет</li>
-                                                <li class="team__item-el">Гештальт-терапия</li>
-                                                <li class="team__item-el">50+ клиентов</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="team__list-item">
-                                        <div class="team__item-img">
-                                            <img src="images/png/man.png" alt="man photo">
-                                        </div>
-                                        <div class="team__item-article">
-                                            <h3 class="team__item-title">Михаил Лопатин</h3>
-                                            <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                            <div class="team__item-line"></div>
-                                            <ul class="team__item-list">
-                                                <li class="team__item-el">Стаж - 10 лет</li>
-                                                <li class="team__item-el">Гештальт-терапия</li>
-                                                <li class="team__item-el">50+ клиентов</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="team__list-item team__list-last">
-                                        <div class="team__item-img">
-                                            <img src="images/png/man.png" alt="man photo">
-                                        </div>
-                                        <div class="team__item-article">
-                                            <h3 class="team__item-title">Михаил Лопатин</h3>
-                                            <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                            <div class="team__item-line"></div>
-                                            <ul class="team__item-list">
-                                                <li class="team__item-el">Стаж - 10 лет</li>
-                                                <li class="team__item-el">Гештальт-терапия</li>
-                                                <li class="team__item-el">50+ клиентов</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="team__list-item team__list-last">
-                                        <div class="team__item-img">
-                                            <img src="images/png/man.png" alt="man photo">
-                                        </div>
-                                        <div class="team__item-article">
-                                            <h3 class="team__item-title">Михаил Лопатин</h3>
-                                            <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                            <div class="team__item-line"></div>
-                                            <ul class="team__item-list">
-                                                <li class="team__item-el">Стаж - 10 лет</li>
-                                                <li class="team__item-el">Гештальт-терапия</li>
-                                                <li class="team__item-el">50+ клиентов</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="team__list-item team__list-last">
-                                        <div class="team__item-img">
-                                            <img src="images/png/man.png" alt="man photo">
-                                        </div>
-                                        <div class="team__item-article">
-                                            <h3 class="team__item-title">Михаил Лопатин</h3>
-                                            <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                            <div class="team__item-line"></div>
-                                            <ul class="team__item-list">
-                                                <li class="team__item-el">Стаж - 10 лет</li>
-                                                <li class="team__item-el">Гештальт-терапия</li>
-                                                <li class="team__item-el">50+ клиентов</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="swiper-slide">
-                                <ul class="team__list">
-                                    <li class="team__list-item">
-                                        <div class="team__item-img">
-                                            <img src="images/png/man.png" alt="man photo">
-                                        </div>
-                                        <div class="team__item-article">
-                                            <h3 class="team__item-title">Михаил Лопатин</h3>
-                                            <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                            <div class="team__item-line"></div>
-                                            <ul class="team__item-list">
-                                                <li class="team__item-el">Стаж - 10 лет</li>
-                                                <li class="team__item-el">Гештальт-терапия</li>
-                                                <li class="team__item-el">50+ клиентов</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="team__list-item">
-                                        <div class="team__item-img">
-                                            <img src="images/png/man.png" alt="man photo">
-                                        </div>
-                                        <div class="team__item-article">
-                                            <h3 class="team__item-title">Михаил Лопатин</h3>
-                                            <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                            <div class="team__item-line"></div>
-                                            <ul class="team__item-list">
-                                                <li class="team__item-el">Стаж - 10 лет</li>
-                                                <li class="team__item-el">Гештальт-терапия</li>
-                                                <li class="team__item-el">50+ клиентов</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="team__list-item">
-                                        <div class="team__item-img">
-                                            <img src="images/png/man.png" alt="man photo">
-                                        </div>
-                                        <div class="team__item-article">
-                                            <h3 class="team__item-title">Михаил Лопатин</h3>
-                                            <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                            <div class="team__item-line"></div>
-                                            <ul class="team__item-list">
-                                                <li class="team__item-el">Стаж - 10 лет</li>
-                                                <li class="team__item-el">Гештальт-терапия</li>
-                                                <li class="team__item-el">50+ клиентов</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="team__list-item team__list-last">
-                                        <div class="team__item-img">
-                                            <img src="images/png/man.png" alt="man photo">
-                                        </div>
-                                        <div class="team__item-article">
-                                            <h3 class="team__item-title">Михаил Лопатин</h3>
-                                            <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                            <div class="team__item-line"></div>
-                                            <ul class="team__item-list">
-                                                <li class="team__item-el">Стаж - 10 лет</li>
-                                                <li class="team__item-el">Гештальт-терапия</li>
-                                                <li class="team__item-el">50+ клиентов</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="team__list-item team__list-last">
-                                        <div class="team__item-img">
-                                            <img src="images/png/man.png" alt="man photo">
-                                        </div>
-                                        <div class="team__item-article">
-                                            <h3 class="team__item-title">Михаил Лопатин</h3>
-                                            <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                            <div class="team__item-line"></div>
-                                            <ul class="team__item-list">
-                                                <li class="team__item-el">Стаж - 10 лет</li>
-                                                <li class="team__item-el">Гештальт-терапия</li>
-                                                <li class="team__item-el">50+ клиентов</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="team__list-item team__list-last">
-                                        <div class="team__item-img">
-                                            <img src="images/png/man.png" alt="man photo">
-                                        </div>
-                                        <div class="team__item-article">
-                                            <h3 class="team__item-title">Михаил Лопатин</h3>
-                                            <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                            <div class="team__item-line"></div>
-                                            <ul class="team__item-list">
-                                                <li class="team__item-el">Стаж - 10 лет</li>
-                                                <li class="team__item-el">Гештальт-терапия</li>
-                                                <li class="team__item-el">50+ клиентов</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="swiper-slide">
-                                <ul class="team__list">
-                                    <li class="team__list-item">
-                                        <div class="team__item-img">
-                                            <img src="images/png/man.png" alt="man photo">
-                                        </div>
-                                        <div class="team__item-article">
-                                            <h3 class="team__item-title">Михаил Лопатин</h3>
-                                            <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                            <div class="team__item-line"></div>
-                                            <ul class="team__item-list">
-                                                <li class="team__item-el">Стаж - 10 лет</li>
-                                                <li class="team__item-el">Гештальт-терапия</li>
-                                                <li class="team__item-el">50+ клиентов</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="team__list-item">
-                                        <div class="team__item-img">
-                                            <img src="images/png/man.png" alt="man photo">
-                                        </div>
-                                        <div class="team__item-article">
-                                            <h3 class="team__item-title">Михаил Лопатин</h3>
-                                            <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                            <div class="team__item-line"></div>
-                                            <ul class="team__item-list">
-                                                <li class="team__item-el">Стаж - 10 лет</li>
-                                                <li class="team__item-el">Гештальт-терапия</li>
-                                                <li class="team__item-el">50+ клиентов</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="team__list-item">
-                                        <div class="team__item-img">
-                                            <img src="images/png/man.png" alt="man photo">
-                                        </div>
-                                        <div class="team__item-article">
-                                            <h3 class="team__item-title">Михаил Лопатин</h3>
-                                            <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                            <div class="team__item-line"></div>
-                                            <ul class="team__item-list">
-                                                <li class="team__item-el">Стаж - 10 лет</li>
-                                                <li class="team__item-el">Гештальт-терапия</li>
-                                                <li class="team__item-el">50+ клиентов</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="team__list-item team__list-last">
-                                        <div class="team__item-img">
-                                            <img src="images/png/man.png" alt="man photo">
-                                        </div>
-                                        <div class="team__item-article">
-                                            <h3 class="team__item-title">Михаил Лопатин</h3>
-                                            <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                            <div class="team__item-line"></div>
-                                            <ul class="team__item-list">
-                                                <li class="team__item-el">Стаж - 10 лет</li>
-                                                <li class="team__item-el">Гештальт-терапия</li>
-                                                <li class="team__item-el">50+ клиентов</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="team__list-item team__list-last">
-                                        <div class="team__item-img">
-                                            <img src="images/png/man.png" alt="man photo">
-                                        </div>
-                                        <div class="team__item-article">
-                                            <h3 class="team__item-title">Михаил Лопатин</h3>
-                                            <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                            <div class="team__item-line"></div>
-                                            <ul class="team__item-list">
-                                                <li class="team__item-el">Стаж - 10 лет</li>
-                                                <li class="team__item-el">Гештальт-терапия</li>
-                                                <li class="team__item-el">50+ клиентов</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="team__list-item team__list-last">
-                                        <div class="team__item-img">
-                                            <img src="images/png/man.png" alt="man photo">
-                                        </div>
-                                        <div class="team__item-article">
-                                            <h3 class="team__item-title">Михаил Лопатин</h3>
-                                            <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                            <div class="team__item-line"></div>
-                                            <ul class="team__item-list">
-                                                <li class="team__item-el">Стаж - 10 лет</li>
-                                                <li class="team__item-el">Гештальт-терапия</li>
-                                                <li class="team__item-el">50+ клиентов</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next">
-                            <img draggable="false" src="images/png/right-arrow.png" alt="left arrow">
-                        </div>
-                        <div class="swiper-button-prev">
-                            <img draggable="false" src="images/png/left-arrow.png" alt="right arrow">
-                        </div>
-                    </div>
-                    <div class="swiper mySwiperOne">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <li class="team__list-item">
-                                    <div class="team__item-img">
-                                        <img src="images/png/man.png" alt="man photo">
-                                    </div>
-                                    <div class="team__item-article">
-                                        <h3 class="team__item-title">Михаил Лопатин</h3>
-                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                        <div class="team__item-line"></div>
-                                        <ul class="team__item-list">
-                                            <li class="team__item-el">Стаж - 10 лет</li>
-                                            <li class="team__item-el">Гештальт-терапия</li>
-                                            <li class="team__item-el">50+ клиентов</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </div>
-                            <div class="swiper-slide">
-                                <li class="team__list-item">
-                                    <div class="team__item-img">
-                                        <img src="images/png/man.png" alt="man photo">
-                                    </div>
-                                    <div class="team__item-article">
-                                        <h3 class="team__item-title">Михаил Лопатин</h3>
-                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                        <div class="team__item-line"></div>
-                                        <ul class="team__item-list">
-                                            <li class="team__item-el">Стаж - 10 лет</li>
-                                            <li class="team__item-el">Гештальт-терапия</li>
-                                            <li class="team__item-el">50+ клиентов</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </div>
-                            <div class="swiper-slide">
-                                <li class="team__list-item">
-                                    <div class="team__item-img">
-                                        <img src="images/png/man.png" alt="man photo">
-                                    </div>
-                                    <div class="team__item-article">
-                                        <h3 class="team__item-title">Михаил Лопатин</h3>
-                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                        <div class="team__item-line"></div>
-                                        <ul class="team__item-list">
-                                            <li class="team__item-el">Стаж - 10 лет</li>
-                                            <li class="team__item-el">Гештальт-терапия</li>
-                                            <li class="team__item-el">50+ клиентов</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </div>
-                            <div class="swiper-slide">
-                                <li class="team__list-item">
-                                    <div class="team__item-img">
-                                        <img src="images/png/man.png" alt="man photo">
-                                    </div>
-                                    <div class="team__item-article">
-                                        <h3 class="team__item-title">Михаил Лопатин</h3>
-                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                        <div class="team__item-line"></div>
-                                        <ul class="team__item-list">
-                                            <li class="team__item-el">Стаж - 10 лет</li>
-                                            <li class="team__item-el">Гештальт-терапия</li>
-                                            <li class="team__item-el">50+ клиентов</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </div>
-                            <div class="swiper-slide">
-                                <li class="team__list-item">
-                                    <div class="team__item-img">
-                                        <img src="images/png/man.png" alt="man photo">
-                                    </div>
-                                    <div class="team__item-article">
-                                        <h3 class="team__item-title">Михаил Лопатин</h3>
-                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                        <div class="team__item-line"></div>
-                                        <ul class="team__item-list">
-                                            <li class="team__item-el">Стаж - 10 лет</li>
-                                            <li class="team__item-el">Гештальт-терапия</li>
-                                            <li class="team__item-el">50+ клиентов</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </div>
-                            <div class="swiper-slide">
-                                <li class="team__list-item">
-                                    <div class="team__item-img">
-                                        <img src="images/png/man.png" alt="man photo">
-                                    </div>
-                                    <div class="team__item-article">
-                                        <h3 class="team__item-title">Михаил Лопатин</h3>
-                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                        <div class="team__item-line"></div>
-                                        <ul class="team__item-list">
-                                            <li class="team__item-el">Стаж - 10 лет</li>
-                                            <li class="team__item-el">Гештальт-терапия</li>
-                                            <li class="team__item-el">50+ клиентов</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </div>
-                            <div class="swiper-slide">
-                                <li class="team__list-item">
-                                    <div class="team__item-img">
-                                        <img src="images/png/man.png" alt="man photo">
-                                    </div>
-                                    <div class="team__item-article">
-                                        <h3 class="team__item-title">Михаил Лопатин</h3>
-                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
-                                        <div class="team__item-line"></div>
-                                        <ul class="team__item-list">
-                                            <li class="team__item-el">Стаж - 10 лет</li>
-                                            <li class="team__item-el">Гештальт-терапия</li>
-                                            <li class="team__item-el">50+ клиентов</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer__logo">
-                        <a href="#" class="footer__logo-img">
-                            <img src="images/svg/footer-logo.svg" alt="logo">
-                        </a>
-                        <div class="footer-dot"></div>
-                        <h3 class="footer__logo-text">Нет предела совершенству!
-                        </h3>
-                    </div>
-                    <div class="footer-line"></div>
-                    <nav class="footer-nav">
-                        <ul class="footer__nav-list">
-                            <li class="nav__list-item">
-                                <a href="#" class="nav__list-link">Главная</a>
+                <div class="team__header-box">
+                    <div class="team__header-nav">
+                        <ul class="team__header-list">
+                            <li class="team__header-el">
+                                <a href="#" class="team__header-link">
+                                    <img src="images/svg/house.svg" alt="house icon">
+                                </a>
                             </li>
-                            <li class="nav__list-item">
-                                <a href="#" class="nav__list-link">Психологи</a>
+                            <li class="team__header-el">
+                                <a href="#" class="team__header-link">
+                                    <img src="images/svg/chat.svg" alt="chat icon">
+                                </a>
                             </li>
-                            <li class="nav__list-item">
-                                <a href="#" class="nav__list-link">Репетиторы</a>
+                            <li class="team__header-el">
+                                <a href="#" class="team__header-link">
+                                    <img src="images/svg/phone.svg" alt="phone icon">
+                                </a>
                             </li>
                         </ul>
-                        <div class="footer-box">
-                            <button class="footer-login">Войти</button>
-                            <button class="footer-signup">Зарегистрироваться</button>
-                            <button class="footer__lang">
-                                <div class="footer__lang-btn">
-                                    <img src="images/svg/globe.svg" alt="lang icon">
-                                </div>
-                                <div class="footer__lang-list">
-                                    <div class="footer__lang-content">
-                                        <a href="#" class="footer__lang-item">RU</a>
-                                        <div class="dot"></div>
-                                        <a href="#" class="footer__lang-item">UZ</a>
-                                    </div>
-                                </div>
-                            </button>
+                        <div class="team__header-btn">
+                            <img src="images/svg/reload.svg" alt="reload icon">
                         </div>
-                    </nav>
+                    </div>
+                    <div class="team__header-info">
+                        Зарегестрируйтесь
+                        и получите доступ
+                        в <a href="#"> Личный кабинет</a>
+                    </div>
                 </div>
             </div>
-        </footer>
+            <div class="team-slider">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <ul class="team__list">
+                                <li class="team__list-item">
+                                    <div class="team__item-img">
+                                        <img src="images/png/man.png" alt="man photo">
+                                    </div>
+                                    <div class="team__item-article">
+                                        <h3 class="team__item-title">Михаил Лопатин</h3>
+                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                        <div class="team__item-line"></div>
+                                        <ul class="team__item-list">
+                                            <li class="team__item-el">Стаж - 10 лет</li>
+                                            <li class="team__item-el">Гештальт-терапия</li>
+                                            <li class="team__item-el">50+ клиентов</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="team__list-item">
+                                    <div class="team__item-img">
+                                        <img src="images/png/man.png" alt="man photo">
+                                    </div>
+                                    <div class="team__item-article">
+                                        <h3 class="team__item-title">Михаил Лопатин</h3>
+                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                        <div class="team__item-line"></div>
+                                        <ul class="team__item-list">
+                                            <li class="team__item-el">Стаж - 10 лет</li>
+                                            <li class="team__item-el">Гештальт-терапия</li>
+                                            <li class="team__item-el">50+ клиентов</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="team__list-item">
+                                    <div class="team__item-img">
+                                        <img src="images/png/man.png" alt="man photo">
+                                    </div>
+                                    <div class="team__item-article">
+                                        <h3 class="team__item-title">Михаил Лопатин</h3>
+                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                        <div class="team__item-line"></div>
+                                        <ul class="team__item-list">
+                                            <li class="team__item-el">Стаж - 10 лет</li>
+                                            <li class="team__item-el">Гештальт-терапия</li>
+                                            <li class="team__item-el">50+ клиентов</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="team__list-item team__list-last">
+                                    <div class="team__item-img">
+                                        <img src="images/png/man.png" alt="man photo">
+                                    </div>
+                                    <div class="team__item-article">
+                                        <h3 class="team__item-title">Михаил Лопатин</h3>
+                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                        <div class="team__item-line"></div>
+                                        <ul class="team__item-list">
+                                            <li class="team__item-el">Стаж - 10 лет</li>
+                                            <li class="team__item-el">Гештальт-терапия</li>
+                                            <li class="team__item-el">50+ клиентов</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="team__list-item team__list-last">
+                                    <div class="team__item-img">
+                                        <img src="images/png/man.png" alt="man photo">
+                                    </div>
+                                    <div class="team__item-article">
+                                        <h3 class="team__item-title">Михаил Лопатин</h3>
+                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                        <div class="team__item-line"></div>
+                                        <ul class="team__item-list">
+                                            <li class="team__item-el">Стаж - 10 лет</li>
+                                            <li class="team__item-el">Гештальт-терапия</li>
+                                            <li class="team__item-el">50+ клиентов</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="team__list-item team__list-last">
+                                    <div class="team__item-img">
+                                        <img src="images/png/man.png" alt="man photo">
+                                    </div>
+                                    <div class="team__item-article">
+                                        <h3 class="team__item-title">Михаил Лопатин</h3>
+                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                        <div class="team__item-line"></div>
+                                        <ul class="team__item-list">
+                                            <li class="team__item-el">Стаж - 10 лет</li>
+                                            <li class="team__item-el">Гештальт-терапия</li>
+                                            <li class="team__item-el">50+ клиентов</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="team__list">
+                                <li class="team__list-item">
+                                    <div class="team__item-img">
+                                        <img src="images/png/man.png" alt="man photo">
+                                    </div>
+                                    <div class="team__item-article">
+                                        <h3 class="team__item-title">Михаил Лопатин</h3>
+                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                        <div class="team__item-line"></div>
+                                        <ul class="team__item-list">
+                                            <li class="team__item-el">Стаж - 10 лет</li>
+                                            <li class="team__item-el">Гештальт-терапия</li>
+                                            <li class="team__item-el">50+ клиентов</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="team__list-item">
+                                    <div class="team__item-img">
+                                        <img src="images/png/man.png" alt="man photo">
+                                    </div>
+                                    <div class="team__item-article">
+                                        <h3 class="team__item-title">Михаил Лопатин</h3>
+                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                        <div class="team__item-line"></div>
+                                        <ul class="team__item-list">
+                                            <li class="team__item-el">Стаж - 10 лет</li>
+                                            <li class="team__item-el">Гештальт-терапия</li>
+                                            <li class="team__item-el">50+ клиентов</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="team__list-item">
+                                    <div class="team__item-img">
+                                        <img src="images/png/man.png" alt="man photo">
+                                    </div>
+                                    <div class="team__item-article">
+                                        <h3 class="team__item-title">Михаил Лопатин</h3>
+                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                        <div class="team__item-line"></div>
+                                        <ul class="team__item-list">
+                                            <li class="team__item-el">Стаж - 10 лет</li>
+                                            <li class="team__item-el">Гештальт-терапия</li>
+                                            <li class="team__item-el">50+ клиентов</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="team__list-item team__list-last">
+                                    <div class="team__item-img">
+                                        <img src="images/png/man.png" alt="man photo">
+                                    </div>
+                                    <div class="team__item-article">
+                                        <h3 class="team__item-title">Михаил Лопатин</h3>
+                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                        <div class="team__item-line"></div>
+                                        <ul class="team__item-list">
+                                            <li class="team__item-el">Стаж - 10 лет</li>
+                                            <li class="team__item-el">Гештальт-терапия</li>
+                                            <li class="team__item-el">50+ клиентов</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="team__list-item team__list-last">
+                                    <div class="team__item-img">
+                                        <img src="images/png/man.png" alt="man photo">
+                                    </div>
+                                    <div class="team__item-article">
+                                        <h3 class="team__item-title">Михаил Лопатин</h3>
+                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                        <div class="team__item-line"></div>
+                                        <ul class="team__item-list">
+                                            <li class="team__item-el">Стаж - 10 лет</li>
+                                            <li class="team__item-el">Гештальт-терапия</li>
+                                            <li class="team__item-el">50+ клиентов</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="team__list-item team__list-last">
+                                    <div class="team__item-img">
+                                        <img src="images/png/man.png" alt="man photo">
+                                    </div>
+                                    <div class="team__item-article">
+                                        <h3 class="team__item-title">Михаил Лопатин</h3>
+                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                        <div class="team__item-line"></div>
+                                        <ul class="team__item-list">
+                                            <li class="team__item-el">Стаж - 10 лет</li>
+                                            <li class="team__item-el">Гештальт-терапия</li>
+                                            <li class="team__item-el">50+ клиентов</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="team__list">
+                                <li class="team__list-item">
+                                    <div class="team__item-img">
+                                        <img src="images/png/man.png" alt="man photo">
+                                    </div>
+                                    <div class="team__item-article">
+                                        <h3 class="team__item-title">Михаил Лопатин</h3>
+                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                        <div class="team__item-line"></div>
+                                        <ul class="team__item-list">
+                                            <li class="team__item-el">Стаж - 10 лет</li>
+                                            <li class="team__item-el">Гештальт-терапия</li>
+                                            <li class="team__item-el">50+ клиентов</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="team__list-item">
+                                    <div class="team__item-img">
+                                        <img src="images/png/man.png" alt="man photo">
+                                    </div>
+                                    <div class="team__item-article">
+                                        <h3 class="team__item-title">Михаил Лопатин</h3>
+                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                        <div class="team__item-line"></div>
+                                        <ul class="team__item-list">
+                                            <li class="team__item-el">Стаж - 10 лет</li>
+                                            <li class="team__item-el">Гештальт-терапия</li>
+                                            <li class="team__item-el">50+ клиентов</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="team__list-item">
+                                    <div class="team__item-img">
+                                        <img src="images/png/man.png" alt="man photo">
+                                    </div>
+                                    <div class="team__item-article">
+                                        <h3 class="team__item-title">Михаил Лопатин</h3>
+                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                        <div class="team__item-line"></div>
+                                        <ul class="team__item-list">
+                                            <li class="team__item-el">Стаж - 10 лет</li>
+                                            <li class="team__item-el">Гештальт-терапия</li>
+                                            <li class="team__item-el">50+ клиентов</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="team__list-item team__list-last">
+                                    <div class="team__item-img">
+                                        <img src="images/png/man.png" alt="man photo">
+                                    </div>
+                                    <div class="team__item-article">
+                                        <h3 class="team__item-title">Михаил Лопатин</h3>
+                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                        <div class="team__item-line"></div>
+                                        <ul class="team__item-list">
+                                            <li class="team__item-el">Стаж - 10 лет</li>
+                                            <li class="team__item-el">Гештальт-терапия</li>
+                                            <li class="team__item-el">50+ клиентов</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="team__list-item team__list-last">
+                                    <div class="team__item-img">
+                                        <img src="images/png/man.png" alt="man photo">
+                                    </div>
+                                    <div class="team__item-article">
+                                        <h3 class="team__item-title">Михаил Лопатин</h3>
+                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                        <div class="team__item-line"></div>
+                                        <ul class="team__item-list">
+                                            <li class="team__item-el">Стаж - 10 лет</li>
+                                            <li class="team__item-el">Гештальт-терапия</li>
+                                            <li class="team__item-el">50+ клиентов</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="team__list-item team__list-last">
+                                    <div class="team__item-img">
+                                        <img src="images/png/man.png" alt="man photo">
+                                    </div>
+                                    <div class="team__item-article">
+                                        <h3 class="team__item-title">Михаил Лопатин</h3>
+                                        <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                        <div class="team__item-line"></div>
+                                        <ul class="team__item-list">
+                                            <li class="team__item-el">Стаж - 10 лет</li>
+                                            <li class="team__item-el">Гештальт-терапия</li>
+                                            <li class="team__item-el">50+ клиентов</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <img draggable="false" src="images/png/right-arrow.png" alt="left arrow">
+                    </div>
+                    <div class="swiper-button-prev">
+                        <img draggable="false" src="images/png/left-arrow.png" alt="right arrow">
+                    </div>
+                </div>
+                <div class="swiper mySwiperOne">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <li class="team__list-item">
+                                <div class="team__item-img">
+                                    <img src="images/png/man.png" alt="man photo">
+                                </div>
+                                <div class="team__item-article">
+                                    <h3 class="team__item-title">Михаил Лопатин</h3>
+                                    <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                    <div class="team__item-line"></div>
+                                    <ul class="team__item-list">
+                                        <li class="team__item-el">Стаж - 10 лет</li>
+                                        <li class="team__item-el">Гештальт-терапия</li>
+                                        <li class="team__item-el">50+ клиентов</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="team__list-item">
+                                <div class="team__item-img">
+                                    <img src="images/png/man.png" alt="man photo">
+                                </div>
+                                <div class="team__item-article">
+                                    <h3 class="team__item-title">Михаил Лопатин</h3>
+                                    <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                    <div class="team__item-line"></div>
+                                    <ul class="team__item-list">
+                                        <li class="team__item-el">Стаж - 10 лет</li>
+                                        <li class="team__item-el">Гештальт-терапия</li>
+                                        <li class="team__item-el">50+ клиентов</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="team__list-item">
+                                <div class="team__item-img">
+                                    <img src="images/png/man.png" alt="man photo">
+                                </div>
+                                <div class="team__item-article">
+                                    <h3 class="team__item-title">Михаил Лопатин</h3>
+                                    <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                    <div class="team__item-line"></div>
+                                    <ul class="team__item-list">
+                                        <li class="team__item-el">Стаж - 10 лет</li>
+                                        <li class="team__item-el">Гештальт-терапия</li>
+                                        <li class="team__item-el">50+ клиентов</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="team__list-item">
+                                <div class="team__item-img">
+                                    <img src="images/png/man.png" alt="man photo">
+                                </div>
+                                <div class="team__item-article">
+                                    <h3 class="team__item-title">Михаил Лопатин</h3>
+                                    <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                    <div class="team__item-line"></div>
+                                    <ul class="team__item-list">
+                                        <li class="team__item-el">Стаж - 10 лет</li>
+                                        <li class="team__item-el">Гештальт-терапия</li>
+                                        <li class="team__item-el">50+ клиентов</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="team__list-item">
+                                <div class="team__item-img">
+                                    <img src="images/png/man.png" alt="man photo">
+                                </div>
+                                <div class="team__item-article">
+                                    <h3 class="team__item-title">Михаил Лопатин</h3>
+                                    <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                    <div class="team__item-line"></div>
+                                    <ul class="team__item-list">
+                                        <li class="team__item-el">Стаж - 10 лет</li>
+                                        <li class="team__item-el">Гештальт-терапия</li>
+                                        <li class="team__item-el">50+ клиентов</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="team__list-item">
+                                <div class="team__item-img">
+                                    <img src="images/png/man.png" alt="man photo">
+                                </div>
+                                <div class="team__item-article">
+                                    <h3 class="team__item-title">Михаил Лопатин</h3>
+                                    <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                    <div class="team__item-line"></div>
+                                    <ul class="team__item-list">
+                                        <li class="team__item-el">Стаж - 10 лет</li>
+                                        <li class="team__item-el">Гештальт-терапия</li>
+                                        <li class="team__item-el">50+ клиентов</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="team__list-item">
+                                <div class="team__item-img">
+                                    <img src="images/png/man.png" alt="man photo">
+                                </div>
+                                <div class="team__item-article">
+                                    <h3 class="team__item-title">Михаил Лопатин</h3>
+                                    <h4 class="team__item-subtitle">психолог по Отношениям</h4>
+                                    <div class="team__item-line"></div>
+                                    <ul class="team__item-list">
+                                        <li class="team__item-el">Стаж - 10 лет</li>
+                                        <li class="team__item-el">Гештальт-терапия</li>
+                                        <li class="team__item-el">50+ клиентов</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-        <script src="scripts/app.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer__logo">
+                    <a href="index.html" class="footer__logo-img">
+                        <img src="images/svg/footer-logo.svg" alt="logo">
+                    </a>
+                    <div class="footer-dot"></div>
+                    <h3 class="footer__logo-text">Нет предела совершенству!
+                    </h3>
+                </div>
+                <div class="footer-line"></div>
+                <nav class="footer-nav">
+                    <ul class="footer__nav-list">
+                        <li class="nav__list-item">
+                            <a href="index.html" class="nav__list-link">Главная</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#" class="nav__list-link">Психологи</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#" class="nav__list-link">Репетиторы</a>
+                        </li>
+                    </ul>
+                    <div class="footer-box">
+                        <a href="login.html" class="footer-login">Войти</a>
+                        <a href="login.html" class="footer-signup">Зарегистрироваться</a>
+                        <button class="footer__lang">
+                            <div class="footer__lang-btn">
+                                <img src="images/svg/globe.svg" alt="lang icon">
+                            </div>
+                            <div class="footer__lang-list">
+                                <div class="footer__lang-content">
+                                    <a href="user.html" class="footer__lang-item">RU</a>
+                                    <div class="dot"></div>
+                                    <a href="user.html" class="footer__lang-item">UZ</a>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="scripts/app.js"></script>
 </body>
 
 </html>

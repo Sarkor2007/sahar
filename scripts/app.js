@@ -131,6 +131,7 @@ editModalOpen?.addEventListener('click', ()=>{
     editModal.classList.add('active')
     modalFilter.classList.add('active')
     body.classList.add('active');
+    window.scrollTo(0, 0);
 })
 
 editModalBtn?.addEventListener('click', ()=>{
