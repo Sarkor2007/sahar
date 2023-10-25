@@ -2796,17 +2796,17 @@ select.edit-input {
     transition: .3s all;
 }
 
-.edit__bottom-btn.second{
+.edit__bottom-btn.second {
     border: 2px solid var(--pink);
     color: var(--pink);
     background: var(--white);
 }
 
-.edit__bottom-btn:hover{
+.edit__bottom-btn:hover {
     box-shadow: var(--hover-shadow);
 }
 
-.edit__bottom-btn img{
+.edit__bottom-btn img {
     width: 24px;
     height: 24px;
     object-fit: contain;
@@ -2815,7 +2815,7 @@ select.edit-input {
 /* ----- chat ------ */
 
 .chat {
-    margin-top: 50px;
+    margin-top: 35px;
     padding-bottom: 50px;
 }
 
@@ -2848,8 +2848,12 @@ select.edit-input {
     font-family: Comfortaa;
     font-size: 24px;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 25px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 
 .chat-title span {
@@ -2861,6 +2865,7 @@ select.edit-input {
     display: flex;
     gap: 30px;
     align-items: flex-start;
+    justify-content: center;
     max-width: 1200px;
     margin: auto;
     margin-top: 40px;
@@ -2888,7 +2893,7 @@ select.edit-input {
     overflow: hidden;
 }
 
-.chat-title {
+.chat__box-title {
     color: var(--black);
     font-family: Comfortaa;
     font-size: 20px;
@@ -2902,7 +2907,7 @@ select.edit-input {
     justify-content: center;
 }
 
-.chat-title::after {
+.chat__box-title::after {
     content: '';
     position: absolute;
     background: var(--gradient);
@@ -2913,7 +2918,7 @@ select.edit-input {
 }
 
 .chat-head {
-    padding: 25px 8px 30px;
+    padding: 25px 16px 30px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -2941,7 +2946,8 @@ select.edit-input {
     display: flex;
     align-items: center;
     gap: 20px;
-    width: 390px;
+    max-width: 390px;
+    width: 100%;
 }
 
 .chat__head-img {
@@ -2978,7 +2984,6 @@ select.edit-input {
 
 .chat__body {
     width: 100%;
-    height: 335px;
     position: relative;
     height: 335px;
 }
@@ -3081,10 +3086,9 @@ select.edit-input {
     border-radius: 20px;
     border: 2px solid var(--white);
     box-shadow: var(--gradient);
-    padding: 10px;
+    padding: 9px;
     max-width: 435px;
     width: 100%;
-    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3393,6 +3397,14 @@ select.edit-input {
     .schedule__list {
         height: 245px;
     }
+
+    .chat-box {
+        width: calc(50% - 10px);
+    }
+
+    .chat-wrapper {
+        gap: 20px;
+    }
 }
 
 @media (max-width: 1010px) {
@@ -3406,6 +3418,10 @@ select.edit-input {
 @media (max-width: 992px) {
     .about__title {
         flex-direction: column;
+    }
+    
+    .chat {
+        margin-top: 25px;
     }
 }
 
@@ -3506,6 +3522,14 @@ select.edit-input {
 
     .team__list-last {
         display: none;
+    }
+
+    .chat-window {
+        width: calc(55% - 10px);
+    }
+
+    .chat-article {
+        width: calc(45% - 10px);
     }
 }
 
@@ -3730,6 +3754,19 @@ select.edit-input {
         width: 200px;
         height: 200px;
     }
+
+    .chat-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .chat-box {
+        width: 100%;
+    }
+
+    .chat-window {
+        max-width: 450px;
+    }
 }
 
 @media (max-width: 690px) {
@@ -3741,6 +3778,10 @@ select.edit-input {
 @media (max-width: 670px) {
     .main__content-center {
         display: none;
+    }
+
+    .chat-title {
+        flex-direction: column;
     }
 }
 
@@ -3965,6 +4006,12 @@ select.edit-input {
 
     .mySwiperTwo .swiper-slide {
         height: 450px;
+    }
+
+    .chat-article {
+        padding: 18px;
+        font-size: 14px;
+        line-height: 22px;
     }
 }
 
@@ -4222,6 +4269,108 @@ select.edit-input {
         width: 100%;
         font-size: 10px;
     }
+
+    .chat-box {
+        border-radius: 12px;
+    }
+
+    .chat__box-title {
+        font-size: 18px;
+        height: 65px;
+    }
+
+    .chat__head-content {
+        border-radius: 0;
+        padding: 20px 12px;
+        gap: 16px;
+        max-width: 100%;
+    }
+
+    .chat-head {
+        padding: 0;
+    }
+
+    .chat__head-name {
+        font-size: 18px;
+    }
+
+    .chat__head-theme {
+        font-size: 14px;
+    }
+
+    .chat__head-article {
+        gap: 4px;
+    }
+
+    .chat-wrapper {
+        margin-top: 20px;
+    }
+
+    .chat-title {
+        font-size: 20px;
+        margin-top: 16px;
+        gap: 4px;
+    }
+
+    .chat-subtitle {
+        font-size: 10px;
+    }
+
+    .chat {
+        margin-top: 0;
+        padding-bottom: 25px;
+    }
+
+    .chat__list {
+        gap: 8px;
+        padding: 16px 10px;
+        height: 335px;
+    }
+
+    .chat__list-content {
+        padding: 12px 14px;
+    }
+
+    .chat__list-name {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .chat__list-text {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .chat__body::after,
+    .chat__body::before {
+        height: 16px;
+    }
+
+    .chat__under {
+        padding: 16px 12px;
+    }
+    .chat__under-form {
+        border-radius: 16px;
+        padding: 6px;
+    }
+    .chat__under-box {
+        border-radius: 12px;
+        height: 44px;
+        padding: 4px;
+        padding-right: 6px;
+    }
+    .chat__under-btn {
+        border-radius: 8px;
+        width: 36px;
+        height: 36px;    
+    }
+    .chat__under-text {
+        width: calc(100% - 45px);
+        font-size: 13px;
+        line-height: 18px;
+        padding: 9px 0 7px;
+        padding-left: 6px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -4417,6 +4566,12 @@ select.edit-input {
 
     .user__article-img {
         transform: scale(1);
+    }
+
+    .chat-article {
+        padding: 12px 14px;
+        font-size: 12px;
+        line-height: 18px;
     }
 }
 

@@ -6,11 +6,11 @@ const footerLangBtn = document.querySelector('.footer__lang-btn');
 const footerLangMenu = document.querySelector('.footer__lang-list');
 
 
-langBtn.addEventListener('click', () => {
+langBtn?.addEventListener('click', () => {
     langMenu.classList.toggle('active');
 })
 
-footerLangBtn.addEventListener('click', () => {
+footerLangBtn?.addEventListener('click', () => {
     footerLangMenu.classList.toggle('active');
 })
 
