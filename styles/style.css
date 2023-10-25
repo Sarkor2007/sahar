@@ -3815,11 +3815,13 @@ select.edit-input {
         width: 100%;
         max-width: 500px;
     }
+
     .edit-bottom {
         gap: 12px;
         padding-left: 16px;
         height: 80px;
     }
+
     .edit__modal-content {
         height: calc(100vh - 115px - 74px - 80px - 30px - 25px - 25px);
     }
@@ -3891,21 +3893,25 @@ select.edit-input {
         height: 210px;
         transform: translate(40%, 60%);
     }
+
     .edit__top-content {
         margin-top: 15px;
         align-items: flex-start;
         gap: 10px;
         flex-direction: column;
     }
+
     .edit__top-arrow {
         min-width: 40px;
         width: 40px;
         height: 28px;
         transform: rotate(90deg) translateY(-40px);
     }
+
     .edit__modal-wrapper {
         padding-top: 15px;
     }
+
     .edit__modal-wrapper::before {
         top: 15px;
     }
@@ -4066,31 +4072,38 @@ select.edit-input {
         gap: 12px;
         padding: 0 12px;
     }
+
     .edit__modal-title {
         font-size: 16px;
     }
+
     .edit__modal-header {
         padding: 10px 10px 10px 20px;
     }
+
     .edit__modal-exit {
         width: 36px;
         height: 36px;
         border-radius: 10px;
     }
+
     .edit__modal-close {
         width: 30px;
         height: 30px;
         border-radius: 8px;
     }
+
     .edit__modal-close img {
         width: 20px;
         height: 20px;
     }
+
     .edit__input-box {
         border-radius: 10px;
         padding: 3px;
         border: 1px solid var(--text);
     }
+
     .edit-input {
         border-radius: 8px;
         padding-left: 15px;
@@ -4100,46 +4113,58 @@ select.edit-input {
         height: 44px;
         border: 1px solid var(--text);
     }
+
     .edit__select-box::after {
         right: 8px;
     }
+
     .edit__modal-content {
         height: calc(100vh - 95px - 74px - 80px - 30px - 25px - 25px);
     }
+
     .edit-content {
         border-radius: 12px;
     }
+
     .header .container {
         padding: 10px 8px;
         border-radius: 10px;
     }
+
     .edit__top-article {
         max-width: 100%;
         height: auto;
     }
+
     .edit__modal-box {
         margin-left: 12px;
     }
+
     .edit__top-title {
         font-size: 16px;
         line-height: 20px;
     }
+
     .edit__top-content {
         margin-top: 10px;
     }
+
     .edit__top-icon {
         min-width: 100px;
         width: 100px;
         height: 100px;
         border-radius: 12px;
     }
+
     .edit__top-icon img {
         width: 26px;
         height: 26px;
     }
+
     .edit__top-arrow {
         transform: rotate(90deg) translateY(-25px);
     }
+
     .edit__top-user {
         min-width: 100px;
         width: 100px;
@@ -4166,17 +4191,28 @@ select.edit-input {
         font-size: 14px;
         line-height: 22px;
     }
+
     .edit__bottom-btn {
         height: 36px;
         padding: 0 16px;
         border-radius: 8px;
         font-size: 14px;
     }
-    .edit-bottom{
+
+    .edit-bottom {
         height: 60px;
     }
+
     .edit__modal-content {
         height: calc(100vh - 75px - 74px - 80px - 30px - 25px - 25px);
+    }
+
+    .edit-content {
+        max-height: 613px;
+    }
+
+    .edit__modal-content {
+        max-height: 454px;
     }
 }
 
@@ -4363,18 +4399,23 @@ select.edit-input {
     .user__profile-bottom {
         border-radius: 12px;
     }
+
     .edit-content {
         border-radius: 8px;
     }
+
     .edit-label {
         gap: 8px;
     }
+
     .edit__label-title {
         font-size: 16px;
     }
+
     .edit-inputs {
         gap: 15px;
     }
+
     .edit-input {
         height: 40px;
     }
@@ -4756,24 +4797,37 @@ select.edit-input {
         font-size: 12px;
         line-height: 18px;
     }
+
     .edit__bottom-btn {
         width: 100%;
     }
-    .edit-bottom{
+
+    .edit-bottom {
         flex-direction: column;
         justify-content: center;
         gap: 8px;
         height: 100px;
         padding: 0 12px;
     }
+
     .edit__modal-content {
         height: calc(100vh - 115px - 74px - 80px - 30px - 25px - 25px);
     }
+
     .edit__modal-title {
         font-size: 14px;
     }
+
     .edit__modal-header {
         padding: 10px;
+    }
+
+    .edit__modal-wrapper {
+        max-height: 456px;
+    }
+
+    .edit__modal-content {
+        max-height: 414px;
     }
 }
 
