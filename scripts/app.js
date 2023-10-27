@@ -159,22 +159,22 @@ for (let i = 0; i < cardTabBtn.length; i++) {
 }
 
 
-let psych = document.querySelector('input[name="psych"]:checked').value;
-let teacher = document.querySelector('input[name="teacher"]:checked').value;
+let psych = document.querySelector('input[name="psych"]:checked')?.value;
+let teacher = document.querySelector('input[name="teacher"]:checked')?.value;
 
-console.log(psych);
-console.log(teacher);
+// console.log(psych);
+// console.log(teacher);
 
 
 const cardPricePlus = document.querySelector('.card__price-btn.plus');
 const cardPriceMinus = document.querySelector('.card__price-btn.minus');
 let cardPrice = document.querySelector('.card__price-input');
 
-cardPricePlus.addEventListener('click', ()=>{
+cardPricePlus?.addEventListener('click', ()=>{
     cardPrice.value = +cardPrice.value + 10000
 })
 
-cardPriceMinus.addEventListener('click', ()=>{
+cardPriceMinus?.addEventListener('click', ()=>{
     if(+cardPrice.value === 10000){
         cardPrice.value = 0
     } else if(+cardPrice.value < 10000){
@@ -190,17 +190,17 @@ const cardDraftBtn = document.querySelector('.complete__bottom-btn.second');
 const cardCreate = document.querySelector('.card__create');
 const cardList = document.querySelector('.card-wrapper');
 
-cardCreateOpen.addEventListener('click', ()=>{
+cardCreateOpen?.addEventListener('click', ()=>{
     cardCreate.classList.add('active');
     cardList.classList.remove('active');
 })
 
-cardCreateBtn.addEventListener('click', ()=>{
+cardCreateBtn?.addEventListener('click', ()=>{
     cardCreate.classList.remove('active');
     cardList.classList.add('active');
 })
 
-cardDraftBtn.addEventListener('click', ()=>{
+cardDraftBtn?.addEventListener('click', ()=>{
     cardCreate.classList.remove('active');
     cardList.classList.add('active');
 })
