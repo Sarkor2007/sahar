@@ -329,6 +329,14 @@ html::-webkit-scrollbar-thumb {
     box-shadow: 0px 35px 50px -15px var(--shadow);
 }
 
+.header__panel-btn,
+.footer__panel-btn{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
 .header__panel-img,
 .footer__panel-img {
     width: 45px;
