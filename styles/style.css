@@ -2836,20 +2836,12 @@ select.edit-input {
     background: var(--gradient);
 }
 
-.chat-subtitle {
-    color: var(--black);
-    font-family: Comfortaa;
-    font-size: 12px;
-    font-weight: 600;
-    text-align: center;
-}
-
 .chat-title {
     color: var(--black);
     font-family: Comfortaa;
     font-size: 24px;
     font-weight: 600;
-    margin-top: 25px;
+    margin-top: 15px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -3164,7 +3156,7 @@ select.edit-input {
 }
 
 .card-empty {
-    height: 260px;
+    height: 280px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -3174,6 +3166,8 @@ select.edit-input {
     font-size: 20px;
     font-weight: 600;
     opacity: 0.5;
+    padding-left: 8px;
+    text-align: center;
 }
 
 .card-wrapper {
@@ -3181,10 +3175,10 @@ select.edit-input {
     border-radius: 15px;
     background: var(--white);
     box-shadow: 0px 35px 50px -15px var(--shadow);
-    padding: 35px 12px 24px 35px;
+    padding: 35px 12px 24px 0;
 }
 
-.card-wrapper.active{
+.card-wrapper.active {
     display: block;
 }
 
@@ -3192,6 +3186,7 @@ select.edit-input {
     display: none;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .card__create.active {
@@ -3215,7 +3210,7 @@ select.edit-input {
 }
 
 .card-body::before {
-    top: 0;
+    top: -1px;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%);
 }
 
@@ -3238,7 +3233,7 @@ select.edit-input {
     gap: 45px;
     height: 550px;
     overflow-y: scroll;
-    padding: 20px 12px 20px 0;
+    padding: 20px 12px 20px 35px;
 }
 
 .card-content::-webkit-scrollbar {
@@ -3342,12 +3337,12 @@ select.edit-input {
 }
 
 .card__item-article {
-    margin-left: 20px;
-    width: calc(100% - 360px - 21px - 20px - 70px);
+    margin-left: 15px;
+    width: calc(100% - 360px - 21px - 15px - 70px);
     display: flex;
     flex-direction: column;
-    height: calc(30px + 72px + 8px);
-    justify-content: space-evenly;
+    /* height: calc(30px + 72px + 8px); */
+    /* justify-content: space-evenly; */
     padding-right: 15px;
 }
 
@@ -3357,6 +3352,9 @@ select.edit-input {
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .card__item-text {
@@ -3364,7 +3362,7 @@ select.edit-input {
     font-family: Comfortaa;
     font-size: 12px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 20px;
     margin-top: 8px;
 }
 
@@ -3389,6 +3387,7 @@ select.edit-input {
 .card-bottom {
     display: flex;
     justify-content: center;
+    padding-left: 8px;
 }
 
 .card__btn {
@@ -3401,6 +3400,7 @@ select.edit-input {
     box-shadow: 0px 35px 50px -15px var(--shadow);
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -3488,8 +3488,10 @@ select.edit-input {
     border: none;
 }
 
-.create__tab-el:hover {
-    box-shadow: var(--hover-shadow);
+@media (min-width: 992px) {
+    .create__tab-el:hover {
+        box-shadow: var(--hover-shadow);
+    }
 }
 
 .create__form {
@@ -3544,6 +3546,11 @@ select.edit-input {
     border-radius: 20px;
     border: 2px solid var(--text);
     box-shadow: 0px 35px 50px -15px var(--shadow);
+}
+
+.create__form-input {
+    border: none;
+    outline: none;
 }
 
 .create__form-input {
@@ -3634,7 +3641,9 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    padding: 0 6px;
     color: var(--text);
+    text-align: center;
 }
 
 .create__radio-item:checked+span {
@@ -3670,6 +3679,11 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
     font-weight: 600;
     text-align: center;
     margin-top: 12px;
+}
+
+.card__price-input{
+    outline: none;
+    border: none;
 }
 
 .card__price-input {
@@ -3743,6 +3757,7 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
 
 .card__certificate-img {
     width: 44px;
+    min-width: 44px;
     height: 44px;
     border-radius: 10px;
     background: var(--gradient);
@@ -3776,6 +3791,7 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
     padding-right: 10px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 14px;
 }
 
@@ -3824,6 +3840,7 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
 
 .complete__header-img {
     width: 44px;
+    min-width: 44px;
     height: 44px;
     border-radius: 10px;
     background: var(--gradient);
@@ -3905,7 +3922,13 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
     transition: .3s all;
 }
 
-.complete__bottom-btn h3{
+.complete__bottom-btn img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.complete__bottom-btn h3 {
     font-size: inherit;
 }
 
@@ -4158,13 +4181,165 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
         height: 1px;
         transform: translateY(0);
     }
+
+    .card__item-article {
+        margin-left: 8px;
+        width: calc(100% - 305px - 6px - 8px - 50px);
+        padding-right: 8px;
+    }
+
+    .card__item-title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .card__item-text {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .card__item-img {
+        width: 95px;
+        height: 110px;
+    }
+
+    .card__facts-el {
+        font-size: 13px;
+        line-height: 130%;
+    }
+
+    .card__item-line {
+        margin: 8px 0;
+    }
+
+    .card__item-left {
+        padding: 12px;
+        padding-right: 6px;
+        min-width: 305px;
+        width: 305px;
+        gap: 15px;
+    }
+
+    .card__item-type {
+        font-size: 13px;
+    }
+
+    .card__item-name {
+        font-size: 18px;
+    }
+
+    .card__item-btn {
+        width: 50px;
+    }
+
+    .card__list-item {
+        height: 155px;
+    }
+
+    .card-body {
+        margin-bottom: 30px;
+    }
+
+    .card-wrapper {
+        padding: 30px 8px 18px 0;
+    }
+
+    .card__list-line {
+        margin: 0 5px 0 0;
+    }
+
+    .card-content {
+        padding: 20px 6px 20px 20px;
+    }
+
+    .card__list {
+        gap: 15px;
+    }
+
+    .card__create-box {
+        width: calc(50% - 10px);
+    }
+
+    .card__create-article {
+        padding: 25px 15px 15px;
+    }
+
+    .create__form-title {
+        padding-left: 8px;
+    }
 }
 
 @media (max-width: 1010px) {
-    @media (max-width: 1190px) {
-        .mySwiperTwo .swiper-slide {
-            height: 580px;
-        }
+    .mySwiperTwo .swiper-slide {
+        height: 580px;
+    }
+
+    .create__tab {
+        border-radius: 15px;
+        padding: 4px;
+        gap: 8px;
+    }
+
+    .create__tab-el {
+        width: calc(100% - 290px - 8px);
+        font-size: 12px;
+        height: 40px;
+    }
+
+    .create__form-center {
+        margin: 15px 0;
+        padding: 20px 0;
+    }
+
+    .create__form-title {
+        font-size: 18px;
+    }
+
+    .create__form-el {
+        padding: 4px 5px;
+        border-radius: 16px;
+    }
+
+    .create__form-input[type='text'] {
+        height: 44px;
+    }
+
+    .create__form-input {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        border-radius: 14px;
+        padding: 6px 12px 6px 18px;
+    }
+
+    .create__form-textarea {
+        padding: 12px 8px 10px;
+    }
+
+    textarea.create__form-input {
+        padding: 0 10px;
+    }
+
+    .create__form-box {
+        gap: 14px;
+    }
+
+    .create__radio-label {
+        width: calc(100% / 2 - 12px / 2);
+        height: 40px;
+        font-size: 10px;
+    }
+
+    .create__radio-label span {
+        border-radius: 8px;
+    }
+
+    .create__tab-el.second {
+        width: 250px;
+    }
+
+    .create__tab-el {
+        width: calc(100% - 250px - 8px);
     }
 }
 
@@ -4175,6 +4350,62 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
 
     .chat {
         margin-top: 25px;
+    }
+
+    .card__new-header {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .card__new-header>div {
+        width: 100%;
+    }
+
+    .card__new {
+        width: calc(40% - 10px);
+    }
+
+    .card__create-article {
+        width: calc(60% - 10px);
+    }
+
+    .complete-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .complete-body {
+        padding: 15px;
+    }
+
+    .complete__bottom {
+        padding: 12px 8px;
+        gap: 10px;
+    }
+
+    .complete__bottom-btn {
+        border-radius: 8px;
+        font-size: 10px;
+        gap: 4px;
+        height: 40px;
+    }
+
+    .complete__bottom-btn img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .complete__header {
+        padding: 12px 10px;
+        gap: 14px;
+    }
+
+    .complete__header-title {
+        font-size: 13px;
+    }
+
+    .card__certificate-header {
+        padding: 12px 10px;
     }
 }
 
@@ -4554,6 +4785,59 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
     .edit__modal-content {
         height: calc(100vh - 115px - 74px - 80px - 30px - 25px - 25px);
     }
+
+    .card__list-item {
+        flex-direction: column;
+        height: auto;
+        padding: 16px 16px 12px;
+    }
+
+    .card__item-article {
+        margin: 0;
+        width: 100%;
+    }
+
+    .card__list-line {
+        margin: 12px 0;
+        height: 1px;
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .card__item-text {
+        margin-top: 4px;
+        line-height: 18px;
+    }
+
+    .card__item-btn {
+        border-radius: 12px;
+        width: 100%;
+        max-width: 360px;
+        height: 40px;
+        margin-top: 16px;
+    }
+
+    .card__item-left {
+        padding: 0;
+    }
+
+    .card-empty {
+        font-size: 18px;
+    }
+
+    .card__create-article {
+        width: 100%;
+    }
+
+    .card__create {
+        gap: 20px;
+        max-width: 550px;
+        margin: auto;
+    }
+
+    .card__new {
+        width: 100%;
+    }
 }
 
 @media (max-width: 690px) {
@@ -4899,6 +5183,88 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
         width: 100px;
         height: 100px;
     }
+
+    .card__box-title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .card__btn {
+        padding: 30px 15px 12px;
+        border-radius: 12px;
+    }
+
+    .card__btn-text {
+        font-size: 16px;
+    }
+
+    .card__btn::after {
+        top: 15px;
+        width: 50px;
+        height: 3px;
+    }
+
+    .card__list.active .card__list-item {
+        outline: 4px solid var(--text);
+    }
+
+    .card__list-item {
+        border-radius: 12px;
+    }
+
+    .card-content {
+        padding: 20px 6px 10px 8px;
+    }
+
+    .card__list.active {
+        gap: 20px;
+        padding: 8px;
+    }
+
+    .card__item-title {
+        overflow: visible;
+        white-space: wrap;
+    }
+
+    .card-wrapper {
+        border-radius: 12px;
+    }
+
+    .card-empty {
+        font-size: 12px;
+        height: 200px;
+    }
+
+    .card-body::after,
+    .card-body::before {
+        height: 10px;
+    }
+
+    .user-article {
+        margin-top: 25px;
+    }
+    .create__form-title {
+        font-size: 16px;
+        padding-left: 0;
+    }
+    .create__form-box {
+        gap: 10px;
+    }
+    .create__form-el {
+        border: 1px solid var(--text);
+    }
+    .create__form-input {
+        border: 1px solid var(--text);
+    }
+    .create__form-textarea {
+        border: 1px solid var(--text);
+    }
+    .card-title {
+        margin-bottom: 25px;
+    }
+    .card__create-article {
+        padding: 15px 12px;
+    }
 }
 
 @media (max-width: 540px) {
@@ -5151,7 +5517,6 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 440px) {
-
     .questions__item-title {
         font-size: 18px;
     }
@@ -5263,10 +5628,6 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
         gap: 4px;
     }
 
-    .chat-subtitle {
-        font-size: 10px;
-    }
-
     .chat {
         margin-top: 0;
         padding-bottom: 25px;
@@ -5333,6 +5694,49 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
 
     .footer-line {
         margin: 25px 0;
+    }
+
+    .card-empty {
+        font-size: 10px;
+        height: 180px;
+    }
+
+    .create__tab {
+        border-radius: 12px;
+        padding: 6px;
+        gap: 4px;
+        flex-direction: column;
+    }
+
+    .create__tab-el {
+        width: 100% !important;
+    }
+    textarea.create__form-input {
+        padding: 0 10px 0 4px;
+    }
+    .create__form-textarea {
+        padding: 8px;
+    }
+    .create__form-input {
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .create__form-input[type='text'] {
+        height: 40px;
+        padding: 4px 12px 4px 10px;
+    }
+    .create__radio-label {
+        width: 100%;
+        height: 36px;
+    }
+    .create__form-el {
+        border-radius: 10px;
+    }
+    .create__form-input {
+        border-radius: 10px;
+    }
+    .create__form-textarea {
+        border-radius: 10px;
     }
 }
 
@@ -5567,6 +5971,63 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
 
     .edit__modal-content {
         max-height: 414px;
+    }
+
+    .card__item-left {
+        flex-direction: column;
+        min-width: auto;
+        width: 100%;
+    }
+
+    .card__item-box {
+        width: 100%;
+        padding-left: 12px;
+    }
+
+    .card__item-title {
+        font-size: 16px;
+        line-height: 20px;
+        overflow: visible;
+        white-space: wrap;
+    }
+
+    .card__item-text {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .card__item-btn {
+        height: 34px;
+        border-radius: 8px;
+    }
+
+    .card__item-btn img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .card-wrapper {
+        padding: 25px 8px 8px 0;
+    }
+
+    .card__btn {
+        padding: 25px 15px 10px;
+        gap: 6px;
+    }
+
+    .card__btn-text {
+        font-size: 12px;
+    }
+
+    .card__btn::after {
+        top: 12px;
+        width: 40px;
+        height: 3px;
+    }
+
+    .card__btn-img {
+        width: 20px;
+        height: 20px;
     }
 }
 
