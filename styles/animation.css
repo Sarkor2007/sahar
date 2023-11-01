@@ -272,7 +272,6 @@ body {
     animation-name: animateImg2;
     animation-delay: 1.1s;
     animation-duration: 4.2s;
-    animation-duration: 4s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -280,8 +279,7 @@ body {
 .main__bg-3 img {
     animation-name: animateImg3;
     animation-delay: 1.05s;
-    animation-duration: 4.1s;
-    animation-duration: 4s;
+    animation-duration: 4.2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     transform: translateY(15px);
@@ -291,7 +289,6 @@ body {
     animation-name: animateImg4;
     animation-delay: 1.15s;
     animation-duration: 4.2s;
-    animation-duration: 4s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -303,7 +300,6 @@ body {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
-
 
 
 @keyframes animate1 {
@@ -322,7 +318,7 @@ body {
     }
 
     to {
-        transform: translateX(100px);
+        transform: translate(30px);
     }
 }
 
@@ -332,7 +328,7 @@ body {
     }
 
     to {
-        transform: translateX(-230px);
+        transform: translateX(-350px);
     }
 }
 
@@ -350,7 +346,7 @@ body {
         transform: translateX(100%);
     }
     to {
-        transform: translateX(-270px);
+        transform: translateX(-400px);
     }
 }
 
@@ -374,7 +370,7 @@ body {
     }
 
     50% {
-        transform: translateY(25px);
+        transform: translateY(30px);
     }
 
     100% {
@@ -384,7 +380,7 @@ body {
 
 @keyframes animateImg3 {
     0% {
-        transform: translateY(25px);
+        transform: translateY(30px);
     }
 
     50% {
@@ -392,7 +388,7 @@ body {
     }
 
     100% {
-        transform: translateY(25px);
+        transform: translateY(30px);
     }
 }
 
@@ -402,7 +398,7 @@ body {
     }
 
     50% {
-        transform: translateX(22px);
+        transform: translateX(30px);
     }
 
     100% {
