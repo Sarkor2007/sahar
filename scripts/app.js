@@ -232,3 +232,4 @@ document.querySelectorAll('.reveal-bottom').forEach(el => {
     observer.observe(el);
 })
 
+

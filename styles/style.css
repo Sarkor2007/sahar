@@ -4128,6 +4128,7 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
         height: 100%;
         max-width: 400px;
         width: 100%;
+        z-index: 11;
         flex-direction: column;
         background: var(--white);
         border-right: 1px solid var(--text);
