@@ -109,6 +109,7 @@ html::-webkit-scrollbar-thumb {
     z-index: 10;
     padding: 0 8px;
     padding-top: 25px;
+    overflow-x: hidden;
 }
 
 .header .container {
@@ -328,7 +329,7 @@ html::-webkit-scrollbar-thumb {
     padding-right: 25px;
     border-radius: 15px;
     background: var(--white);
-    box-shadow: 0px 35px 50px -15px var(--shadow);
+    /* box-shadow: 0px 35px 50px -15px var(--shadow); */
 }
 
 .header__panel-btn,
@@ -523,6 +524,7 @@ html::-webkit-scrollbar-thumb {
     padding-bottom: 100px;
     margin-top: 20px;
     position: relative;
+    overflow-x: hidden;
 }
 
 .main-bg {
@@ -798,6 +800,7 @@ html::-webkit-scrollbar-thumb {
 .service {
     margin-top: 50px;
     padding-bottom: 40px;
+    overflow-x: hidden;
 }
 
 .service-title {
