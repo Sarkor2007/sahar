@@ -1,27 +1,51 @@
-.reveal-left{
+.reveal-left-intro{
     transition: all 1.3s ease;
     transition-delay: 1.5s;
     opacity: 0;
     transform: translate3d(-150px, 0, 0);
 }
 
-.reveal-right{
+.reveal-right-intro{
     transition: all 1.3s ease;
     transition-delay: 1.5s;
     opacity: 0;
-    transform: translate3d(150px, 0, 0);
+    transform: translate3d(150px, 0, 10px);
 }
 
-.reveal-top{
+.reveal-top-intro{
     transition: all 1.3s ease;
     transition-delay: 1.5s;
     opacity: 0;
     transform: translate3d(0, -60px, 0);
 }
 
-.reveal-bottom{
+.reveal-bottom-intro{
     transition: all 1.3s ease;
     transition-delay: 1.5s;
+    opacity: 0;
+    transform: translate3d(0, 60px, 0);
+}
+
+.reveal-left{
+    transition: all 1s ease;
+    opacity: 0;
+    transform: translate3d(-150px, 0, 0);
+}
+
+.reveal-right{
+    transition: all 1s ease;
+    opacity: 0;
+    transform: translate3d(150px, 0, 10px);
+}
+
+.reveal-top{
+    transition: all 1s ease;
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+}
+
+.reveal-bottom{
+    transition: all 1s ease;
     opacity: 0;
     transform: translate3d(0, 60px, 0);
 }
@@ -30,6 +54,20 @@
     transform: translate3d(0, 0, 0);
     opacity: 1;
       /* animation: fade 1s ease forwards */
+}
+
+.reveal-after-intro {
+    animation-name: fade-intro;
+    animation-fill-mode: forwards;
+    animation-duration: 1.6s;
+    animation-delay: 1.5s;
+}
+
+@keyframes fade-intro {
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 @keyframes fade {
@@ -139,6 +177,126 @@ body{
     }
 }
 
+.main__bg-img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.main__bg-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.main__bg-1 {
+    width: 1100px;
+    height: 1100px;
+    right: -1100px;
+    animation-fill-mode: forwards;
+    /* right: -320px; */
+    top: -175px;
+    z-index: 3;
+    animation-name: animate1;
+    animation-duration: 1s;
+    animation-delay: 1.8s;
+}
+
+.main__bg-2 {
+    width: 716px;
+    height: 638px;
+    z-index: 2;
+    /* right: -95px; */
+    animation-fill-mode: forwards;
+    right: -800px;
+    top: -20px;
+    animation-name: animate2;
+    animation-duration: 0.8s;
+    animation-delay: 1.8s;
+}
+
+.main__bg-3 {
+    width: 357px;
+    height: 357px;
+    /* right: 230px; */
+    right: -800px;
+    animation-fill-mode: forwards;
+    z-index: 4;
+    bottom: 15px;
+    animation-name: animate3;
+    animation-duration: 0.75s;
+    animation-delay: 1.8s;
+}
+
+.main__bg-4 {
+    width: 560px;
+    height: 720px;
+    /* right: 0; */
+    animation-fill-mode: forwards;
+    right: -800px;
+    z-index: 5;
+    top: 30px;
+    animation-name: animate4;
+    animation-duration: 0.85s;
+    animation-delay: 1.8s;
+}
+
+.main__bg-5 {
+    width: 313px;
+    height: 313px;
+    animation-fill-mode: forwards;
+    /* right: 270px; */
+    right: -800px;
+    top: -10px;
+    z-index: 1;
+    animation-name: animate5;
+    animation-duration: 0.7s;
+    animation-delay: 1.8s;
+}
+
+.main__bg-1 img {
+    animation-name: animateImg1;
+    animation-delay: 1.3s;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.main__bg-2 img {
+    animation-name: animateImg2;
+    animation-delay: 1.1s;
+    animation-duration: 4.2s;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.main__bg-3 img {
+    animation-name: animateImg3;
+    animation-delay: 1.05s;
+    animation-duration: 4.1s;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: translateY(15px);
+}
+
+.main__bg-4 img {
+    animation-name: animateImg4;
+    animation-delay: 1.15s;
+    animation-duration: 4.2s;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.main__bg-5 img {
+    animation-name: animateImg5;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
 
 
 

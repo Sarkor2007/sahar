@@ -210,9 +210,10 @@ var callback = function (entries, observer) {
     entries.forEach(el => {
         if (el.isIntersecting && el.intersectionRatio > .75) {
             el.target.classList.add('reveal-after')
-        } else {
-            el.target.classList.remove('reveal-after');
         }
+        //  else {
+        //     el.target.classList.remove('reveal-after');
+        // }
     })
 };
 
@@ -222,6 +223,9 @@ document.querySelectorAll('.reveal-left').forEach(el => {
     observer.observe(el);
 })
 document.querySelectorAll('.reveal-right').forEach(el => {
+    observer.observe(el);
+})
+document.querySelectorAll('.reveal-top').forEach(el => {
     observer.observe(el);
 })
 document.querySelectorAll('.reveal-bottom').forEach(el => {
