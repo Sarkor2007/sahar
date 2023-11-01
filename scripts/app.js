@@ -127,20 +127,20 @@ const editModal = document.querySelector('.edit-modal')
 const modalFilter = document.querySelector('.modal-filter')
 const editModalOpen = document.querySelector('.user__profile-bottom')
 
-editModalOpen?.addEventListener('click', ()=>{
+editModalOpen?.addEventListener('click', () => {
     editModal.classList.add('active')
     modalFilter.classList.add('active')
     body.classList.add('active');
     window.scrollTo(0, 0);
 })
 
-editModalBtn?.addEventListener('click', ()=>{
+editModalBtn?.addEventListener('click', () => {
     editModal.classList.remove('active')
     modalFilter.classList.remove('active')
     body.classList.remove('active');
 })
 
-editModalClose?.addEventListener('click', ()=>{
+editModalClose?.addEventListener('click', () => {
     editModal.classList.remove('active')
     modalFilter.classList.remove('active')
     body.classList.remove('active');
@@ -150,7 +150,7 @@ const cardTabBtn = document.querySelectorAll('.create__tab-el');
 const cardTabBody = document.querySelectorAll('.create__form');
 
 for (let i = 0; i < cardTabBtn.length; i++) {
-    cardTabBtn[i].addEventListener('click', ()=>{
+    cardTabBtn[i].addEventListener('click', () => {
         cardTabBtn.forEach(el => el.classList.remove('active'))
         cardTabBody.forEach(el => el.classList.remove('active'))
         cardTabBtn[i].classList.add('active')
@@ -162,24 +162,20 @@ for (let i = 0; i < cardTabBtn.length; i++) {
 let psych = document.querySelector('input[name="psych"]:checked')?.value;
 let teacher = document.querySelector('input[name="teacher"]:checked')?.value;
 
-// console.log(psych);
-// console.log(teacher);
-
-
 const cardPricePlus = document.querySelector('.card__price-btn.plus');
 const cardPriceMinus = document.querySelector('.card__price-btn.minus');
 let cardPrice = document.querySelector('.card__price-input');
 
-cardPricePlus?.addEventListener('click', ()=>{
+cardPricePlus?.addEventListener('click', () => {
     cardPrice.value = +cardPrice.value + 10000
 })
 
-cardPriceMinus?.addEventListener('click', ()=>{
-    if(+cardPrice.value === 10000){
+cardPriceMinus?.addEventListener('click', () => {
+    if (+cardPrice.value === 10000) {
         cardPrice.value = 0
-    } else if(+cardPrice.value < 10000){
+    } else if (+cardPrice.value < 10000) {
         cardPrice.value = 0
-    } else{
+    } else {
         cardPrice.value = +cardPrice.value - 10000
     }
 })
@@ -190,18 +186,38 @@ const cardDraftBtn = document.querySelector('.complete__bottom-btn.second');
 const cardCreate = document.querySelector('.card__create');
 const cardList = document.querySelector('.card-wrapper');
 
-cardCreateOpen?.addEventListener('click', ()=>{
+cardCreateOpen?.addEventListener('click', () => {
     cardCreate.classList.add('active');
     cardList.classList.remove('active');
 })
 
-cardCreateBtn?.addEventListener('click', ()=>{
+cardCreateBtn?.addEventListener('click', () => {
     cardCreate.classList.remove('active');
     cardList.classList.add('active');
 })
 
-cardDraftBtn?.addEventListener('click', ()=>{
+cardDraftBtn?.addEventListener('click', () => {
     cardCreate.classList.remove('active');
     cardList.classList.add('active');
 })
 
+var options = {
+    rootMargin: '0px',
+    threshold: [0, .25, .50, .75, 1]
+}
+
+var callback = function (entries, observer) {
+    entries.forEach(el => {
+        if (el.isIntersecting && el.intersectionRatio > .75) {
+            el.target.classList.add('reveal-after')
+        } else {
+            el.target.classList.remove('reveal-after');
+        }
+    })
+};
+
+var observer = new IntersectionObserver(callback, options);
+
+document.querySelectorAll('.reveal').forEach(el => {
+    observer.observe(el);
+})
