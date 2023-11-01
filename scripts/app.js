@@ -204,16 +204,16 @@ cardDraftBtn?.addEventListener('click', () => {
 var options = {
     rootMargin: '0px',
     threshold: [0, .25, .50, .75, 1]
+    // threshold: 1,
 }
 
 var callback = function (entries, observer) {
     entries.forEach(el => {
         if (el.isIntersecting && el.intersectionRatio > .75) {
             el.target.classList.add('reveal-after')
+        } else {
+            el.target.classList.remove('reveal-after');
         }
-        //  else {
-        //     el.target.classList.remove('reveal-after');
-        // }
     })
 };
 

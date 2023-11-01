@@ -29,13 +29,13 @@
 .reveal-left {
     transition: all 1s ease;
     opacity: 0;
-    transform: translate3d(-150px, 0, 0);
+    transform: translate3d(-100px, 0, 0);
 }
 
 .reveal-right {
     transition: all 1s ease;
     opacity: 0;
-    transform: translate3d(150px, 0, 10px);
+    transform: translate3d(100px, 0, 10px);
 }
 
 .reveal-top {
