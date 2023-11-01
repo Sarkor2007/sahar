@@ -218,6 +218,13 @@ var callback = function (entries, observer) {
 
 var observer = new IntersectionObserver(callback, options);
 
-document.querySelectorAll('.reveal').forEach(el => {
+document.querySelectorAll('.reveal-left').forEach(el => {
     observer.observe(el);
 })
+document.querySelectorAll('.reveal-right').forEach(el => {
+    observer.observe(el);
+})
+document.querySelectorAll('.reveal-bottom').forEach(el => {
+    observer.observe(el);
+})
+

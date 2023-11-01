@@ -1,8 +1,29 @@
-.reveal{
+.reveal-left{
     transition: all 1.3s ease;
     transition-delay: 1.5s;
     opacity: 0;
     transform: translate3d(-150px, 0, 0);
+}
+
+.reveal-right{
+    transition: all 1.3s ease;
+    transition-delay: 1.5s;
+    opacity: 0;
+    transform: translate3d(150px, 0, 0);
+}
+
+.reveal-top{
+    transition: all 1.3s ease;
+    transition-delay: 1.5s;
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+}
+
+.reveal-bottom{
+    transition: all 1.3s ease;
+    transition-delay: 1.5s;
+    opacity: 0;
+    transform: translate3d(0, 60px, 0);
 }
 
 .reveal-after {
@@ -115,5 +136,128 @@ body{
         transform: scale(0);
 
         visibility: hidden;
+    }
+}
+
+
+
+
+@keyframes animate1 {
+    from {
+        right: -1100px;
+    }
+
+    to {
+        right: -320px;
+    }
+}
+
+@keyframes animate2 {
+    from {
+        right: -800px;
+    }
+
+    to {
+        right: -95px;
+    }
+}
+
+@keyframes animate3 {
+    from {
+        right: -800px;
+    }
+
+    to {
+        right: 230px;
+    }
+}
+
+@keyframes animate4 {
+    from {
+        right: -800px;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+@keyframes animate5 {
+    from {
+        right: -800px;
+    }
+
+    to {
+        right: 270px;
+    }
+}
+
+@keyframes animateImg1 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes animateImg2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(25px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes animateImg3 {
+    0% {
+        transform: translateY(25px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(25px);
+    }
+}
+
+@keyframes animateImg4 {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(22px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes animateImg5 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
