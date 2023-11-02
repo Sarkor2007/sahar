@@ -231,3 +231,5 @@ document.querySelectorAll('.reveal-top').forEach(el => {
 document.querySelectorAll('.reveal-bottom').forEach(el => {
     observer.observe(el);
 })
+
+

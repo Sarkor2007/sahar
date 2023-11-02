@@ -336,6 +336,7 @@ body {
     from {
         transform: translateX(100%);
     }
+
     to {
         transform: translateX(-30px);
     }
@@ -345,8 +346,41 @@ body {
     from {
         transform: translateX(100%);
     }
+
     to {
         transform: translateX(-400px);
+    }
+}
+
+@media (max-width: 576px) {
+    @keyframes animate2 {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translate(150px);
+        }
+    }
+
+    @keyframes animate3 {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(-220px);
+        }
+    }
+
+    @keyframes animate5 {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(-250px);
+        }
     }
 }
 

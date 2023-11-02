@@ -524,7 +524,7 @@ html::-webkit-scrollbar-thumb {
     padding-bottom: 100px;
     margin-top: 20px;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .main-bg {
