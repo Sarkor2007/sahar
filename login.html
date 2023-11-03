@@ -100,7 +100,7 @@
         <div class="login">
             <div class="container">
                 <div class="login-wrapper">
-                    <div class="login-header">
+                    <div class="login-header reveal-left-intro reveal-after-intro">
                         <h2 class="login-title">
                             Создайте свой Аккаунт
                             или войдите
@@ -135,12 +135,12 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="login-header second">
+                    <!-- <div class="login-header reveal-left-intro reveal-after-intro second">
                         <div class="login-title">
                             Введите полученный код
                         </div>
                     </div> -->
-                    <!-- <form class="login-form">
+                    <!-- <form class="login-form reveal-right-intro reveal-after-intro">
                         <div class="login-box">
                             <input type="number" placeholder="Ваш номер телефона..." class="login-phone">
                             <button class="login-btn">
@@ -151,7 +151,7 @@
                                 </button>
                         </div>
                     </form> -->
-                    <div class="login__number">
+                    <div class="login__number reveal-right-intro reveal-after-intro">
                         <div class="login__number-text">
                             для номера <span>+998 90 914 67 08</span>
                         </div>
@@ -161,7 +161,7 @@
                             </button>
                         </div>
                     </div>
-                    <form class="login-form second">
+                    <form class="login-form reveal-right-intro reveal-after-intro second">
                         <div class="login-box">
                             <input type="number" placeholder="Введите код..." class="login-phone">
                             <button class="login-btn">
@@ -185,8 +185,8 @@
                     </div>
                 </div>
                 <div class="about-header">
-                    <div class="about__buttons">
-                        <a href="#" class="about__buttons-item">Зарегистрироваться</a>
+                    <div class="about__buttons hover-box">
+                        <a href="login.html" class="about__buttons-item printer">Зарегистрироваться</a>
                         <button id="aboutBtn" class="about__buttons-item second">
                             <p>Что будет дальше?</p>
                             <img src="images/png/to-bottom.png" alt="to bottom">
@@ -445,6 +445,12 @@
 
     <div class="loader">
         <div class="loader-center"></div>
+    </div>
+
+    <span id="circle" class="circle"></span>
+
+    <div class="cursor-box" id="cursorBox">
+        <span id="cursor" class="cursor"></span>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

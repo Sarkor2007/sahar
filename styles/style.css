@@ -573,6 +573,46 @@ html::-webkit-scrollbar-thumb {
     flex-direction: column;
     gap: 15px;
     align-items: center;
+    position: relative;
+}
+
+.hover-block,
+.hover-box {
+    position: relative;
+}
+
+.hover-block::after,
+.hover-box::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    transition: .3s all;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.hover-block::after {
+    transform: scale(0.9, 0);
+    transition: .35s all;
+}
+
+.hover-box::after {
+    transform: scale(1, 1);
+}
+
+@media (min-width: 1024px) {
+
+    .hover-box:hover::after,
+    .hover-block:hover::after {
+        transform: scale(1.05, 1.15);
+        box-shadow: 0px 35px 50px -15px var(--shadow);
+    }
 }
 
 .main__content-item {
@@ -800,7 +840,7 @@ html::-webkit-scrollbar-thumb {
 
 .service {
     margin-top: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     overflow-x: hidden;
 }
 
@@ -920,6 +960,7 @@ html::-webkit-scrollbar-thumb {
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    position: relative;
 }
 
 .service__content-btn.first {
@@ -953,7 +994,7 @@ html::-webkit-scrollbar-thumb {
 /* ----- features ---- */
 
 .features {
-    margin-top: 50px;
+    margin-top: 30px;
     padding-bottom: 50px;
     overflow: hidden;
 }
@@ -1082,6 +1123,8 @@ html::-webkit-scrollbar-thumb {
     align-items: flex-start;
     gap: 18px;
     justify-content: center;
+    position: relative;
+    z-index: 2;
 }
 
 .offers__content-box {
@@ -1090,6 +1133,7 @@ html::-webkit-scrollbar-thumb {
     flex-direction: column;
     gap: 15px;
     align-items: center;
+    position: relative;
 }
 
 .offers__content-item {
@@ -1098,7 +1142,6 @@ html::-webkit-scrollbar-thumb {
     border-radius: 15px;
     background: var(--white);
     box-shadow: 0px 35px 50px -15px var(--shadow);
-    position: relative;
 }
 
 .offers__content-top {
@@ -2331,7 +2374,7 @@ input[type="number"]::-webkit-outer-spin-button {
     justify-content: center;
     padding: 0 25px 10px;
     overflow-y: scroll;
-    height: 261px;
+    height: 256px;
     margin: 20px 0 10px;
     box-shadow: 0px 35px 75px 0px var(--shadow);
 }
@@ -4274,7 +4317,7 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
     }
 
     .schedule__list {
-        height: 245px;
+        height: 240px;
     }
 
     .chat-box {
