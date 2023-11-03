@@ -5,6 +5,13 @@
     transform: translate3d(-150px, 0, 0);
 }
 
+.reveal-bottom-intro {
+    transition: all 1.3s ease;
+    transition-delay: 1.5s;
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+}
+
 .reveal-right-intro {
     transition: all 1.3s ease;
     transition-delay: 1.5s;
@@ -17,13 +24,6 @@
     transition-delay: 1.5s;
     opacity: 0;
     transform: translate3d(0, -60px, 0);
-}
-
-.reveal-bottom-intro {
-    transition: all 1.3s ease;
-    transition-delay: 1.5s;
-    opacity: 0;
-    transform: translate3d(0, 60px, 0);
 }
 
 .reveal-left {
