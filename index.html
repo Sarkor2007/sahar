@@ -16,7 +16,7 @@
 
         <div class="container">
             <div class="header__logo">
-                <a href="index.html" class="header__logo-img">
+                <a href="index.html" class="header__logo-img printer">
                     <img src="images/svg/logo.svg" alt="logo">
                 </a>
                 <div class="dot"></div>
@@ -25,22 +25,22 @@
             </div>
             <nav class="nav">
                 <div class="nav__exit">
-                    <div class="nav__exit-btn"></div>
+                    <div class="nav__exit-btn printer"></div>
                 </div>
                 <ul class="nav__list">
                     <li class="nav__list-item">
-                        <a href="index.html" class="nav__list-link">Главная</a>
+                        <a href="index.html" class="nav__list-link printer">Главная</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="#" class="nav__list-link">Психологи</a>
+                        <a href="#" class="nav__list-link printer">Психологи</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="#" class="nav__list-link">Репетиторы</a>
+                        <a href="#" class="nav__list-link printer">Репетиторы</a>
                     </li>
                 </ul>
                 <div class="header__block">
                     <div class="header__panel">
-                        <div class="header__panel-btn">
+                        <div class="header__panel-btn printer">
                             <div class="header__panel-img">
                                 <img src="./images/png/man.png" alt="user image">
                             </div>
@@ -86,7 +86,7 @@
                     </div>
                 </div>
             </nav>
-            <div class="nav__open">
+            <div class="nav__open printer">
                 <div class="nav__open-btn">
                     <div class="btn-elem"></div>
                 </div>
@@ -97,19 +97,19 @@
     <main class="main">
         <div class="main-bg">
             <div class="main__bg-img main__bg-1">
-                <img src="./images/webp/animate-1.webp" alt="animate 1">
+                <img draggable="false" src="./images/webp/animate-1.webp" alt="animate 1">
             </div>
             <div class="main__bg-img main__bg-4">
-                <img src="./images/webp/animate-4.webp" alt="animate 4">
+                <img draggable="false" src="./images/webp/animate-4.webp" alt="animate 4">
             </div>
             <div class="main__bg-img main__bg-2">
-                <img src="./images/webp/animate-2.webp" alt="animate 2">
+                <img draggable="false" src="./images/webp/animate-2.webp" alt="animate 2">
             </div>
             <div class="main__bg-img main__bg-3">
-                <img src="./images/webp/animate-3.webp" alt="animate 3">
+                <img draggable="false" src="./images/webp/animate-3.webp" alt="animate 3">
             </div>
             <div class="main__bg-img main__bg-5">
-                <img src="./images/webp/animate-5.webp" alt="animate 5">
+                <img draggable="false" src="./images/webp/animate-5.webp" alt="animate 5">
             </div>
         </div>
         <div class="container">
@@ -373,7 +373,7 @@
             </div>
             <div class="about-header">
                 <div class="about__buttons">
-                    <a href="#" class="about__buttons-item">Зарегистрироваться</a>
+                    <a href="#" class="about__buttons-item printer">Зарегистрироваться</a>
                     <button id="aboutBtn" class="about__buttons-item second">
                         <p>Что будет дальше?</p>
                         <img src="images/png/to-bottom.png" alt="to bottom">
@@ -489,7 +489,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="team__header-btn">
+                        <div class="team__header-btn printer">
                             <img src="images/svg/reload.svg" alt="reload icon">
                         </div>
                     </div>
@@ -952,7 +952,7 @@
                                         book
                                     </p>
                                 </div>
-                                <div class="questions__item-btn">
+                                <div class="questions__item-btn printer">
                                     <img src="images/png/to-bottom.png" alt="to bottom">
                                 </div>
                             </div>
@@ -1046,7 +1046,7 @@
                     </ul>
                     <div class="footer__block">
                         <div class="footer__panel">
-                            <div class="footer__panel-btn">
+                            <div class="footer__panel-btn printer">
                                 <div class="footer__panel-img">
                                     <img src="./images/png/man.png" alt="user image">
                                 </div>
@@ -1099,6 +1099,16 @@
     <div class="loader">
         <div class="loader-center"></div>
     </div>
+
+    <!-- <div class="cursors">
+    </div> -->
+
+    <span id="circle" class="circle"></span>
+
+    <div class="cursor-box" id="cursorBox">
+        <span id="cursor" class="cursor"></span>
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="scripts/app.js"></script>

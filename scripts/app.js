@@ -233,3 +233,76 @@ document.querySelectorAll('.reveal-bottom').forEach(el => {
 })
 
 
+var mouseX = 0, mouseY = 0;
+var xp = 0, yp = 0;
+var circle = document.getElementById('circle');
+var cursor = document.getElementById('cursor');
+var cursorBox = document.getElementById('cursorBox');
+
+document.addEventListener('mousemove', function (e) {
+    mouseX = e.pageX - circle.offsetWidth / 2;
+    mouseY = e.pageY - circle.offsetWidth / 2;
+});
+
+setInterval(function () {
+    xp += (mouseX - xp) / 6;
+    yp += (mouseY - yp) / 6;
+    circle.style.left = xp + 'px';
+    circle.style.top = yp + 'px';
+}, 10);
+
+document.addEventListener('mouseleave', function () {
+    circle.style.display = 'none';
+});
+
+document.addEventListener("mousemove", function (e) {
+    // cursor.style.left = e.x + "px";
+    // cursor.style.top = e.y + "px";
+    cursorBox.style.left = (e.pageX - cursorBox.offsetWidth / 2) + "px";
+    cursorBox.style.top = (e.pageY - cursorBox.offsetHeight / 2) + "px";
+})
+
+const printerElement = document.querySelectorAll(".printer");
+const link = document.querySelectorAll('a');
+const btn = document.querySelectorAll('button');
+
+for (let i = 0; i < printerElement.length; i++) {
+    printerElement[i].addEventListener("mouseenter", function () {
+        cursor.classList.add("active");
+    });
+
+    printerElement[i].addEventListener("mouseleave", function () {
+        cursor.classList.remove("active");
+    });
+}
+
+for (let i = 0; i < link.length; i++) {
+    link[i].addEventListener("mouseenter", function () {
+        cursor.classList.add("active");
+    });
+
+    link[i].addEventListener("mouseleave", function () {
+        cursor.classList.remove("active");
+    });
+}
+
+
+for (let i = 0; i < btn.length; i++) {
+    btn[i].addEventListener("mouseenter", function () {
+        cursor.classList.add("active");
+    });
+
+    btn[i].addEventListener("mouseleave", function () {
+        cursor.classList.remove("active");
+    });
+}
+
+body.addEventListener("mouseleave", function () {
+    cursor.style.display = "none";
+    circle.style.display = "none";
+});
+
+body.addEventListener("mouseover", function () {
+    cursor.style.display = "block";
+    circle.style.display = "block";
+});

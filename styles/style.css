@@ -48,6 +48,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: none !important;
 }
 
 li {
@@ -56,13 +57,14 @@ li {
 
 a {
     text-decoration: none;
+    cursor: none;
 }
 
 button {
     outline: none;
     border: none;
     background-color: transparent;
-    cursor: pointer;
+    cursor: none;
 }
 
 body.active {
@@ -109,7 +111,6 @@ html::-webkit-scrollbar-thumb {
     z-index: 10;
     padding: 0 8px;
     padding-top: 25px;
-    overflow-x: hidden;
 }
 
 .header .container {
@@ -217,7 +218,6 @@ html::-webkit-scrollbar-thumb {
     align-items: center;
     width: 40px;
     height: 40px;
-    cursor: pointer;
 }
 
 .nav__open-btn {
@@ -286,7 +286,6 @@ html::-webkit-scrollbar-thumb {
 }
 
 .nav__exit-btn {
-    cursor: pointer;
     display: inline-block;
     position: relative;
     z-index: 51;
@@ -337,7 +336,6 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     gap: 15px;
-    cursor: pointer;
 }
 
 .header__panel-img,
@@ -1259,7 +1257,6 @@ html::-webkit-scrollbar-thumb {
     background: var(--gradient);
     box-shadow: 0px 35px 50px -15px var(--shadow);
     transition: .3s all;
-    cursor: pointer;
 }
 
 .about__buttons-item:hover {
@@ -1484,7 +1481,6 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
 .team__header-btn img {
@@ -1713,9 +1709,7 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     padding: 25px 0;
-    cursor: pointer;
     box-shadow: 0px 35px 50px -15px var(--shadow);
-
 }
 
 .questions__item-btn img {
@@ -1942,7 +1936,6 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
 .login__header-btn img {
@@ -2624,7 +2617,6 @@ input[type="number"]::-webkit-outer-spin-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     transition: .4s all;
 }
 
@@ -2907,7 +2899,6 @@ select.edit-input {
 }
 
 .edit__bottom-btn {
-    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3503,7 +3494,6 @@ select.edit-input {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
 .card__item-btn img {
@@ -3519,7 +3509,6 @@ select.edit-input {
 }
 
 .card__btn {
-    cursor: pointer;
     max-width: 585px;
     width: 100%;
     padding: 45px 15px 25px;
@@ -3603,7 +3592,6 @@ select.edit-input {
     align-items: center;
     width: calc(100% - 290px - 10px);
     transition: .3s all;
-    cursor: pointer;
 }
 
 .create__tab-el.second {
@@ -3757,7 +3745,6 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
     font-family: Comfortaa;
     font-size: 11px;
     font-weight: 600;
-    cursor: pointer;
 }
 
 .create__radio-label span {
@@ -3839,7 +3826,6 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
 .card__price-btn {
     width: 24px;
     height: 24px;
-    cursor: pointer;
 }
 
 .card__price-btn img {
@@ -4033,7 +4019,6 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
 }
 
 .complete__bottom-btn {
-    cursor: pointer;
     width: calc(50% - 15px / 2);
     border-radius: 10px;
     background: var(--gradient);
