@@ -48,7 +48,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: none !important;
 }
 
 li {
@@ -57,22 +56,25 @@ li {
 
 a {
     text-decoration: none;
-    cursor: none;
 }
 
 button {
     outline: none;
     border: none;
     background-color: transparent;
-    cursor: none;
-}
-
-body.active {
-    overflow: hidden;
+    cursor: pointer;
 }
 
 body {
     min-width: 330px;
+    position: relative;
+    overflow-x: hidden;
+    width: calc(100vw - 10px);
+    height: 100%;
+}
+
+body.active {
+    overflow: hidden;
 }
 
 html {
@@ -679,6 +681,7 @@ html::-webkit-scrollbar-thumb {
 
 .fit {
     margin-top: 40px;
+    overflow-x: hidden;
 }
 
 .fit__title {
