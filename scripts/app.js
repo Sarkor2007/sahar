@@ -223,7 +223,7 @@ var options = {
 
 var callback = function (entries, observer) {
     entries.forEach(el => {
-        if (el.isIntersecting && el.intersectionRatio > .75) {
+        if (el.isIntersecting && el.intersectionRatio > .5) {
             el.target.classList.add('reveal-after')
         } else {
             el.target.classList.remove('reveal-after');
