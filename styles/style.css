@@ -3033,6 +3033,11 @@ select.edit-input {
     text-decoration-line: underline;
 }
 
+.chat-container {
+    overflow-x: hidden;
+    padding: 0 12px;
+}
+
 .chat-wrapper {
     display: flex;
     gap: 30px;
@@ -6282,5 +6287,8 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
 
     .user__article-text.second {
         height: calc(16px * 5);
+    }
+    .chat-title {
+        font-size: 18px;
     }
 }
