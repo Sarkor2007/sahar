@@ -41,6 +41,7 @@
     --shadow: rgba(133, 53, 232, 0.15);
     --shadow-2: rgba(133, 53, 232, 0.25);
     --hover-shadow: 0px 0px 6px 2px rgba(133, 53, 232, 0.5);
+    --hover-outline-shadow: 0px 0px 40px 10px rgba(133, 53, 232, 0.5);
 }
 
 
@@ -1570,6 +1571,7 @@ html::-webkit-scrollbar-thumb {
     border-radius: 15px;
     background: var(--white);
     box-shadow: 0px 35px 50px -15px var(--shadow);
+    width: calc(50% - 15px/2);
 }
 
 .team__item-img {
@@ -1613,6 +1615,10 @@ html::-webkit-scrollbar-thumb {
     line-height: 150%;
     opacity: 0.5;
     list-style: disc inside;
+}
+
+.mySwiperFive {
+    display: none;
 }
 
 .mySwiperOne {
@@ -2120,6 +2126,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .user {
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .user-title {
@@ -2599,7 +2606,7 @@ input[type="number"]::-webkit-outer-spin-button {
     left: 50%;
     top: 140px;
     transform: translateX(-50%) scale(0);
-    z-index: 11;
+    z-index: 9;
     max-width: 1200px;
     width: 100%;
     padding: 0 15px;
@@ -2887,9 +2894,10 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .edit-input {
-    width: 100%;
+    min-width: 100%;
     height: 100%;
-    display: block;
+    display: flex;
+    align-items: center;
     border-radius: 12px;
     border: 2px solid var(--text);
     background: var(--white);
@@ -3304,6 +3312,10 @@ select.edit-input {
 
 /* ---- worker page ----- */
 
+.card-overflow {
+    overflow-x: hidden;
+}
+
 .card {
     padding-bottom: 20px;
     max-width: 1200px;
@@ -3427,19 +3439,47 @@ select.edit-input {
     padding: 8px;
 }
 
-.card__list.active .card__list-item {
+.card__list.active .card__list-el {
     outline: 8px solid var(--text);
 }
 
 .card__list-item {
+    height: 170px;
+    width: 100%;
+    position: relative;
+}
+
+.card__list-tilt {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+}
+
+.card__list-el {
     display: flex;
     align-items: center;
-    height: 170px;
+    height: 100%;
     width: 100%;
     border-radius: 15px;
     background: var(--white);
     box-shadow: 0px 35px 50px -15px var(--shadow);
+    transition: box-shadow 0.2s, transform 0.1s;
 }
+
+@media (min-width: 1024px) {
+    .card__list-item:hover .card__list-el {
+        box-shadow: var(--hover-shadow);
+    }
+
+    .card__list.active .card__list-item:hover .card__list-el {
+        box-shadow: var(--hover-outline-shadow);
+    }
+}
+
 
 .card__list-line {
     width: 1px;
@@ -4667,8 +4707,20 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
         padding-bottom: 35px;
     }
 
-    .team__list-last {
+    .team__list-item {
+        width: 100%;
+    }
+
+    .team__list {
+        max-width: 450px;
+    }
+
+    .mySwiper {
         display: none;
+    }
+
+    .mySwiperFive {
+        display: block;
     }
 
     .chat-window {
@@ -4950,8 +5002,11 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
     }
 
     .card__list-item {
-        flex-direction: column;
         height: auto;
+    }
+
+    .card__list-el {
+        flex-direction: column;
         padding: 16px 16px 12px;
     }
 
@@ -5367,11 +5422,11 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
         height: 3px;
     }
 
-    .card__list.active .card__list-item {
+    .card__list.active .card__list-el {
         outline: 4px solid var(--text);
     }
 
-    .card__list-item {
+    .card__list-el {
         border-radius: 12px;
     }
 
@@ -5711,12 +5766,12 @@ textarea.create__form-input::-webkit-scrollbar-thumb {
         width: 100%;
     }
 
-    .mySwiper {
-        display: none;
-    }
-
     .team {
         overflow-x: hidden;
+    }
+
+    .mySwiperFive {
+        display: none;
     }
 
     .mySwiperOne {

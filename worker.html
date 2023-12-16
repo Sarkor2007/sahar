@@ -94,794 +94,836 @@
                 </div>
             </button>
         </div>
+
+        <div class="edit-modal">
+            <form class="edit-content">
+                <div class="edit__modal-header">
+                    <h3 class="edit__modal-title">⚙️ Ваш профиль и настройка</h3>
+                    <div class="edit__modal-exit">
+                        <div class="edit__modal-close">
+                            <img src="./images/svg/close.svg" alt="close btn">
+                        </div>
+                    </div>
+                </div>
+                <div class="edit__modal-wrapper">
+                    <div class="edit__modal-content">
+                        <div class="edit__modal-box">
+                            <div class="edit__modal-top">
+                                <div class="edit__top-box">
+                                    <h2 class="edit__top-title">
+                                        Изменить фото
+                                    </h2>
+                                    <div class="edit__top-content">
+                                        <div class="edit__top-icon">
+                                            <img src="./images/svg/edit.svg" alt="edit img">
+                                        </div>
+                                        <div class="edit__top-arrow">
+                                            <img src="./images/png/right-arrow.png" alt="arrow">
+                                        </div>
+                                        <div class="edit__top-user">
+                                            <img src="./images/png/man.png" alt="user image">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edit__vertical-line"></div>
+                                <div class="edit__top-box">
+                                    <h2 class="edit__top-title">
+                                        Верификация личности
+                                    </h2>
+                                    <div class="edit__top-content">
+                                        <div class="edit__top-icon">
+                                            <img src="./images/svg/card.svg" alt="card img">
+                                        </div>
+                                        <div class="edit__top-arrow">
+                                            <img src="./images/png/right-arrow.png" alt="arrow">
+                                        </div>
+                                        <div class="edit__top-article">
+                                            <p class="edit__top-text">
+                                                Загрузите фотографию или ксперокопию вашей ID-карты в хорошем качестве
+                                                для
+                                                утверждения личности аккаунта
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit-inputs">
+                                <ul class="edit__list">
+                                    <li class="edit__list-item">
+                                        <label for="name" class="edit-label">
+                                            <h3 class="edit__label-title">Имя</h3>
+                                            <div class="edit__input-box">
+                                                <input required placeholder="Введите имя..." type="text" name="name" id="name"
+                                                    class="edit-input">
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li class="edit__list-item">
+                                        <label for="surname" class="edit-label">
+                                            <h3 class="edit__label-title">Фамилия</h3>
+                                            <div class="edit__input-box">
+                                                <input required placeholder="Введите фамилию..." type="text" name="surname"
+                                                    id="surname" class="edit-input">
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <div class="edit__list-line"></div>
+                                <ul class="edit__list">
+                                    <li class="edit__list-item">
+                                        <label for="city" class="edit-label">
+                                            <h3 class="edit__label-title">Город</h3>
+                                            <div class="edit__input-box edit__select-box">
+                                                <select required class="edit-input" name="city" id="city">
+                                                    <option selected disabled value="">Выберите город...</option>
+                                                    <option value="tashkent">Ташкент</option>
+                                                    <option value="samarkand">Самарканд</option>
+                                                </select>
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li class="edit__list-item">
+                                        <label for="birthday" class="edit-label">
+                                            <h3 class="edit__label-title">Дата рождения</h3>
+                                            <div class="edit__input-box">
+                                                <input required type="date" name="birthday" id="birthday" class="edit-input">
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="edit__modal-line"></div>
+                        <div class="edit__modal-box second">
+                            <div class="edit-inputs">
+                                <ul class="edit__list">
+                                    <li class="edit__list-item">
+                                        <label for="password" class="edit-label">
+                                            <h3 class="edit__label-title">Пароль</h3>
+                                            <div class="edit__input-box second">
+                                                <input required placeholder="Введите пароль..." type="password" name="password"
+                                                    id="password" class="edit-input">
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li class="edit__list-item">
+                                        <label for="repassword" class="edit-label">
+                                            <h3 class="edit__label-title">Повторите пароль</h3>
+                                            <div class="edit__input-box second">
+                                                <input required placeholder="Введите пароль еще раз..." type="password"
+                                                    name="repassword" id="repassword" class="edit-input">
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <div class="edit__list-line"></div>
+                                <ul class="edit__list">
+                                    <li class="edit__list-item">
+                                        <label for="email" class="edit-label">
+                                            <h3 class="edit__label-title">E-mail</h3>
+                                            <div class="edit__input-box">
+                                                <input required placeholder="Введите E-mail..." type="email" name="email"
+                                                    id="email" class="edit-input">
+                                            </div>
+                                        </label>
+                                    </li>
+                                    <li class="edit__list-item">
+                                        <label for="phone" class="edit-label">
+                                            <h3 class="edit__label-title">Номер телефона</h3>
+                                            <div class="edit__input-box">
+                                                <input required placeholder="Введите номер телефона..." type="number"
+                                                    name="phone" id="phone" class="edit-input">
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edit__modal-line"></div>
+                </div>
+                <div class="edit-bottom">
+                    <button class="edit__bottom-btn">
+                        <p>Сохранить изменения</p>
+                        <img src="./images/svg/checkAll.svg" alt="checked icon">
+                    </button>
+                    <button type="reset" class="edit__bottom-btn second">Отменить</button>
+                </div>
+            </form>
+        </div>
     </header>
 
-    <section class="user">
-        <div class="container">
-            <h2 class="user-title">
-                Добро пожаловать в Личный кабинет!
-            </h2>
-            <div class="user-header">
-                <h3 class="user__header-title">
-                    Завершите полную настройку <span>Вашего</span> аккаунта:
-                </h3>
-                <ul class="user__header-list">
-                    <li class="user__header-item">
-                        <a href="#" class="user__header-link">
-                            Заполните профиль
-                        </a>
-                    </li>
-                    <li class="user__header-item">
-                        <a href="#" class="user__header-link">
-                            Поставьте пароль
-                        </a>
-                    </li>
-                    <li class="user__header-item">
-                        <a href="#" class="user__header-link">
-                            Пройдите верификацию личности
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="user-wrapper">
-                <div class="user-box user__profile reveal-left-intro reveal-after-intro">
-                    <h4 class="user__profile-title">
-                        ⚙️ Ваш профиль и настройка
-                    </h4>
-                    <div class="user__profile-box">
-                        <div class="user__profile-img">
-                            <img src="./images/png/man.png" alt="man">
+    <!-- <div class="card-overflow"> -->
+        <section class="user">
+            <div class="container">
+                <h2 class="user-title">
+                    Добро пожаловать в Личный кабинет!
+                </h2>
+                <div class="user-header">
+                    <h3 class="user__header-title">
+                        Завершите полную настройку <span>Вашего</span> аккаунта:
+                    </h3>
+                    <ul class="user__header-list">
+                        <li class="user__header-item">
+                            <a href="#" class="user__header-link">
+                                Заполните профиль
+                            </a>
+                        </li>
+                        <li class="user__header-item">
+                            <a href="#" class="user__header-link">
+                                Поставьте пароль
+                            </a>
+                        </li>
+                        <li class="user__header-item">
+                            <a href="#" class="user__header-link">
+                                Пройдите верификацию личности
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="user-wrapper">
+                    <div class="user-box user__profile reveal-left-intro reveal-after-intro">
+                        <h4 class="user__profile-title">
+                            ⚙️ Ваш профиль и настройка
+                        </h4>
+                        <div class="user__profile-box">
+                            <div class="user__profile-img">
+                                <img src="./images/png/man.png" alt="man">
+                            </div>
+                            <div class="user__profile-article">
+                                <h3 class="user__profile-name">
+                                    <p>Михаил Лопатин</p>
+                                </h3>
+                                <ul class="user__progress-list">
+                                    <li class="user__progress-item">
+                                        ⭐️ Проведено занятий: <span>7</span>
+                                    </li>
+                                    <li class="user__progress-item">
+                                        🏆️ Ваш рейтинг: <span>9.5</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="user__profile-article">
-                            <h3 class="user__profile-name">
-                                <p>Михаил Лопатин</p>
-                            </h3>
-                            <ul class="user__progress-list">
-                                <li class="user__progress-item">
-                                    ⭐️ Проведено занятий: <span>7</span>
+                        <button class="user__profile-bottom">
+                            <div class="profile__bottom-box">
+                                <p class="profile__bottom-text">Редактировать профиль</p>
+                                <div class="profile__bottom-img">
+                                    <img src="./images/svg/edit.svg" alt="edit icon">
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="user-box user__schedule reveal-right-intro reveal-after-intro">
+                        <h4 class="user__schedule-title">
+                            🗓️ График занятий
+                        </h4>
+                        <div class="schedule__list-wrapper">
+                            <ul class="schedule__list">
+                                <li class="schedule__list-item">
+                                    <h3 class="schedule__item-title">
+                                        Четверг, 16:30
+                                    </h3>
+                                    <div class="schedule__item-body">
+                                        <p class="schedule__item-text">
+                                            Илья Маков
+                                        </p>
+                                        <a href="#" class="schedule__item-link">
+                                            <p>Подробнее...</p>
+                                            <img src="./images/svg/right-arrow-gradien.svg" alt="arrow">
+                                        </a>
+                                    </div>
                                 </li>
-                                <li class="user__progress-item">
-                                    🏆️ Ваш рейтинг: <span>9.5</span>
+                                <li class="schedule__list-item">
+                                    <h3 class="schedule__item-title">
+                                        Пятница, 11:00
+                                    </h3>
+                                    <div class="schedule__item-body">
+                                        <p class="schedule__item-text">
+                                            Андрей Лопатин
+                                        </p>
+                                        <a href="#" class="schedule__item-link">
+                                            <p>Подробнее...</p>
+                                            <img src="./images/svg/right-arrow-gradien.svg" alt="arrow">
+                                        </a>
+                                    </div>
                                 </li>
+                                <li class="schedule__list-item">
+                                    <h3 class="schedule__item-title">
+                                        Четверг, 16:30
+                                    </h3>
+                                    <div class="schedule__item-body">
+                                        <p class="schedule__item-text">
+                                            Дмитрий Хафизов
+                                        </p>
+                                        <a href="#" class="schedule__item-link">
+                                            <p>Подробнее...</p>
+                                            <img src="./images/svg/right-arrow-gradien.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="schedule__list-item">
+                                    <h3 class="schedule__item-title">
+                                        Пятница, 11:00
+                                    </h3>
+                                    <div class="schedule__item-body">
+                                        <p class="schedule__item-text">
+                                            Анна Андреяко
+                                        </p>
+                                        <a href="#" class="schedule__item-link">
+                                            <p>Подробнее...</p>
+                                            <img src="./images/svg/right-arrow-gradien.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                <li class="schedule__list-item">
+                                    <h3 class="schedule__item-title">
+                                        Четверг, 16:30
+                                    </h3>
+                                    <div class="schedule__item-body">
+                                        <p class="schedule__item-text">
+                                            Сессия с Психологом
+                                        </p>
+                                        <a href="#" class="schedule__item-link">
+                                            <p>Подробнее...</p>
+                                            <img src="./images/svg/right-arrow-gradien.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="schedule__list-item">
+                                    <h3 class="schedule__item-title">
+                                        Пятница, 11:00
+                                    </h3>
+                                    <div class="schedule__item-body">
+                                        <p class="schedule__item-text">
+                                            Занятие с репетитором
+                                        </p>
+                                        <a href="#" class="schedule__item-link">
+                                            <p>Подробнее...</p>
+                                            <img src="./images/svg/right-arrow-gradien.svg" alt="arrow">
+                                        </a>
+                                    </div>
                             </ul>
                         </div>
                     </div>
-                    <button class="user__profile-bottom">
-                        <div class="profile__bottom-box">
-                            <p class="profile__bottom-text">Редактировать профиль</p>
-                            <div class="profile__bottom-img">
-                                <img src="./images/svg/edit.svg" alt="edit icon">
-                            </div>
-                        </div>
-                    </button>
                 </div>
-                <div class="user-box user__schedule reveal-right-intro reveal-after-intro">
-                    <h4 class="user__schedule-title">
-                        🗓️ График занятий
-                    </h4>
-                    <div class="schedule__list-wrapper">
-                        <ul class="schedule__list">
-                            <li class="schedule__list-item">
-                                <h3 class="schedule__item-title">
-                                    Четверг, 16:30
-                                </h3>
-                                <div class="schedule__item-body">
-                                    <p class="schedule__item-text">
-                                        Илья Маков
-                                    </p>
-                                    <a href="#" class="schedule__item-link">
-                                        <p>Подробнее...</p>
-                                        <img src="./images/svg/right-arrow-gradien.svg" alt="arrow">
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="schedule__list-item">
-                                <h3 class="schedule__item-title">
-                                    Пятница, 11:00
-                                </h3>
-                                <div class="schedule__item-body">
-                                    <p class="schedule__item-text">
-                                        Андрей Лопатин
-                                    </p>
-                                    <a href="#" class="schedule__item-link">
-                                        <p>Подробнее...</p>
-                                        <img src="./images/svg/right-arrow-gradien.svg" alt="arrow">
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="schedule__list-item">
-                                <h3 class="schedule__item-title">
-                                    Четверг, 16:30
-                                </h3>
-                                <div class="schedule__item-body">
-                                    <p class="schedule__item-text">
-                                        Дмитрий Хафизов
-                                    </p>
-                                    <a href="#" class="schedule__item-link">
-                                        <p>Подробнее...</p>
-                                        <img src="./images/svg/right-arrow-gradien.svg" alt="arrow">
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="schedule__list-item">
-                                <h3 class="schedule__item-title">
-                                    Пятница, 11:00
-                                </h3>
-                                <div class="schedule__item-body">
-                                    <p class="schedule__item-text">
-                                        Анна Андреяко
-                                    </p>
-                                    <a href="#" class="schedule__item-link">
-                                        <p>Подробнее...</p>
-                                        <img src="./images/svg/right-arrow-gradien.svg" alt="arrow">
-                                    </a>
-                                </div>
-                            <li class="schedule__list-item">
-                                <h3 class="schedule__item-title">
-                                    Четверг, 16:30
-                                </h3>
-                                <div class="schedule__item-body">
-                                    <p class="schedule__item-text">
-                                        Сессия с Психологом
-                                    </p>
-                                    <a href="#" class="schedule__item-link">
-                                        <p>Подробнее...</p>
-                                        <img src="./images/svg/right-arrow-gradien.svg" alt="arrow">
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="schedule__list-item">
-                                <h3 class="schedule__item-title">
-                                    Пятница, 11:00
-                                </h3>
-                                <div class="schedule__item-body">
-                                    <p class="schedule__item-text">
-                                        Занятие с репетитором
-                                    </p>
-                                    <a href="#" class="schedule__item-link">
-                                        <p>Подробнее...</p>
-                                        <img src="./images/svg/right-arrow-gradien.svg" alt="arrow">
-                                    </a>
-                                </div>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <h2 class="card-title">
-                    📱 Мои карточки услуг
-                </h2>
-                <div class="card-wrapper active">
-                    <!-- <div class="card-empty">
+                <div class="card">
+                    <h2 class="card-title">
+                        📱 Мои карточки услуг
+                    </h2>
+                    <div class="card-wrapper active">
+                        <!-- <div class="card-empty">
                             Вы еще не создали ни одной карточки
                         </div> -->
-                    <div class="card-body">
-                        <div class="card-content">
-                            <div class="card-box">
-                                <h3 class="card__box-title">
-                                    Черновики
-                                </h3>
-                                <ul class="card__list">
-                                    <li class="card__list-item">
-                                        <div class="card__item-left">
-                                            <div class="card__item-img">
-                                                <img src="./images/png/man.png" alt="man">
+                        <div class="card-body">
+                            <div class="card-content">
+                                <div class="card-box">
+                                    <h3 class="card__box-title">
+                                        Черновики
+                                    </h3>
+                                    <ul class="card__list">
+                                        <li class="card__list-item">
+                                            <div class="card__list-tilt"></div>
+                                            <div class="tilt card__list-el">
+                                                <div class="card__item-left">
+                                                    <div class="card__item-img">
+                                                        <img src="./images/png/man.png" alt="man">
+                                                    </div>
+                                                    <div class="card__item-box">
+                                                        <h4 class="card__item-name">Михаил Лопатин</h4>
+                                                        <h5 class="card__item-type">Психотерапевт</h5>
+                                                        <div class="card__item-line"></div>
+                                                        <ul class="card__facts">
+                                                            <li class="card__facts-el">Стаж - 10 лет</li>
+                                                            <li class="card__facts-el">Гештальт-терапия</li>
+                                                            <li class="card__facts-el">50+ клиентов</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="card__list-line"></div>
+                                                <div class="card__item-article">
+                                                    <h3 class="card__item-title">Проработаем любые комплексы по
+                                                        метедологии...
+                                                    </h3>
+                                                    <p class="card__item-text">
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.
+                                                        Lorem
+                                                        Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.
+                                                        Lorem
+                                                        Ipsum
+                                                        is simply dummy text of the printing and typesetting industry.
+                                                    </p>
+                                                </div>
+                                                <div class="card__item-btn printer">
+                                                    <img src="./images/svg/edit.svg" alt="edit btn">
+                                                </div>
                                             </div>
-                                            <div class="card__item-box">
-                                                <h4 class="card__item-name">Михаил Лопатин</h4>
-                                                <h5 class="card__item-type">Психотерапевт</h5>
-                                                <div class="card__item-line"></div>
-                                                <ul class="card__facts">
-                                                    <li class="card__facts-el">Стаж - 10 лет</li>
-                                                    <li class="card__facts-el">Гештальт-терапия</li>
-                                                    <li class="card__facts-el">50+ клиентов</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="card__list-line"></div>
-                                        <div class="card__item-article">
-                                            <h3 class="card__item-title">Проработаем любые комплексы по метедологии...
-                                            </h3>
-                                            <p class="card__item-text">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry.
-                                                Lorem
-                                                Ipsum is simply dummy text of the printing and typesetting industry.
-                                                Lorem
-                                                Ipsum
-                                                is simply dummy text of the printing and typesetting industry.
-                                            </p>
-                                        </div>
-                                        <div class="card__item-btn printer">
-                                            <img src="./images/svg/edit.svg" alt="edit btn">
-                                        </div>
-                                    </li>
-                                    <li class="card__list-item">
-                                        <div class="card__item-left">
-                                            <div class="card__item-img">
-                                                <img src="./images/png/man.png" alt="man">
-                                            </div>
-                                            <div class="card__item-box">
-                                                <h4 class="card__item-name">Михаил Лопатин</h4>
-                                                <h5 class="card__item-type">Психотерапевт</h5>
-                                                <div class="card__item-line"></div>
-                                                <ul class="card__facts">
-                                                    <li class="card__facts-el">Стаж - 10 лет</li>
-                                                    <li class="card__facts-el">Гештальт-терапия</li>
-                                                    <li class="card__facts-el">50+ клиентов</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="card__list-line"></div>
-                                        <div class="card__item-article">
-                                            <h3 class="card__item-title">Проработаем любые комплексы по метедологии...
-                                            </h3>
-                                            <p class="card__item-text">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry.
-                                                Lorem
-                                                Ipsum is simply dummy text of the printing and typesetting industry.
-                                                Lorem
-                                                Ipsum
-                                                is simply dummy text of the printing and typesetting industry.
-                                            </p>
-                                        </div>
-                                        <div class="card__item-btn printer">
-                                            <img src="./images/svg/edit.svg" alt="edit btn">
-                                        </div>
-                                    </li>
-                                    <li class="card__list-item">
-                                        <div class="card__item-left">
-                                            <div class="card__item-img">
-                                                <img src="./images/png/man.png" alt="man">
-                                            </div>
-                                            <div class="card__item-box">
-                                                <h4 class="card__item-name">Михаил Лопатин</h4>
-                                                <h5 class="card__item-type">Психотерапевт</h5>
-                                                <div class="card__item-line"></div>
-                                                <ul class="card__facts">
-                                                    <li class="card__facts-el">Стаж - 10 лет</li>
-                                                    <li class="card__facts-el">Гештальт-терапия</li>
-                                                    <li class="card__facts-el">50+ клиентов</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="card__list-line"></div>
-                                        <div class="card__item-article">
-                                            <h3 class="card__item-title">Проработаем любые комплексы по метедологии...
-                                            </h3>
-                                            <p class="card__item-text">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry.
-                                                Lorem
-                                                Ipsum is simply dummy text of the printing and typesetting industry.
-                                                Lorem
-                                                Ipsum
-                                                is simply dummy text of the printing and typesetting industry.
-                                            </p>
-                                        </div>
-                                        <div class="card__item-btn printer">
-                                            <img src="./images/svg/edit.svg" alt="edit btn">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="card-box">
-                                <h3 class="card__box-title">
-                                    Опубликованные/активные
-                                </h3>
-                                <ul class="card__list active">
-                                    <li class="card__list-item">
-                                        <div class="card__item-left">
-                                            <div class="card__item-img">
-                                                <img src="./images/png/man.png" alt="man">
-                                            </div>
-                                            <div class="card__item-box">
-                                                <h4 class="card__item-name">Михаил Лопатин</h4>
-                                                <h5 class="card__item-type">Психотерапевт</h5>
-                                                <div class="card__item-line"></div>
-                                                <ul class="card__facts">
-                                                    <li class="card__facts-el">Стаж - 10 лет</li>
-                                                    <li class="card__facts-el">Гештальт-терапия</li>
-                                                    <li class="card__facts-el">50+ клиентов</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="card__list-line"></div>
-                                        <div class="card__item-article">
-                                            <h3 class="card__item-title">Проработаем любые комплексы по метедологии...
-                                            </h3>
-                                            <p class="card__item-text">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry.
-                                                Lorem
-                                                Ipsum is simply dummy text of the printing and typesetting industry.
-                                                Lorem
-                                                Ipsum
-                                                is simply dummy text of the printing and typesetting industry.
-                                            </p>
-                                        </div>
-                                        <div class="card__item-btn printer">
-                                            <img src="./images/svg/edit.svg" alt="edit btn">
-                                        </div>
-                                    </li>
-                                    <li class="card__list-item">
-                                        <div class="card__item-left">
-                                            <div class="card__item-img">
-                                                <img src="./images/png/man.png" alt="man">
-                                            </div>
-                                            <div class="card__item-box">
-                                                <h4 class="card__item-name">Михаил Лопатин</h4>
-                                                <h5 class="card__item-type">Психотерапевт</h5>
-                                                <div class="card__item-line"></div>
-                                                <ul class="card__facts">
-                                                    <li class="card__facts-el">Стаж - 10 лет</li>
-                                                    <li class="card__facts-el">Гештальт-терапия</li>
-                                                    <li class="card__facts-el">50+ клиентов</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="card__list-line"></div>
-                                        <div class="card__item-article">
-                                            <h3 class="card__item-title">Проработаем любые комплексы по метедологии...
-                                            </h3>
-                                            <p class="card__item-text">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry.
-                                                Lorem
-                                                Ipsum is simply dummy text of the printing and typesetting industry.
-                                                Lorem
-                                                Ipsum
-                                                is simply dummy text of the printing and typesetting industry.
-                                            </p>
-                                        </div>
-                                        <div class="card__item-btn printer">
-                                            <img src="./images/svg/edit.svg" alt="edit btn">
-                                        </div>
-                                    </li>
-                                    <li class="card__list-item">
-                                        <div class="card__item-left">
-                                            <div class="card__item-img">
-                                                <img src="./images/png/man.png" alt="man">
-                                            </div>
-                                            <div class="card__item-box">
-                                                <h4 class="card__item-name">Михаил Лопатин</h4>
-                                                <h5 class="card__item-type">Психотерапевт</h5>
-                                                <div class="card__item-line"></div>
-                                                <ul class="card__facts">
-                                                    <li class="card__facts-el">Стаж - 10 лет</li>
-                                                    <li class="card__facts-el">Гештальт-терапия</li>
-                                                    <li class="card__facts-el">50+ клиентов</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="card__list-line"></div>
-                                        <div class="card__item-article">
-                                            <h3 class="card__item-title">Проработаем любые комплексы по метедологии...
-                                            </h3>
-                                            <p class="card__item-text">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry.
-                                                Lorem
-                                                Ipsum is simply dummy text of the printing and typesetting industry.
-                                                Lorem
-                                                Ipsum
-                                                is simply dummy text of the printing and typesetting industry.
-                                            </p>
-                                        </div>
-                                        <div class="card__item-btn printer">
-                                            <img src="./images/svg/edit.svg" alt="edit btn">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-bottom">
-                        <div class="card__btn printer">
-                            <p class="card__btn-text">Создать карточку</p>
-                            <img class="card__btn-img" src="./images/svg/plus.svg" alt="add icon">
-                        </div>
-                    </div>
-                </div>
-                <form class="card__create">
-                    <div class="card__create-box card__create-article">
-                        <div class="create__article-header">
-                            <div class="create__tab">
-                                <div class="create__tab-el printer active">Я - Психолог</div>
-                                <div class="create__tab-el printer second">Я - Репетитор/Преподаватель</div>
-                            </div>
-                        </div>
-                        <div class="create__form active">
-                            <div class="create__form-center">
-                                <label for="articleTitle" class="create__form-box">
-                                    <h3 class="create__form-title">Заголовок объявления</h3>
-                                    <div class="create__form-el">
-                                        <input value="1ое меню" placeholder="Введите заголовок..." type="text"
-                                            id="articleTitle" class="create__form-input">
-                                    </div>
-                                </label>
-                                <label for="articleText" class="create__form-box second">
-                                    <h3 class="create__form-title">Описание обьявления</h3>
-                                    <div class="create__form-el">
-                                        <div class="create__form-textarea">
-                                            <textarea class="create__form-input" placeholder="Введите обьявление..."
-                                                name="articleText" id="articleText" cols="30" rows="5"></textarea>
-                                        </div>
-                                    </div>
-                                </label>
-                            </div>
-                            <div class="create__form-box create">
-                                <h3 class="create__form-title">Выберите категорию услуги</h3>
-                                <div class="create__radio">
-                                    <label class="create__radio-label printer" for="radio1">
-                                        <input class="create__radio-item" value="1" checked type="radio" name="psych"
-                                            id="radio1">
-                                        <span>Психотерапевт</span>
-                                    </label>
-                                    <label class="create__radio-label printer" for="radio2">
-                                        <input class="create__radio-item" value="2" type="radio" name="psych"
-                                            id="radio2">
-                                        <span>Семейный психолог</span>
-                                    </label>
-                                    <label class="create__radio-label printer" for="radio3">
-                                        <input class="create__radio-item" value="3" type="radio" name="psych"
-                                            id="radio3">
-                                        <span>Спортивный психолог</span>
-                                    </label>
-                                    <label class="create__radio-label printer" for="radio4">
-                                        <input class="create__radio-item" value="4" type="radio" name="psych"
-                                            id="radio4">
-                                        <span>Клинический психолог</span>
-                                    </label>
-                                    <label class="create__radio-label printer" for="radio5">
-                                        <input class="create__radio-item" value="5" type="radio" name="psych"
-                                            id="radio5">
-                                        <span>Социальный психолог</span>
-                                    </label>
-                                    <label class="create__radio-label printer" for="radio6">
-                                        <input class="create__radio-item" value="6" type="radio" name="psych"
-                                            id="radio6">
-                                        <span>Психолог - консультант</span>
-                                    </label>
-                                    <label class="create__radio-label printer" for="radio7">
-                                        <input class="create__radio-item" value="7" type="radio" name="psych"
-                                            id="radio7">
-                                        <span>Юридический психолог</span>
-                                    </label>
-                                    <label class="create__radio-label printer" for="radio8">
-                                        <input class="create__radio-item" value="8" type="radio" name="psych"
-                                            id="radio8">
-                                        <span>Гипнотерапевт</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="create__form">
-                            <div class="create__form-center">
-                                <label for="articleTitle" class="create__form-box">
-                                    <h3 class="create__form-title">Заголовок объявления</h3>
-                                    <div class="create__form-el">
-                                        <input value="2ое меню" placeholder="Введите заголовок..." type="text"
-                                            id="articleTitle" class="create__form-input">
-                                    </div>
-                                </label>
-                                <label for="articleText" class="create__form-box second">
-                                    <h3 class="create__form-title">Описание обьявления</h3>
-                                    <div class="create__form-el">
-                                        <div class="create__form-textarea">
-                                            <textarea class="create__form-input" placeholder="Введите обьявление..."
-                                                name="articleText" id="articleText" cols="30" rows="5"></textarea>
-                                        </div>
-                                    </div>
-                                </label>
-                            </div>
-                            <div class="create__form-box create">
-                                <h3 class="create__form-title">Выберите категорию услуги</h3>
-                                <div class="create__radio">
-                                    <label class="create__radio-label" for="radio1">
-                                        <input class="create__radio-item" value="1" checked type="radio" name="teacher"
-                                            id="radio1">
-                                        <span>Психотерапевт</span>
-                                    </label>
-                                    <label class="create__radio-label" for="radio2">
-                                        <input class="create__radio-item" value="2" type="radio" name="teacher"
-                                            id="radio2">
-                                        <span>Семейный психолог</span>
-                                    </label>
-                                    <label class="create__radio-label" for="radio3">
-                                        <input class="create__radio-item" value="3" type="radio" name="teacher"
-                                            id="radio3">
-                                        <span>Спортивный психолог</span>
-                                    </label>
-                                    <label class="create__radio-label" for="radio4">
-                                        <input class="create__radio-item" value="4" type="radio" name="teacher"
-                                            id="radio4">
-                                        <span>Клинический психолог</span>
-                                    </label>
-                                    <label class="create__radio-label" for="radio5">
-                                        <input class="create__radio-item" value="5" type="radio" name="teacher"
-                                            id="radio5">
-                                        <span>Социальный психолог</span>
-                                    </label>
-                                    <label class="create__radio-label" for="radio6">
-                                        <input class="create__radio-item" value="6" type="radio" name="teacher"
-                                            id="radio6">
-                                        <span>Психолог - консультант</span>
-                                    </label>
-                                    <label class="create__radio-label" for="radio7">
-                                        <input class="create__radio-item" value="7" type="radio" name="teacher"
-                                            id="radio7">
-                                        <span>Юридический психолог</span>
-                                    </label>
-                                    <label class="create__radio-label" for="radio8">
-                                        <input class="create__radio-item" value="8" type="radio" name="teacher"
-                                            id="radio8">
-                                        <span>Гипнотерапевт</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card__create-box card__new">
-                        <div class="card__new-header">
-                            <div class="card__price">
-                                <h3 class="card__price-title">
-                                    💵 Ставка за занятие
-                                </h3>
 
-                                <input type="number" placeholder="100000" value="100000" class="card__price-input">
-                                <div class="card__price-change">
-                                    <div class="card__price-btn printer minus">
-                                        <img src="./images/svg/minus.svg" alt="minus">
-                                    </div>
-                                    <div class="card__price-btn printer plus">
-                                        <img src="./images/svg/plus-primary.svg" alt="plus">
-                                    </div>
+                                        </li>
+                                        <li class="card__list-item">
+                                            <div class="card__list-tilt"></div>
+                                            <div class="tilt card__list-el">
+                                                <div class="card__item-left">
+                                                    <div class="card__item-img">
+                                                        <img src="./images/png/man.png" alt="man">
+                                                    </div>
+                                                    <div class="card__item-box">
+                                                        <h4 class="card__item-name">Михаил Лопатин</h4>
+                                                        <h5 class="card__item-type">Психотерапевт</h5>
+                                                        <div class="card__item-line"></div>
+                                                        <ul class="card__facts">
+                                                            <li class="card__facts-el">Стаж - 10 лет</li>
+                                                            <li class="card__facts-el">Гештальт-терапия</li>
+                                                            <li class="card__facts-el">50+ клиентов</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="card__list-line"></div>
+                                                <div class="card__item-article">
+                                                    <h3 class="card__item-title">Проработаем любые комплексы по
+                                                        метедологии...
+                                                    </h3>
+                                                    <p class="card__item-text">
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.
+                                                        Lorem
+                                                        Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.
+                                                        Lorem
+                                                        Ipsum
+                                                        is simply dummy text of the printing and typesetting industry.
+                                                    </p>
+                                                </div>
+                                                <div class="card__item-btn printer">
+                                                    <img src="./images/svg/edit.svg" alt="edit btn">
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <li class="card__list-item">
+                                            <div class="card__list-tilt"></div>
+                                            <div class="tilt card__list-el">
+                                                <div class="card__item-left">
+                                                    <div class="card__item-img">
+                                                        <img src="./images/png/man.png" alt="man">
+                                                    </div>
+                                                    <div class="card__item-box">
+                                                        <h4 class="card__item-name">Михаил Лопатин</h4>
+                                                        <h5 class="card__item-type">Психотерапевт</h5>
+                                                        <div class="card__item-line"></div>
+                                                        <ul class="card__facts">
+                                                            <li class="card__facts-el">Стаж - 10 лет</li>
+                                                            <li class="card__facts-el">Гештальт-терапия</li>
+                                                            <li class="card__facts-el">50+ клиентов</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="card__list-line"></div>
+                                                <div class="card__item-article">
+                                                    <h3 class="card__item-title">Проработаем любые комплексы по
+                                                        метедологии...
+                                                    </h3>
+                                                    <p class="card__item-text">
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.
+                                                        Lorem
+                                                        Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.
+                                                        Lorem
+                                                        Ipsum
+                                                        is simply dummy text of the printing and typesetting industry.
+                                                    </p>
+                                                </div>
+                                                <div class="card__item-btn printer">
+                                                    <img src="./images/svg/edit.svg" alt="edit btn">
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                    </ul>
                                 </div>
-                                <p class="card__price-text">
-                                    Комиссия сервиса составляет 15% от вашего дохода
-                                </p>
-                            </div>
-                            <div class="card__new-certificate">
-                                <a href="#" class="card__certificate-header">
-                                    <div class="card__certificate-img">
-                                        <img src="./images/svg/files.svg" alt="files icon">
-                                    </div>
-                                    <div class="card__certificate-title">Добавить портфолио/сертификацию</div>
-                                </a>
-                                <div class="card__certificate-body">
-                                    <ul class="card__certificate-list">
-                                        <li class="card__certificate-el">
-                                            <img src="./images/png/certificate.png" alt="certificate">
+                                <div class="card-box">
+                                    <h3 class="card__box-title">
+                                        Опубликованные/активные
+                                    </h3>
+                                    <ul class="card__list active">
+                                        <li class="card__list-item">
+                                            <div class="card__list-tilt"></div>
+                                            <div class="tilt card__list-el">
+                                                <div class="card__item-left">
+                                                    <div class="card__item-img">
+                                                        <img src="./images/png/man.png" alt="man">
+                                                    </div>
+                                                    <div class="card__item-box">
+                                                        <h4 class="card__item-name">Михаил Лопатин</h4>
+                                                        <h5 class="card__item-type">Психотерапевт</h5>
+                                                        <div class="card__item-line"></div>
+                                                        <ul class="card__facts">
+                                                            <li class="card__facts-el">Стаж - 10 лет</li>
+                                                            <li class="card__facts-el">Гештальт-терапия</li>
+                                                            <li class="card__facts-el">50+ клиентов</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="card__list-line"></div>
+                                                <div class="card__item-article">
+                                                    <h3 class="card__item-title">Проработаем любые комплексы по
+                                                        метедологии...
+                                                    </h3>
+                                                    <p class="card__item-text">
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.
+                                                        Lorem
+                                                        Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.
+                                                        Lorem
+                                                        Ipsum
+                                                        is simply dummy text of the printing and typesetting industry.
+                                                    </p>
+                                                </div>
+                                                <div class="card__item-btn printer">
+                                                    <img src="./images/svg/edit.svg" alt="edit btn">
+                                                </div>
+                                            </div>
+
                                         </li>
-                                        <li class="card__certificate-el">
-                                            <img src="./images/png/certificate.png" alt="certificate">
+                                        <li class="card__list-item">
+                                            <div class="card__list-tilt"></div>
+                                            <div class="tilt card__list-el">
+                                                <div class="card__item-left">
+                                                    <div class="card__item-img">
+                                                        <img src="./images/png/man.png" alt="man">
+                                                    </div>
+                                                    <div class="card__item-box">
+                                                        <h4 class="card__item-name">Михаил Лопатин</h4>
+                                                        <h5 class="card__item-type">Психотерапевт</h5>
+                                                        <div class="card__item-line"></div>
+                                                        <ul class="card__facts">
+                                                            <li class="card__facts-el">Стаж - 10 лет</li>
+                                                            <li class="card__facts-el">Гештальт-терапия</li>
+                                                            <li class="card__facts-el">50+ клиентов</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="card__list-line"></div>
+                                                <div class="card__item-article">
+                                                    <h3 class="card__item-title">Проработаем любые комплексы по
+                                                        метедологии...
+                                                    </h3>
+                                                    <p class="card__item-text">
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.
+                                                        Lorem
+                                                        Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.
+                                                        Lorem
+                                                        Ipsum
+                                                        is simply dummy text of the printing and typesetting industry.
+                                                    </p>
+                                                </div>
+                                                <div class="card__item-btn printer">
+                                                    <img src="./images/svg/edit.svg" alt="edit btn">
+                                                </div>
+                                            </div>
+
                                         </li>
-                                        <li class="card__certificate-el">
-                                            <img src="./images/png/certificate.png" alt="certificate">
-                                        </li>
-                                        <li class="card__certificate-el">
-                                            <img src="./images/png/certificate.png" alt="certificate">
-                                        </li>
-                                        <li class="card__certificate-el">
-                                            <img src="./images/png/certificate.png" alt="certificate">
+                                        <li class="card__list-item">
+                                            <div class="card__list-tilt"></div>
+                                            <div class="tilt card__list-el">
+                                                <div class="card__item-left">
+                                                    <div class="card__item-img">
+                                                        <img src="./images/png/man.png" alt="man">
+                                                    </div>
+                                                    <div class="card__item-box">
+                                                        <h4 class="card__item-name">Михаил Лопатин</h4>
+                                                        <h5 class="card__item-type">Психотерапевт</h5>
+                                                        <div class="card__item-line"></div>
+                                                        <ul class="card__facts">
+                                                            <li class="card__facts-el">Стаж - 10 лет</li>
+                                                            <li class="card__facts-el">Гештальт-терапия</li>
+                                                            <li class="card__facts-el">50+ клиентов</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="card__list-line"></div>
+                                                <div class="card__item-article">
+                                                    <h3 class="card__item-title">Проработаем любые комплексы по
+                                                        метедологии...
+                                                    </h3>
+                                                    <p class="card__item-text">
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.
+                                                        Lorem
+                                                        Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.
+                                                        Lorem
+                                                        Ipsum
+                                                        is simply dummy text of the printing and typesetting industry.
+                                                    </p>
+                                                </div>
+                                                <div class="card__item-btn printer">
+                                                    <img src="./images/svg/edit.svg" alt="edit btn">
+                                                </div>
+                                            </div>
+
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="card__new-complete">
-                            <div class="complete__header">
-                                <div class="complete__header-img">
-                                    <img src="./images/svg/checkAll.svg" alt="checked">
-                                </div>
-                                <h3 class="complete__header-title">Завершение настройки</h3>
-                            </div>
-                            <div class="complete-body">
-                                <p class="complete-text">
-                                    После публикации Вашей карточки товара, она начнет показываться потенциальным
-                                    клиентам.
-                                    Заинтересовавшиеся люди будут писать вам в Сообщения. Познакомьтесь и обсудите с
-                                    ними
-                                    всевозможные вопросы перед назначением занятия/сессии. Будьте доброжелательны!
-                                </p>
-                            </div>
-                            <div class="complete__bottom">
-                                <div class="complete__bottom-btn printer first">
-                                    <h3>Опубликовать</h3>
-                                    <img src="./images/svg/checkAll.svg" alt="checkAll icon">
-                                </div>
-                                <div class="complete__bottom-btn printer second">Сохранить в Черновик</div>
+                        <div class="card-bottom">
+                            <div class="card__btn printer">
+                                <p class="card__btn-text">Создать карточку</p>
+                                <img class="card__btn-img" src="./images/svg/plus.svg" alt="add icon">
                             </div>
                         </div>
                     </div>
-                </form>
-            </div>
-            <div class="user-article">
-                <h2 class="user__article-title">💵 Ваш баланс и Биллинг:</h2>
-                <div class="user__article-wrapper">
-                    <div class="user__article-box user__article-item reveal-left reveal-after">
-                        <p class="user__article-text">
-                            На нашей платформе используется удобный внутренний баланс для комфортного взаимодействия
-                            между пользователями и испольнителями
-                        </p>
-                        <div class="user__article-line"></div>
-                        <p class="user__article-text second">
-                            Пополните баланс своего аккаунта для возможности проведения сессий и занятий со
-                            специалистами
-                        </p>
-                        <div class="user__article-under">
-                            <button class="user__article-btn">Ваш баланс: <span>5.210.000</span> сум</button>
-                            <button class="user__article-btn second">
-                                <p>Пополнить баланс</p>
-                                <img draggable="false" src="./images/svg/data.svg" alt="data">
-                            </button>
+                    <form class="card__create">
+                        <div class="card__create-box card__create-article">
+                            <div class="create__article-header">
+                                <div class="create__tab">
+                                    <div class="create__tab-el printer active">Я - Психолог</div>
+                                    <div class="create__tab-el printer second">Я - Репетитор/Преподаватель</div>
+                                </div>
+                            </div>
+                            <div class="create__form active">
+                                <div class="create__form-center">
+                                    <label for="articleTitle" class="create__form-box">
+                                        <h3 class="create__form-title">Заголовок объявления</h3>
+                                        <div class="create__form-el">
+                                            <input value="1ое меню" placeholder="Введите заголовок..." type="text"
+                                                id="articleTitle" class="create__form-input">
+                                        </div>
+                                    </label>
+                                    <label for="articleText" class="create__form-box second">
+                                        <h3 class="create__form-title">Описание обьявления</h3>
+                                        <div class="create__form-el">
+                                            <div class="create__form-textarea">
+                                                <textarea class="create__form-input" placeholder="Введите обьявление..."
+                                                    name="articleText" id="articleText" cols="30" rows="5"></textarea>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="create__form-box create">
+                                    <h3 class="create__form-title">Выберите категорию услуги</h3>
+                                    <div class="create__radio">
+                                        <label class="create__radio-label printer" for="radio1">
+                                            <input class="create__radio-item" value="1" checked type="radio"
+                                                name="psych" id="radio1">
+                                            <span>Психотерапевт</span>
+                                        </label>
+                                        <label class="create__radio-label printer" for="radio2">
+                                            <input class="create__radio-item" value="2" type="radio" name="psych"
+                                                id="radio2">
+                                            <span>Семейный психолог</span>
+                                        </label>
+                                        <label class="create__radio-label printer" for="radio3">
+                                            <input class="create__radio-item" value="3" type="radio" name="psych"
+                                                id="radio3">
+                                            <span>Спортивный психолог</span>
+                                        </label>
+                                        <label class="create__radio-label printer" for="radio4">
+                                            <input class="create__radio-item" value="4" type="radio" name="psych"
+                                                id="radio4">
+                                            <span>Клинический психолог</span>
+                                        </label>
+                                        <label class="create__radio-label printer" for="radio5">
+                                            <input class="create__radio-item" value="5" type="radio" name="psych"
+                                                id="radio5">
+                                            <span>Социальный психолог</span>
+                                        </label>
+                                        <label class="create__radio-label printer" for="radio6">
+                                            <input class="create__radio-item" value="6" type="radio" name="psych"
+                                                id="radio6">
+                                            <span>Психолог - консультант</span>
+                                        </label>
+                                        <label class="create__radio-label printer" for="radio7">
+                                            <input class="create__radio-item" value="7" type="radio" name="psych"
+                                                id="radio7">
+                                            <span>Юридический психолог</span>
+                                        </label>
+                                        <label class="create__radio-label printer" for="radio8">
+                                            <input class="create__radio-item" value="8" type="radio" name="psych"
+                                                id="radio8">
+                                            <span>Гипнотерапевт</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="create__form">
+                                <div class="create__form-center">
+                                    <label for="articleTitle" class="create__form-box">
+                                        <h3 class="create__form-title">Заголовок объявления</h3>
+                                        <div class="create__form-el">
+                                            <input value="2ое меню" placeholder="Введите заголовок..." type="text"
+                                                id="articleTitle" class="create__form-input">
+                                        </div>
+                                    </label>
+                                    <label for="articleText" class="create__form-box second">
+                                        <h3 class="create__form-title">Описание обьявления</h3>
+                                        <div class="create__form-el">
+                                            <div class="create__form-textarea">
+                                                <textarea class="create__form-input" placeholder="Введите обьявление..."
+                                                    name="articleText" id="articleText" cols="30" rows="5"></textarea>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="create__form-box create">
+                                    <h3 class="create__form-title">Выберите категорию услуги</h3>
+                                    <div class="create__radio">
+                                        <label class="create__radio-label" for="radio1">
+                                            <input class="create__radio-item" value="1" checked type="radio"
+                                                name="teacher" id="radio1">
+                                            <span>Психотерапевт</span>
+                                        </label>
+                                        <label class="create__radio-label" for="radio2">
+                                            <input class="create__radio-item" value="2" type="radio" name="teacher"
+                                                id="radio2">
+                                            <span>Семейный психолог</span>
+                                        </label>
+                                        <label class="create__radio-label" for="radio3">
+                                            <input class="create__radio-item" value="3" type="radio" name="teacher"
+                                                id="radio3">
+                                            <span>Спортивный психолог</span>
+                                        </label>
+                                        <label class="create__radio-label" for="radio4">
+                                            <input class="create__radio-item" value="4" type="radio" name="teacher"
+                                                id="radio4">
+                                            <span>Клинический психолог</span>
+                                        </label>
+                                        <label class="create__radio-label" for="radio5">
+                                            <input class="create__radio-item" value="5" type="radio" name="teacher"
+                                                id="radio5">
+                                            <span>Социальный психолог</span>
+                                        </label>
+                                        <label class="create__radio-label" for="radio6">
+                                            <input class="create__radio-item" value="6" type="radio" name="teacher"
+                                                id="radio6">
+                                            <span>Психолог - консультант</span>
+                                        </label>
+                                        <label class="create__radio-label" for="radio7">
+                                            <input class="create__radio-item" value="7" type="radio" name="teacher"
+                                                id="radio7">
+                                            <span>Юридический психолог</span>
+                                        </label>
+                                        <label class="create__radio-label" for="radio8">
+                                            <input class="create__radio-item" value="8" type="radio" name="teacher"
+                                                id="radio8">
+                                            <span>Гипнотерапевт</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="user__article-box user__article-banner reveal-right reveal-after">
-                        <img draggable="false" class="user__article-img" src="./images/webp/wallet.webp" alt="wallet">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                        <div class="card__create-box card__new">
+                            <div class="card__new-header">
+                                <div class="card__price">
+                                    <h3 class="card__price-title">
+                                        💵 Ставка за занятие
+                                    </h3>
 
-    <div class="edit-modal">
-        <form class="edit-content">
-            <div class="edit__modal-header">
-                <h3 class="edit__modal-title">⚙️ Ваш профиль и настройка</h3>
-                <div class="edit__modal-exit">
-                    <div class="edit__modal-close">
-                        <img src="./images/svg/close.svg" alt="close btn">
-                    </div>
-                </div>
-            </div>
-            <div class="edit__modal-wrapper">
-                <div class="edit__modal-content">
-                    <div class="edit__modal-box">
-                        <div class="edit__modal-top">
-                            <div class="edit__top-box">
-                                <h2 class="edit__top-title">
-                                    Изменить фото
-                                </h2>
-                                <div class="edit__top-content">
-                                    <div class="edit__top-icon">
-                                        <img src="./images/svg/edit.svg" alt="edit img">
+                                    <input type="number" placeholder="100000" value="100000" class="card__price-input">
+                                    <div class="card__price-change">
+                                        <div class="card__price-btn printer minus">
+                                            <img src="./images/svg/minus.svg" alt="minus">
+                                        </div>
+                                        <div class="card__price-btn printer plus">
+                                            <img src="./images/svg/plus-primary.svg" alt="plus">
+                                        </div>
                                     </div>
-                                    <div class="edit__top-arrow">
-                                        <img src="./images/png/right-arrow.png" alt="arrow">
-                                    </div>
-                                    <div class="edit__top-user">
-                                        <img src="./images/png/man.png" alt="user image">
+                                    <p class="card__price-text">
+                                        Комиссия сервиса составляет 15% от вашего дохода
+                                    </p>
+                                </div>
+                                <div class="card__new-certificate">
+                                    <a href="#" class="card__certificate-header">
+                                        <div class="card__certificate-img">
+                                            <img src="./images/svg/files.svg" alt="files icon">
+                                        </div>
+                                        <div class="card__certificate-title">Добавить портфолио/сертификацию</div>
+                                    </a>
+                                    <div class="card__certificate-body">
+                                        <ul class="card__certificate-list">
+                                            <li class="card__certificate-el">
+                                                <img src="./images/png/certificate.png" alt="certificate">
+                                            </li>
+                                            <li class="card__certificate-el">
+                                                <img src="./images/png/certificate.png" alt="certificate">
+                                            </li>
+                                            <li class="card__certificate-el">
+                                                <img src="./images/png/certificate.png" alt="certificate">
+                                            </li>
+                                            <li class="card__certificate-el">
+                                                <img src="./images/png/certificate.png" alt="certificate">
+                                            </li>
+                                            <li class="card__certificate-el">
+                                                <img src="./images/png/certificate.png" alt="certificate">
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="edit__vertical-line"></div>
-                            <div class="edit__top-box">
-                                <h2 class="edit__top-title">
-                                    Верификация личности
-                                </h2>
-                                <div class="edit__top-content">
-                                    <div class="edit__top-icon">
-                                        <img src="./images/svg/card.svg" alt="card img">
+                            <div class="card__new-complete">
+                                <div class="complete__header">
+                                    <div class="complete__header-img">
+                                        <img src="./images/svg/checkAll.svg" alt="checked">
                                     </div>
-                                    <div class="edit__top-arrow">
-                                        <img src="./images/png/right-arrow.png" alt="arrow">
+                                    <h3 class="complete__header-title">Завершение настройки</h3>
+                                </div>
+                                <div class="complete-body">
+                                    <p class="complete-text">
+                                        После публикации Вашей карточки товара, она начнет показываться потенциальным
+                                        клиентам.
+                                        Заинтересовавшиеся люди будут писать вам в Сообщения. Познакомьтесь и обсудите с
+                                        ними
+                                        всевозможные вопросы перед назначением занятия/сессии. Будьте доброжелательны!
+                                    </p>
+                                </div>
+                                <div class="complete__bottom">
+                                    <div class="complete__bottom-btn printer first">
+                                        <h3>Опубликовать</h3>
+                                        <img src="./images/svg/checkAll.svg" alt="checkAll icon">
                                     </div>
-                                    <div class="edit__top-article">
-                                        <p class="edit__top-text">
-                                            Загрузите фотографию или ксперокопию вашей ID-карты в хорошем качестве для
-                                            утверждения личности аккаунта
-                                        </p>
-                                    </div>
+                                    <div class="complete__bottom-btn printer second">Сохранить в Черновик</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="edit-inputs">
-                            <ul class="edit__list">
-                                <li class="edit__list-item">
-                                    <label for="name" class="edit-label">
-                                        <h3 class="edit__label-title">Имя</h3>
-                                        <div class="edit__input-box">
-                                            <input placeholder="Введите имя..." type="text" name="name" id="name"
-                                                class="edit-input">
-                                        </div>
-                                    </label>
-                                </li>
-                                <li class="edit__list-item">
-                                    <label for="surname" class="edit-label">
-                                        <h3 class="edit__label-title">Фамилия</h3>
-                                        <div class="edit__input-box">
-                                            <input placeholder="Введите фамилию..." type="text" name="surname"
-                                                id="surname" class="edit-input">
-                                        </div>
-                                    </label>
-                                </li>
-                            </ul>
-                            <div class="edit__list-line"></div>
-                            <ul class="edit__list">
-                                <li class="edit__list-item">
-                                    <label for="city" class="edit-label">
-                                        <h3 class="edit__label-title">Город</h3>
-                                        <div class="edit__input-box edit__select-box">
-                                            <select class="edit-input" name="city" id="city">
-                                                <option selected disabled value="">Выберите город...</option>
-                                                <option value="tashkent">Ташкент</option>
-                                                <option value="samarkand">Самарканд</option>
-                                            </select>
-                                        </div>
-                                    </label>
-                                </li>
-                                <li class="edit__list-item">
-                                    <label for="birthday" class="edit-label">
-                                        <h3 class="edit__label-title">Дата рождения</h3>
-                                        <div class="edit__input-box">
-                                            <input type="date" name="birthday" id="birthday" class="edit-input">
-                                        </div>
-                                    </label>
-                                </li>
-                            </ul>
+                    </form>
+                </div>
+                <div class="user-article">
+                    <h2 class="user__article-title">💵 Ваш баланс и Биллинг:</h2>
+                    <div class="user__article-wrapper">
+                        <div class="user__article-box user__article-item reveal-left reveal-after">
+                            <p class="user__article-text">
+                                На нашей платформе используется удобный внутренний баланс для комфортного взаимодействия
+                                между пользователями и испольнителями
+                            </p>
+                            <div class="user__article-line"></div>
+                            <p class="user__article-text second">
+                                Пополните баланс своего аккаунта для возможности проведения сессий и занятий со
+                                специалистами
+                            </p>
+                            <div class="user__article-under">
+                                <button class="user__article-btn">Ваш баланс: <span>5.210.000</span> сум</button>
+                                <button class="user__article-btn second">
+                                    <p>Пополнить баланс</p>
+                                    <img draggable="false" src="./images/svg/data.svg" alt="data">
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="edit__modal-line"></div>
-                    <div class="edit__modal-box second">
-                        <div class="edit-inputs">
-                            <ul class="edit__list">
-                                <li class="edit__list-item">
-                                    <label for="password" class="edit-label">
-                                        <h3 class="edit__label-title">Пароль</h3>
-                                        <div class="edit__input-box second">
-                                            <input placeholder="Введите пароль..." type="password" name="password"
-                                                id="password" class="edit-input">
-                                        </div>
-                                    </label>
-                                </li>
-                                <li class="edit__list-item">
-                                    <label for="repassword" class="edit-label">
-                                        <h3 class="edit__label-title">Повторите пароль</h3>
-                                        <div class="edit__input-box second">
-                                            <input placeholder="Введите пароль еще раз..." type="password"
-                                                name="repassword" id="repassword" class="edit-input">
-                                        </div>
-                                    </label>
-                                </li>
-                            </ul>
-                            <div class="edit__list-line"></div>
-                            <ul class="edit__list">
-                                <li class="edit__list-item">
-                                    <label for="email" class="edit-label">
-                                        <h3 class="edit__label-title">E-mail</h3>
-                                        <div class="edit__input-box">
-                                            <input placeholder="Введите E-mail..." type="email" name="email" id="email"
-                                                class="edit-input">
-                                        </div>
-                                    </label>
-                                </li>
-                                <li class="edit__list-item">
-                                    <label for="phone" class="edit-label">
-                                        <h3 class="edit__label-title">Номер телефона</h3>
-                                        <div class="edit__input-box">
-                                            <input placeholder="Введите номер телефона..." type="number" name="phone"
-                                                id="phone" class="edit-input">
-                                        </div>
-                                    </label>
-                                </li>
-                            </ul>
+                        <div class="user__article-box user__article-banner reveal-right reveal-after">
+                            <img draggable="false" class="user__article-img" src="./images/webp/wallet.webp"
+                                alt="wallet">
                         </div>
                     </div>
                 </div>
-                <div class="edit__modal-line"></div>
             </div>
-            <div class="edit-bottom">
-                <button class="edit__bottom-btn">
-                    <p>Сохранить изменения</p>
-                    <img src="./images/svg/checkAll.svg" alt="checked icon">
-                </button>
-                <button type="reset" class="edit__bottom-btn second">Отменить</button>
-            </div>
-        </form>
-    </div>
+        </section>
+
+    <!-- </div> -->
+
 
 
     <section class="questions">
@@ -923,9 +965,12 @@
                                 </h3>
                                 <div class="questions__item-content">
                                     <p class="questions__item-text">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                        an
+                                        unknown printer took a galley of type and scrambled it to make a type
+                                        specimen
                                         book
                                     </p>
                                 </div>
@@ -942,9 +987,12 @@
                                 </h3>
                                 <div class="questions__item-content">
                                     <p class="questions__item-text">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                        an
+                                        unknown printer took a galley of type and scrambled it to make a type
+                                        specimen
                                         book
                                     </p>
                                 </div>
@@ -961,9 +1009,12 @@
                                 </h3>
                                 <div class="questions__item-content">
                                     <p class="questions__item-text">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                        an
+                                        unknown printer took a galley of type and scrambled it to make a type
+                                        specimen
                                         book
                                     </p>
                                 </div>
